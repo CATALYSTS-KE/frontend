@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <main>
-      <section>
+      <section class="bg-lime-300 py-72 px-72">
         <div>
           <div>Manifesto Image</div>
           <div>
@@ -10,7 +10,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="bg-yellow-400 py-72 px-72">
         <div>Mission Vision Image</div>
         <div>
           <div>
@@ -23,7 +23,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="bg-teal-500 py-72 px-72">
         <div>Background Image Header</div>
         <!-- card with white bg -->
         <div>
