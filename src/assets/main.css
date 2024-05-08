@@ -1,0 +1,12 @@
+/* ./src/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  /* padding-left: 121px; */
+  /* padding-right: 121px; */
+
+  box-sizing: border-box;
+  margin: 0 auto;
+}
