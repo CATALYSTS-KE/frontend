@@ -1,10 +1,13 @@
 <template>
   <div>
     <main>
-      <section >
+      <section>
         <div>
-          <div>THE 5 C'S Image</div>
+          <!-- <div>THE 5 C'S Image</div> -->
           <!-- Container for 5 c/s -->
+          <div>
+            <img alt="Catalysts logo" class="logo" src="@/assets/images/What-we-do.png" />
+          </div>
           <div>
             <!-- first c -->
             <div>
@@ -39,10 +42,10 @@
             <p>Lorem Ipsum</p>
           </div>
           <div>
-           <div>Video 1</div>
-           <div>Video 2</div>
-           <div>Video 3</div>
-           <div>Video 4</div>
+            <div>Video 1</div>
+            <div>Video 2</div>
+            <div>Video 3</div>
+            <div>Video 4</div>
           </div>
         </div>
       </section>

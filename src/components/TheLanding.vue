@@ -12,8 +12,8 @@
 
     <!-- Call to action Section -->
     <div>
-      <div>lorem Ipsum</div>
-      <div>Image of lady holding Mic</div>
+      <!-- <div>lorem Ipsum</div>
+      <div>Image of lady holding Mic</div> -->
     </div>
   </div>
 </template>
