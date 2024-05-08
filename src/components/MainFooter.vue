@@ -20,7 +20,8 @@
       <div>
         <h1>RESOURCES</h1>
         <div class="flex flex-col px-4">
-          <RouterLink to="/">Research</RouterLink>
+          <RouterLink to="/">Guidlines</RouterLink>
+          <RouterLink to="/">Toolkits</RouterLink>
           <RouterLink to="/">Resources</RouterLink>
         </div>
       </div>
@@ -34,7 +35,7 @@
       </div>
     </div>
     <!-- contact info -->
-    <div class="p-4"><span>CONTACTS:</span><span>: www.catalystsafrica.org</span></div>
+    <div class="p-4"><span>CONTACTS:</span><span> www.catalystsafrica.org</span></div>
     <!-- socials -->
     <div>
       <div class="flex gap-4">

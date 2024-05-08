@@ -1,12 +1,16 @@
 <template>
   <div>
     <main>
-      <section>
+      <section class="">
         <div>
           <!-- <div>THE 5 C'S Image</div> -->
           <!-- Container for 5 c/s -->
           <div>
-            <img alt="Catalysts logo" class="logo" src="@/assets/images/What-we-do.png" />
+            <img
+              alt="Catalysts logo"
+              class="logo bg-[#00C4B3]"
+              src="@/assets/images/What-we-do.png"
+            />
           </div>
           <div>
             <!-- first c -->
