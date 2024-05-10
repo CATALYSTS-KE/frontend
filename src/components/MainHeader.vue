@@ -35,6 +35,7 @@ export default {
         { label: 'Who We Are', route: '/who-we-are' },
         { label: 'What We Do', route: '/what-we-do' },
         { label: 'Updates', route: '/updates' },
+        { label: 'Resources', route: '/resources' },
         { label: 'Join Us', route: '/join-us' },
         { label: 'Contact Us', route: '/contact-us' }
       ],
