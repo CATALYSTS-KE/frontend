@@ -17,7 +17,7 @@
               <div class="pb-4 md:pb-36 flex flex-col justify-between">
                 <div class="flex justify-center">
                   <img
-                    class="w-full h-64"
+                    class="w-full h-96"
                     alt="contact page dubai image"
                     src="@/assets/images/contact/Dubai-image.webp"
                   />
