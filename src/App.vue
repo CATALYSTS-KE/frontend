@@ -6,16 +6,8 @@ import MainFooter from '@/components/MainFooter.vue'
 
 <template class="">
   <div class="px-4 mx-auto min-h-screen flex flex-col">
-    <header class="flex items-center justify-between px-24 h-56">
-      <router-link to="/" class="text-lg">
-        <img alt="Catalysts logo" class="logo" src="@/assets/images/catalysts-logo.svg" />
-      </router-link>
-
-      <div class="">
-        <MainHeader />
-      </div>
-    </header>
-
+    <!-- <header class="flex items-center justify-between px-24 h-56"> -->
+    <MainHeader />
     <RouterView class="wrapper" />
     <div class="mt-0">
       <MainFooter />
@@ -23,9 +15,9 @@ import MainFooter from '@/components/MainFooter.vue'
   </div>
 </template>
 
-<style scopped>
+<style scopped> 
 .wrapper {
-  min-height: calc(100vh - 100px); /* you have to minus header and footer width 
+  min-height: calc(100vh - 100px); /* minus header and footer width 
       together*/
 }
 * {

@@ -2,8 +2,13 @@
 export default {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'], //remove unused styles
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        orange: {
+          primary: '#FF5F00'
+        }
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }
-

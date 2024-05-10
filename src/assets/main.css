@@ -4,9 +4,6 @@
 @tailwind utilities;
 
 #app {
-  /* padding-left: 121px; */
-  /* padding-right: 121px; */
-
   box-sizing: border-box;
   margin: 0 auto;
 }
