@@ -1,19 +1,22 @@
 <template>
   <div>
     <main>
-      <section class="h-screen pb-10 px-20 bg-[url('@/assets/images/our_story_bg.png')] bg-cover bg-center relative overflow-hidden">
-        <div>
-          <div>
-            <img src="@/assets/images/our_story_title.svg" alt="Title Image" class="h-auto block relative z-10">
-          </div>
-
-            <div>
-            <h1 class="font-inter text-4xl font-normal leading-tight px-4 py-2 text-gray-900">Explain the origins and goals of Catalysts:</h1>
-            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
-            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
-
-          </div>
+      <section id="mission" class="h-screen px-20 relative overflow-hidden">
+        <!-- Background image -->
+        <div class="absolute inset-0 bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center"></div>
+          <!-- Colored background -->
+        <div class="absolute inset-0 bg-yellow-300 opacity-75"></div>
+        <div class="div">
+          <img src="@/assets/images/our_story_title.svg" alt="Title Image" class="h-auto block relative px-4 py-2 z-10">
         </div>
+          <!-- <img alt="yellow b" src="@/assets/images/whoweare.svg" style="width: 100%; height: auto; display: block; position: relative; z-index: 1;"> -->
+          <div style="position: relative; z-index: 2;">
+              <div class="relative bg-transparent p-8">
+                  <h1 class="font-inter text-4xl font-normal leading-tight text-justify text-gray-900 px-4 py-2">Explain the origins and goals of Catalysts:</h1>
+                  <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
+                  <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
+              </div>
+          </div>
       </section>
       <section class="h-screen pb-10 px-20 bg-[url('@/assets/images/news_bg.png')] bg-cover bg-center relative overflow-hidden">
         <div>
