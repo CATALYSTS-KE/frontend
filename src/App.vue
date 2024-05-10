@@ -17,7 +17,7 @@ import MainFooter from '@/components/MainFooter.vue'
     </header>
 
     <RouterView class="wrapper" />
-    <div class="mt-4">
+    <div class="mt-0">
       <MainFooter />
     </div>
   </div>
