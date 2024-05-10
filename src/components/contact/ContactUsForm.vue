@@ -2,7 +2,7 @@
   <main class="">
     <!-- Introduction  -->
     <section>
-      <div class="px-4 md:px-8 py-4 mx-auto max-w-screen-xl 2xl:max-w-screen-2xl">
+      <div class="px-4 py-4 mx-auto max-w-screen-xl 2xl:max-w-screen-2xl">
         <div class="text-center">
           <p class="text-base md:text-2xl font-bold leading-7">Get In Touch With Us</p>
           <div class="mt-2.5 h-1 w-44 bg-orange-primary mx-auto"></div>
@@ -17,15 +17,17 @@
               <div class="pb-4 md:pb-36 flex flex-col justify-between">
                 <div class="flex justify-center">
                   <img
-                    class="w-full h-96"
+                    class="w-full h-80"
                     alt="contact page dubai image"
                     src="@/assets/images/contact/Dubai-image.webp"
                   />
                 </div>
                 <div class="px-4 md:px">
                   <p class="font-semibold pt-10 pb-3 md:pb-6 mb-4 text-base md:text-lg leading-6">
-                    Need help? Want to Join Us? <br> We exist to serve you with the purpose of providing you
-                    with information. For any query, please contact us:
+                    Need help? Want to Join Us? 
+                    <br> We exist to serve you with the purpose of providing you
+                    with information. 
+                    <br> For any query, please contact us:
                   </p>
                   <div class="flex flex-col md:flex-row items-start md:items-center mb-4">
                     <div class="md:pr-4">
