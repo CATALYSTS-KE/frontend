@@ -3,24 +3,36 @@
     <main>
       <section>
         <div>
-          <div>OUR STORY Image</div>
           <div>
-            <h1>Explain the origins and goals of Catalysts:</h1>
-            <p>Lorem Ipsum</p>
+            <img src="@/assets/images/our_story_title.svg" alt="Title Image" class="h-auto block relative z-10">
+          </div>
+
+            <div>
+            <h1 class="font-inter text-4xl font-normal leading-tight px-4 py-2 text-gray-900">Explain the origins and goals of Catalysts:</h1>
+            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
+            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
+
           </div>
         </div>
       </section>
       <section>
-        <div>NEWS & ARTICLES Image Image</div>
         <div>
-          <div>
-            <h1>Overview of abortion laws by country in Africa.</h1>
-            <p>Lorem Ipsum</p>
-          </div>
+          <img src="@/assets/images/news_title.svg" alt="Title Image" class="h-auto block relative z-10">
+        </div>
+        <div>
+        <!-- card with white bg -->
+        <div class="w-full bg-white rounded-lg shadow-lg overflow-y-auto px-20 py-10 mt-10 mx-auto ">
+          <h1 class="font-inter text-4xl font-normal leading-tight text-left text-red-500 px-4 py-2">Clearly outline the pillars that guide Catalysts</h1>
+            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
+            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
+            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
+        </div>
         </div>
       </section>
       <section>
-        <div>TESTIMONIES image Header</div>
+        <div>
+          <img src="@/assets/images/testimonies_title.svg" alt="Title Image" class="h-auto block relative z-10">
+        </div>
         <!-- Testimonies -->
         <div>
           <div>
@@ -32,7 +44,9 @@
         </div>
       </section>
       <section>
-        <div>Press Statement Header</div>
+        <div>
+          <img src="@/assets/images/press_title.svg" alt="Title Image" class="h-auto block relative z-10">
+        </div>
         <!-- press statement one -->
         <div>
           <div>
@@ -44,7 +58,9 @@
       </section>
 
       <section>
-        <div>Upcoming event image header</div>
+        <div>
+          <img src="@/assets/images/events_title.svg" alt="Title Image" class="h-auto block relative z-10">
+        </div>
         <!-- Image courousle for events 3 at a time -->
         <div>
           <!-- One card for event  -->
@@ -63,7 +79,9 @@
       </section>
       <!-- Photo Gallery -->
       <section>
-        <div>Photo galley image Header</div>
+        <div>
+          <img src="@/assets/images/gallery_title.svg" alt="Title Image" class="h-auto block relative z-10">
+        </div>
         <!-- Gallery -->
         <div>
           <!-- one image gallery info -->
