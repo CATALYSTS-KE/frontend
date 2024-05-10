@@ -13,10 +13,10 @@
       dominant-baseline="middle"
       text-anchor="middle"
       :fill="textFill"
-      class="uppercase"
+      :class="{ uppercase: uppercase }"
       :font-size="calculateFontSize"
     >
-      {{ text }}
+      {{ uppercase ? text.toUpperCase() : text }}
     </text>
   </svg>
 </template>
@@ -52,12 +52,13 @@ export default {
       type: String,
       required: true,
       default: 'M362.841 11.544V91.974L3.64062 105.074V6.84399L362.841 11.544Z'
-    }
+    },
+    uppercase: { type: Boolean, default: true }
   },
   computed: {
     calculateFontSize() {
       // Adjust the factor (0.8) as needed to occupy almost the whole width
-      return Math.floor((this.width * 0.8) / this.text.length)
+      return Math.floor(parseFloat(this.width) / this.text.length)
     }
   }
 }
