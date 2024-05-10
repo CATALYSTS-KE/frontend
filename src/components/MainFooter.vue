@@ -1,5 +1,5 @@
 <template>
-  <div class="footer text-white flex flex-col items-center p-4">
+  <div class="footer text-white flex flex-col items-center p-10 bg-[url('@/assets/images/footer_bg.svg')]">
     <!-- link to the pages container -->
     <div class="flex px-4">
       <div>
@@ -20,7 +20,7 @@
       <div>
         <h1>RESOURCES</h1>
         <div class="flex flex-col px-4">
-          <RouterLink to="/">Guidlines</RouterLink>
+          <RouterLink to="/">Guidelines</RouterLink>
           <RouterLink to="/">Toolkits</RouterLink>
           <RouterLink to="/">Resources</RouterLink>
         </div>
@@ -44,25 +44,26 @@
         <div>Twitter</div>
         <div>Instagram</div>
         <div>LinkedIn</div>
-        <div>Yotube</div>
+        <div>YouTube</div> <!-- Corrected typo -->
       </div>
     </div>
   </div>
 </template>
+
 <script setup>
 import { RouterLink } from 'vue-router'
 </script>
-<style scoped>
+
+ <style scoped>
 .footer {
-  background-image: url('paper.gif');
-  background-color: black;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
+  background-repeat: no-repeat;
+  margin-top: 0px ;
+  padding-top: 100px;
+  height: 300px; /* Adjust the height as needed to display the image */
   text-align: center;
 }
+
 h1 {
   color: orange;
 }
-</style>
+</style> 
