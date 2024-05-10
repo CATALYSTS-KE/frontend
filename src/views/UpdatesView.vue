@@ -1,7 +1,7 @@
 <template>
   <div>
     <main>
-      <section>
+      <section class="h-screen pb-10 px-20 bg-[url('@/assets/images/our_story_bg.png')] bg-cover bg-center relative overflow-hidden">
         <div>
           <div>
             <img src="@/assets/images/our_story_title.svg" alt="Title Image" class="h-auto block relative z-10">
@@ -15,7 +15,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="h-screen pb-10 px-20 bg-[url('@/assets/images/news_bg.png')] bg-cover bg-center relative overflow-hidden">
         <div>
           <img src="@/assets/images/news_title.svg" alt="Title Image" class="h-auto block relative z-10">
         </div>
@@ -29,7 +29,7 @@
         </div>
         </div>
       </section>
-      <section>
+      <section class="h-screen pb-10 px-20 bg-[url('@/assets/images/testimonies_bg.png')] bg-cover bg-center relative overflow-hidden">
         <div>
           <img src="@/assets/images/testimonies_title.svg" alt="Title Image" class="h-auto block relative z-10">
         </div>
@@ -43,7 +43,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="h-screen pb-10 px-20 bg-[url('@/assets/images/press_bg.png')] bg-cover bg-center relative overflow-hidden">
         <div>
           <img src="@/assets/images/press_title.svg" alt="Title Image" class="h-auto block relative z-10">
         </div>
@@ -57,7 +57,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="h-screen pb-10 px-20 bg-[url('@/assets/images/events_bg.png')] bg-cover bg-center relative overflow-hidden">
         <div>
           <img src="@/assets/images/events_title.svg" alt="Title Image" class="h-auto block relative z-10">
         </div>
@@ -78,7 +78,7 @@
         </div>
       </section>
       <!-- Photo Gallery -->
-      <section>
+      <section class="h-screen pb-10 px-20 bg-[url('@/assets/images/gallery_bg.png')] bg-cover bg-center relative overflow-hidden">
         <div>
           <img src="@/assets/images/gallery_title.svg" alt="Title Image" class="h-auto block relative z-10">
         </div>
