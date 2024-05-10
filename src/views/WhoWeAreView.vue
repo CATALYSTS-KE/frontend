@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <main>
-      <section class="bg-lime-300 py-10 px-20">
+      <section class="h-screen px-20 bg-[url('@/assets/images/manifesto_bg.svg')] bg-cover bg-center relative overflow-hidden">
         <div>
           <div>
             <img src="@/assets/images/manifesto_title.svg" alt="Title Image" class="h-auto block relative z-10">
@@ -13,7 +13,7 @@
           </div>
         </div>
       </section>
-      <section class="pb-10 px-20 bg-yellow-300" style="position: relative; overflow: hidden;">
+      <section class="h-screen px-20 bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center relative overflow-hidden">
         <div class="div">
           <img src="@/assets/images/mission_vision_title.svg" alt="Title Image" class="h-auto block relative z-10">
         </div>
@@ -34,7 +34,7 @@
               </div>
           </div>
       </section>
-      <section class="bg-teal-500 pb-10 px-20 relative overflow-hidden">
+      <section class="h-screen px-20 bg-[url('@/assets/images/background_bg.svg')] bg-cover bg-center relative overflow-hidden">
       <div class="">
           <img src="@/assets/images/background_title.svg" alt="Title Image" class="h-auto block relative z-10">
       </div>
