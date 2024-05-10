@@ -4,7 +4,7 @@
       <img alt="Catalysts logo" class="logo" src="@/assets/images/catalysts-logo.svg" />
     </router-link>
 
-    <nav class="flex justify-end items-center gap-x-5">
+    <nav class="flex justify-end items-center gap-x-4">
       <div v-for="(page, index) in pages" :key="index" class="relative flex items-center">
         <router-link
           @click="setActiveTab(index)"
@@ -15,7 +15,7 @@
           <span class="md:uppercase">{{ page.label }}</span>
           <img
             @click="toggleSubMenu(index)"
-            class="arrow-icon cursor-pointer w-4 h-6 ml-2 pt-2"
+            class="arrow-icon cursor-pointer w-5 h-6 ml-2 pt-1"
             src="@/assets/images/arrow.svg"
             alt="Arrow Icon"
           />

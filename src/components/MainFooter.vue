@@ -49,7 +49,6 @@
         <div>Instagram</div>
         <div>LinkedIn</div>
         <div>YouTube</div>
-        <!-- Corrected typo -->
       </div>
     </div>
   </div>
