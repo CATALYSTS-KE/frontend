@@ -5,11 +5,11 @@ import MainFooter from '@/components/MainFooter.vue'
 </script>
 
 <template class="">
-  <div class="px-4 mx-auto min-h-screen flex flex-col">
+  <div class="px-4 mx-auto min-h-screen flex flex-col relative">
     <!-- <header class="flex items-center justify-between px-24 h-56"> -->
     <MainHeader />
-    <RouterView class="wrapper" />
-    <div class="mt-0">
+    <RouterView class="wrapper relative" />
+    <div class="">
       <MainFooter />
     </div>
   </div>
@@ -19,6 +19,7 @@ import MainFooter from '@/components/MainFooter.vue'
 .wrapper {
   min-height: calc(100vh - 100px); /* minus header and footer width 
       together*/
+  /* min-width: 100%; */
 }
 * {
   margin: 0;

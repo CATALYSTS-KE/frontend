@@ -4,8 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        secondary: '#121922',
         orange: {
           primary: '#FF5F00'
+        },
+        yellow: {
+          primary: '#FFDD00'
         }
       }
     }
