@@ -15,7 +15,7 @@ import MainFooter from '@/components/MainFooter.vue'
   </div>
 </template>
 
-<style scopped> 
+<style scopped>
 .wrapper {
   min-height: calc(100vh - 100px); /* minus header and footer width 
       together*/
@@ -26,5 +26,6 @@ import MainFooter from '@/components/MainFooter.vue'
 html,
 body {
   height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 </style>
