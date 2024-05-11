@@ -1,6 +1,6 @@
 <template>
   <div
-    class="footer bg-[url('@/assets/images/footer_bg.svg')] text-white flex flex-col items-center w-full"
+    class="footer bg-[url('@/assets/images/footer_bg.png')] text-white flex flex-col items-center w-full"
   >
     <!-- link to the pages container -->
     <div class="grid md:grid-cols-2 lg:grid-cols-4 text-lg">
