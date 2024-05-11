@@ -5,7 +5,7 @@
         id="mission"
         class="pb-10 px-20 bg-[#943700] bg-cover bg-center relative overflow-hidden"
       >
-        <div class="max-w-4xl">
+        <div class="max-w-4xl mx-auto">
           <img
             src="@/assets/images/Bold_Unapologetic_Africaled.png"
             alt="Title Image"
@@ -30,7 +30,7 @@
         </div>
 
         <!-- Home page video container -->
-        <div class="max-w-5xl">
+        <div class="max-w-5xl mx-auto">
           <img
             src="@/assets/images/home_video.png"
             alt="Catalyst Video Animation"
@@ -40,7 +40,7 @@
       </section>
       <!-- Who we are -->
       <section
-        class="pb-10 px-20 bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center relative overflow-hidden"
+        class="pb-10 px-20 bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center relative"
       >
         <div class="p-4">
           <!-- ReusableSvg component -->
