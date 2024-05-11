@@ -1,55 +1,189 @@
 <template>
-  <div>
-    <main>
-      <section id="manifesto" class="h-screen px-20 bg-[url('@/assets/images/manifesto_bg.svg')] bg-cover bg-center relative overflow-hidden">
-          <div>
-            <img src="@/assets/images/manifesto_title.svg" alt="Title Image" class="h-auto block relative z-10">
-          </div>
-          <div>
-            <h1 class="font-inter text-4xl font-normal leading-tight px-4 py-2 text-gray-900">Explain the origins and goals of Catalysts:</h1>
-            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. 
-              Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.
-            </p>
-          </div>
-      </section>
-      <section id="mission" class="h-screen px-20 relative overflow-hidden">
-        <!-- Background image -->
-        <div class="absolute inset-0 bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center"></div>
-          <!-- Colored background -->
-        <div class="absolute inset-0 bg-yellow-300 opacity-75"></div>
-        <div class="div">
-          <img src="@/assets/images/mission_vision_title.svg" alt="Title Image" class="h-auto block relative z-10">
+  <div class="">
+    <section class="section-with-background">
+      <!-- Container -->
+      <div class="px-20">
+        <div class="p-4">
+          <!-- ReusableSvg component -->
+          <RectangleSvg
+            fill="#00C4B3"
+            width="482"
+            height="99"
+            viewBox="0 0 482 99"
+            :path="path3"
+            text="MANIFESTO"
+            textFill="white"
+            class=""
+          />
         </div>
-          <!-- <img alt="yellow b" src="@/assets/images/whoweare.svg" style="width: 100%; height: auto; display: block; position: relative; z-index: 1;"> -->
-          <div style="position: relative; z-index: 2;">
-              <div class="relative bg-transparent p-8">
-                  <h1 class="font-inter text-4xl font-normal leading-tight text-justify text-gray-900">Mission</h1>
-                  <p class="font-inter text-lg font-normal leading-snug text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. <br>
-                      <br>
-                      Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
-              </div>
 
-              <div class="relative bg-transparent p-8">
-                  <h1 class="font-inter text-4xl font-normal leading-tight text-justify text-gray-900">Vision</h1>
-                  <p class="font-inter text-lg font-normal leading-snug text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. <br>
-                      <br>
-                      Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
+        <!-- Manifesto -->
+        <div>
+          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
+            Explain the origins and goals of Catalysts
+          </h1>
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+            Vel pharetra vel turpis nunc eget.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission and Vision  -->
+    <section class="pb-10 -mt-6  bg-yellow-400 bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center relative overflow-hidden">
+      <!-- Container -->
+      <div class="px-20">
+        <div class="px-4">
+          <!-- ReusableSvg component -->
+          <RectangleSvg
+            fill="#943700"
+            width="482"
+            height="99"
+            viewBox="0 0 482 99"
+            :path="path3"
+            text="MISSION & VISION"
+            textFill="white"
+            class="text"
+          />
+        </div>
+
+        <div>
+          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
+            Mission
+          </h1>
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+            Vel pharetra vel turpis nunc eget.
+          </p>
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+            Vel pharetra vel turpis nunc eget.
+          </p>
+          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
+            Vision
+          </h1>
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+            Vel pharetra vel turpis nunc eget.
+          </p>
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+            Vel pharetra vel turpis nunc eget.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Member Videos -->
+    <section class="thematic-section bg-teal-400 pb-0">
+      <div class="px-20">
+          <div class="px-4">
+          <!-- ReusableSvg component -->
+          <RectangleSvg
+            fill="#453635"
+            width="482"
+            height="99"
+            viewBox="0 0 601 99"
+            :path="path2"
+            text="OUR STORY"
+            textFill="white"
+            class="svg-text"
+          />
+        </div>
+      </div>
+      <div class="mx-24 py-12">
+          <!-- Loop through your data -->
+          <div v-for="(item, index) in cardData" :key="index" class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="flex flex-col md:flex-row">
+              <!-- Text Content -->
+              <div class="p-4">
+                <h2 class="text-2xl px-12 text-red-primary">{{ item.title }}</h2>
+                <p class="text-lg font-normal leading-snug px-12 py-6 text-justify mt-2 text-gray-600" v-html="item.message"></p>
               </div>
-          </div>
-      </section>
-      <section id="background" class="h-screen px-20 bg-[url('@/assets/images/background_bg.svg')] bg-cover bg-center relative overflow-hidden">
-        <div class="">
-            <img src="@/assets/images/background_title.svg" alt="Title Image" class="h-auto block relative z-10">
+            </div>
         </div>
-        <!-- card with white bg -->
-        <div class="w-full bg-white rounded-lg shadow-lg  px-20 py-10 mt-10 mx-auto ">
-          <h1 class="font-inter text-4xl font-normal leading-tight text-left text-red-500 px-4 py-2">Clearly outline the pillars that guide Catalysts</h1>
-            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
-            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
-            <p class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. Vel pharetra vel turpis nunc eget.</p>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
   </div>
 </template>
+
+<script setup>
+import RectangleSvg from '@/components/common/RectangleSvg.vue'
+
+const path2 = 'M600.84 4.69995V85.1301L0 98.23V0L600.84 4.69995Z'
+const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
+
+const cardData = [
+  {
+    title: 'Clearly outline the pillars that guide Catalysts',
+    message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+      consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+      sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+      commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+      maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+      aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+      Vel pharetra vel turpis nunc eget.
+      <br>
+      <br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc 
+      consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices 
+      sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor 
+      commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam 
+      maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla 
+      aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. 
+      Vel pharetra vel turpis nunc eget.`
+  }
+];
+</script>
+
+<style scoped>
+.section-with-background {
+  @apply relative bg-[rgba(0,196,179,1)] bg-[url('@/assets/images/manifesto_bg.svg')] bg-cover bg-center py-12;
+}
+
+.content {
+  @apply relative z-10 max-w-[1200px] mx-auto px-4;
+}
+
+.text-content {
+  @apply mt-5;
+}
+
+.text-content div {
+  @apply mb-5;
+}
+
+</style>
