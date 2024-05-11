@@ -40,7 +40,7 @@
       </section>
       <!-- Who we are -->
       <section
-        class="pb-10 px-20 bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center relative"
+        class="relative pb-10 px-20 flex flex-col justify-center items-center bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center"
       >
         <div class="p-4">
           <!-- ReusableSvg component -->
@@ -58,7 +58,7 @@
 
         <div class="h-full p-4">
           <div
-            class="bg-white bg-opacity-60 p-8 rounded-lg shadow-lg w-8/12 h-96 overflow-y-auto relative"
+            class="bg-white bg-opacity-60 p-8 rounded-lg shadow-lg w-8/12 h-96 overflow-y-auto relative mx-auto"
           >
             <!-- bg-opacity-50 makes the background slightly transparent -->
             <p class="text-lg font-normal leading-snug px-4 py-2 text-center">
