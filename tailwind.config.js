@@ -10,6 +10,12 @@ export default {
         },
         yellow: {
           primary: '#FFDD00'
+        },
+        red: {
+          primary: '#EE3B26'
+        },
+        blue: {
+          primary: '#00C4B3'
         }
       }
     }

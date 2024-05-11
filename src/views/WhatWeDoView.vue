@@ -1,58 +1,215 @@
 <template>
-  <div>
-    <main>
-      <section class="">
+  <div class="">
+    <section class="section-with-background">
+      <!-- Container -->
+      <div class="px-20">
+        <div class="p-4">
+          <!-- ReusableSvg component -->
+          <RectangleSvg
+            fill="#FF5F00"
+            width="482"
+            height="99"
+            viewBox="0 0 482 99"
+            :path="path3"
+            text="The 5 C'S"
+            textFill="white"
+            class=""
+          />
+        </div>
+
+        <!-- 5 C'S content -->
+        <div class="mx-56 py-12">
+          <div
+            class="container max-w-6xl h-96 px-20 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
+          >
+            <div class="grid gap-6 w-full">
+              <!-- Loop through your data -->
+              <div
+                v-for="(item, index) in cardData"
+                :key="index"
+                class="bg-white shadow-md rounded-lg overflow-hidden"
+              >
+                <div class="flex flex-col md:flex-row">
+                  <!-- Image -->
+                  <div class="">
+                    <img
+                      src="@/assets/images/5Cboy.png"
+                      alt="Card image"
+                      class="h-auto w-full object-cover"
+                    />
+                    <!-- <img :src="item.image" alt="Card image" class="h-auto w-full object-cover" /> -->
+                  </div>
+                  <!-- Text Content -->
+                  <div class="p-4">
+                    <div class="max-w-xs">
+                      <!-- Limit width of text content -->
+                      <h2 class="text-lg font-semibold text-red-primary uppercase">
+                        {{ item.title }}
+                      </h2>
+                      <p class="mt-2 text-gray-600">{{ item.message }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thematic section -->
+    <section class="thematic-section bg-yellow-primary pb-20">
+      <!-- Container -->
+      <div class="px-20">
+        <div class="px-4">
+          <!-- ReusableSvg component -->
+          <RectangleSvg
+            fill="#FF5F00"
+            width="482"
+            height="99"
+            viewBox="0 0 482 99"
+            :path="path3"
+            text="Thematic Areas"
+            textFill="white"
+            class=""
+          />
+        </div>
+
         <div>
-          <!-- <div>THE 5 C'S Image</div> -->
-          <!-- Container for 5 c/s -->
-          <div>
+          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
+            Explain the origins and goals of Catalysts:
+          </h1>
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+            Vel pharetra vel turpis nunc eget.
+          </p>
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+            Vel pharetra vel turpis nunc eget.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Member Videos -->
+    <section
+      class="pb-10 px-20 bg-orange-primary bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
+    >
+      <div class="px-4">
+        <!-- ReusableSvg component -->
+        <RectangleSvg
+          fill="#00C4B3"
+          width="601"
+          height="99"
+          viewBox="0 0 601 99"
+          :path="path2"
+          text="MEMBER VIDEOS"
+          textFill="white"
+          class=""
+        />
+      </div>
+
+      <div class="pl-40 grid grid-cols-2 2xl:grid-cols-4 gap-y-8 2xl:gap-6 pt-12">
+        <!-- Loop through frames -->
+        <div
+          v-for="index in 6"
+          :key="index"
+          class="w-96 h-60border-2 bg-white border-gray-400 rounded-lg p-4"
+        >
+          <div class="px-2">
             <img
-              alt="Catalysts logo"
-              class="logo bg-[#00C4B3]"
-              src="@/assets/images/What-we-do.png"
+              src="@/assets/images/video_placeholder.png"
+              alt="Organization"
+              class="mb-4 rounded-md w-full"
             />
           </div>
-          <div>
-            <!-- first c -->
-            <div>
-              <div>Image logo</div>
-              <h1>CO-ORDINATING FOR SUCCESS</h1>
-              <p>Lorem Ipsum</p>
-            </div>
-            <!-- first c -->
-            <div>
-              <div>Image logo</div>
-              <h1>CO-ORDINATING FOR SUCCESS</h1>
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
         </div>
-      </section>
-      <section>
-        <div>THEMATIC AREAS Image</div>
-        <div>
-          <div>
-            <h1>Heading</h1>
-            <p>Lorem Ipsum</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div>MEMBER VIDEOS image Header</div>
-        <!-- Intro vidoes -->
-        <div>
-          <div>
-            <h1>Place the member introduction videos here</h1>
-            <p>Lorem Ipsum</p>
-          </div>
-          <div>
-            <div>Video 1</div>
-            <div>Video 2</div>
-            <div>Video 3</div>
-            <div>Video 4</div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
   </div>
 </template>
+<script setup>
+import RectangleSvg from '@/components/common/RectangleSvg.vue'
+// const path1 = 'M483.92 14.01V101.44L5.14008 112.86V7.63013L483.92 14.01Z'
+const path2 = 'M600.84 4.69995V85.1301L0 98.23V0L600.84 4.69995Z'
+const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
+
+const cardData = [
+  {
+    title: 'CO-ORDINATING FOR SUCCESS',
+    message:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id tincidunt arcu. Sed sodales risus vel efficitur pretium.',
+    image: '../assets/images/5Cboy.png'
+  },
+  {
+    title: 'CONNECTING AND CONVENING',
+    message:
+      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer luctus purus ac ligula semper ullamcorper.',
+    image: 'https://via.placeholder.com/150'
+  },
+  {
+    title: 'CULTIVATING TECHNICAL EXCELLENCE',
+    message:
+      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
+    image: 'https://via.placeholder.com/150'
+  },
+  {
+    title: 'Card 4',
+    message:
+      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
+    image: 'https://via.placeholder.com/150'
+  }
+]
+</script>
+
+<style scoped>
+.section-with-background {
+  @apply relative bg-[rgba(0,196,179,1)] bg-[url('@/assets/images/what_we_do.png')] bg-cover bg-center py-12;
+}
+
+.content {
+  @apply relative z-10 max-w-[1200px] mx-auto px-4;
+}
+
+.text-content {
+  @apply mt-5;
+}
+
+.text-content div {
+  @apply mb-5;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(77, 72, 72);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ee3b26;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+</style>

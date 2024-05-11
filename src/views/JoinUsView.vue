@@ -60,7 +60,7 @@
           />
         </div>
       </section>
-      <section class="bg-[#808083] flex justify-center items-center h-60">
+      <section class="bg-[#808083] flex justify-center items h-80">
         <RectangleSvg
           fill="#CDDE00"
           width="450"
