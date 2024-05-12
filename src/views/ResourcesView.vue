@@ -1,36 +1,28 @@
 <template>
-  <div>
-    <main class="bg-[#C3D93C] min-h-screen">
-      <section class="relative min-h-screen px-20 bg">
-        <div class="absolute inset-0 z-0">
-          <div
-            class="bg-[url('@/assets/images/research_bg_top.svg')] bg-cover bg-center h-full"
-          ></div>
+  <div class="">
+    <section class="section-with-background">
+      <!-- Container -->
+      <div class="px-20">
+        <div class="p-4">
+          <!-- ReusableSvg component -->
+          <RectangleSvg
+            fill="#00C4B3"
+            width="482"
+            height="99"
+            viewBox="0 0 482 99"
+            :path="path3"
+            text="News & Articles"
+            textFill="white"
+            class=""
+          />
         </div>
-        <!-- Title image -->
-        <div class="relative z-10">
-          <img src="@/assets/images/research_title.svg" alt="Title Image" class="h-auto block" />
-        </div>
-        <!-- Top background image -->
-        <div class="absolute inset-0 z-0">
-          <div
-            class="bg-[url('@/assets/images/pattern_green.png')] bg-cover bg-center h-full"
-          ></div>
-        </div>
-        <!-- Bottom background image -->
-        <!-- <div class="absolute inset-0 z-0">
-          <div class="bg-[url('@/assets/images/news_bg.png')] bg-cover bg-center h-full"></div>
-        </div> -->
-        <!-- card with white bg -->
-        <div
-          class="w-full bg-white rounded-lg shadow-lg overflow-y-auto px-20 py-10 mt-10 mx-auto relative z-10"
-        >
-          <h1
-            class="font-inter text-4xl font-normal leading-tight text-left text-red-500 px-4 py-2"
-          >
-            Overview of abortion laws by country in Africa
+
+        <!-- Manifesto -->
+        <div>
+          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
+            Explain the origins and goals of Catalysts
           </h1>
-          <p Lorem class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify pb-10">
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
             consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
@@ -38,22 +30,35 @@
             commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
             maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
             aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper
-            malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at.
-            Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis
-            egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit
-            tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis.
-            Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem
-            integer vitae justo eget. Vel pharetra vel turpis nunc eget.
+            Vel pharetra vel turpis nunc eget.
           </p>
+        </div>
+      </div>
+    </section>
 
-          <h1
-            class="font-inter text-4xl font-normal leading-tight text-left text-red-500 px-4 pt-16"
-          >
-            Overview of abortion laws by country in Africa
+    <!-- Mission and Vision  -->
+    <section class="pb-10 -mt-6  bg-yellow-400 bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center relative overflow-hidden">
+      <!-- Container -->
+      <div class="px-20">
+        <div class="px-4">
+          <!-- ReusableSvg component -->
+          <RectangleSvg
+            fill="#943700"
+            width="482"
+            height="99"
+            viewBox="0 0 482 99"
+            :path="path3"
+            text="MISSION & VISION"
+            textFill="white"
+            class="text"
+          />
+        </div>
+
+        <div>
+          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
+            Mission
           </h1>
-          <p Lorem class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify pb-10">
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
             consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
@@ -61,46 +66,112 @@
             commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
             maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
             aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper
-            malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at.
-            Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis
-            egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit
-            tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis.
-            Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem
-            integer vitae justo eget. Vel pharetra vel turpis nunc eget.
+            Vel pharetra vel turpis nunc eget.
           </p>
-
-          <h1
-            class="font-inter text-4xl font-normal leading-tight text-left text-red-500 px-4 pt-16"
-          >
-            Overview of abortion laws by country in Africa
-          </h1>
-          <p Lorem class="font-inter text-lg font-normal leading-snug px-4 py-2 text-justify pb-10">
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
             consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
             sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipt tellus mauris a diam
+            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
             maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
             aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper
-            malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at.
-            Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Ac turpis
-            egestas sed tempus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit
-            tellus mauris a diam maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis.
-            Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem
-            integer vitae justo eget. Vel pharetra vel turpis nunc eget.
+            Vel pharetra vel turpis nunc eget.
+          </p>
+          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
+            Vision
+          </h1>
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+            Vel pharetra vel turpis nunc eget.
+          </p>
+          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+            Vel pharetra vel turpis nunc eget.
           </p>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- Member Videos -->
+    <section class="thematic-section bg-teal-400 pb-0">
+      <div class="px-20">
+          <div class="px-4">
+          <!-- ReusableSvg component -->
+          <RectangleSvg
+            fill="#453635"
+            width="482"
+            height="99"
+            viewBox="0 0 601 99"
+            :path="path2"
+            text="OUR STORY"
+            textFill="white"
+            class="svg-text"
+          />
+        </div>
+      </div>
+      <div class="mx-24 py-12">
+          <!-- Loop through your data -->
+          <div v-for="(item, index) in cardData" :key="index" class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="flex flex-col md:flex-row">
+              <!-- Text Content -->
+              <div class="p-4">
+                <h2 class="text-2xl px-12 text-red-primary">{{ item.title }}</h2>
+                <p class="text-lg font-normal leading-snug px-12 py-6 text-justify mt-2 text-gray-600" v-html="item.message"></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
-<!-- <script setup>
+
+<script setup>
 import RectangleSvg from '@/components/common/RectangleSvg.vue'
-const path1 = 'M486.471 12.5201V92.9501L4.80078 106.05V7.82007L486.471 12.5201Z'
-width="494"
-height="117"
-</script> -->
+
+const path2 = 'M600.84 4.69995V85.1301L0 98.23V0L600.84 4.69995Z'
+const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
+
+const cardData = [
+  {
+    title: 'Clearly outline the pillars that guide Catalysts',
+    message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+      consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
+      sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
+      commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
+      maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
+      aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
+      Vel pharetra vel turpis nunc eget.
+      <br>
+      <br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc 
+      consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices 
+      sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor 
+      commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam 
+      maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla 
+      aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. 
+      Vel pharetra vel turpis nunc eget.`
+  }
+];
+</script>
+
+<style scoped>
+.section-with-background {
+  @apply relative bg-[rgba(0,196,179,1)] bg-[url('@/assets/images/manifesto_bg.svg')] bg-cover bg-center py-12;
+}
+
+</style>

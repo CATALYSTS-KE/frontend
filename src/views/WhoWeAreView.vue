@@ -105,7 +105,7 @@
       </div>
     </section>
 
-    <!-- Member Videos -->
+    <!-- Our Story -->
     <section class="thematic-section bg-teal-400 pb-0">
       <div class="px-20">
           <div class="px-4">
@@ -172,18 +172,6 @@ const cardData = [
 <style scoped>
 .section-with-background {
   @apply relative bg-[rgba(0,196,179,1)] bg-[url('@/assets/images/manifesto_bg.svg')] bg-cover bg-center py-12;
-}
-
-.content {
-  @apply relative z-10 max-w-[1200px] mx-auto px-4;
-}
-
-.text-content {
-  @apply mt-5;
-}
-
-.text-content div {
-  @apply mb-5;
 }
 
 </style>
