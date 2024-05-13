@@ -5,7 +5,7 @@
         id="mission"
         class="pb-10 px-20 bg-[#943700] bg-cover bg-center relative overflow-hidden"
       >
-        <div class="max-w-4xl mx-auto">
+        <div class="mx-auto">
           <img
             src="@/assets/images/Bold_Unapologetic_Africaled.png"
             alt="Title Image"
