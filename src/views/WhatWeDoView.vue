@@ -20,7 +20,7 @@
         <!-- 5 C'S content -->
         <div class="mx-56 py-12">
           <div
-            class="container max-w-6xl h-96 px-20 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
+            class="container h-96 px-20 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
           >
             <div class="grid gap-6 w-full">
               <!-- Loop through your data -->

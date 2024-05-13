@@ -22,9 +22,9 @@
         <div class="flex justify-center my-8">
           <div class="relative bg-white shadow-md rounded-md p-8 max-w-2xl">
             <p class="font-inter text-xl font-normal leading-snug px-4 py-2 text-justify">
-              <span class="font-bold text-red-500">CATALYSTS:</span> a bold, unapologetic Africa-led
-              alliance connecting and amplifying Africans to achieve universal abortion rights and
-              access to high quality abortion care for all.
+              <span class="font-bold text-red-500">CATALYSTS:</span> An Africa-led alliance
+              connecting and amplifying African voices and efforts towards universal abortion rights
+              and quality abortion care for all.
             </p>
           </div>
         </div>
@@ -97,12 +97,12 @@
           </div>
         </div>
       </section>
-      <div class="bg-black">
-        <!-- <div class="bg-[#FF5F00]"> -->
+      <!-- <div class="bg-black"> -->
+      <div class="bg-[#FF5F00]">
         <section
           class="pb-10 px-20 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
         >
-          <div class="p-4">
+          <div class="px-4">
             <!-- ReusableSvg component -->
             <RectangleSvg
               fill="black"

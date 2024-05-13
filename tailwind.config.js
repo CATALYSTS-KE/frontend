@@ -19,6 +19,9 @@ export default {
         },
         grey: {
           primary: '#404041'
+        },
+        brown: {
+          primary: '#943700'
         }
       }
     }

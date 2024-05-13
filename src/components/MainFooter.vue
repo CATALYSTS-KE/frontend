@@ -37,19 +37,8 @@
       </div>
     </div>
     <!-- contact info -->
-    <div class="pt-8 text-lg">
-      <span class="text-orange-primary">CONTACTS:</span><span> www.catalystsafrica.org</span>
-    </div>
-    <!-- socials -->
-    <div class="p-12 flex justify-center text-lg">
-      <div class="flex gap-4">
-        <h2>FOLLOW US</h2>
-        <div>Facebook</div>
-        <div>Twitter</div>
-        <div>Instagram</div>
-        <div>LinkedIn</div>
-        <div>YouTube</div>
-      </div>
+    <div class="py-8 text-lg">
+      <span class="text-orange-primary">CONTACTS:</span><span> info@catalystsafrica.org</span>
     </div>
   </div>
 </template>

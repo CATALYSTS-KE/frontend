@@ -52,7 +52,7 @@
             height="99"
             viewBox="0 0 482 99"
             :path="path3"
-            text="MISSION & VISION"
+            text="VISION"
             textFill="white"
             class="text"
           />
