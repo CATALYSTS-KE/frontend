@@ -17,6 +17,8 @@
           />
         </div>
 
+        
+
         <!-- Manifesto -->
         <div class="pb-20">
           <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-primary">

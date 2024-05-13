@@ -6,123 +6,17 @@
         <div class="p-4">
           <!-- ReusableSvg component -->
           <RectangleSvg
-            fill="#00C4B3"
+            fill="#EE3B26"
             width="482"
             height="99"
             viewBox="0 0 482 99"
             :path="path3"
-            text="News & Articles"
+            text="Research"
             textFill="white"
             class=""
           />
         </div>
-
-        <!-- Manifesto -->
-        <div>
-          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
-            Explain the origins and goals of Catalysts
-          </h1>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mission and Vision  -->
-    <section class="pb-10 -mt-6  bg-yellow-400 bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center relative overflow-hidden">
-      <!-- Container -->
-      <div class="px-20">
-        <div class="px-4">
-          <!-- ReusableSvg component -->
-          <RectangleSvg
-            fill="#943700"
-            width="482"
-            height="99"
-            viewBox="0 0 482 99"
-            :path="path3"
-            text="MISSION & VISION"
-            textFill="white"
-            class="text"
-          />
-        </div>
-
-        <div>
-          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
-            Mission
-          </h1>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
-          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
-            Vision
-          </h1>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Member Videos -->
-    <section class="thematic-section bg-teal-400 pb-0">
-      <div class="px-20">
-          <div class="px-4">
-          <!-- ReusableSvg component -->
-          <RectangleSvg
-            fill="#453635"
-            width="482"
-            height="99"
-            viewBox="0 0 601 99"
-            :path="path2"
-            text="OUR STORY"
-            textFill="white"
-            class="svg-text"
-          />
-        </div>
-      </div>
-      <div class="mx-24 py-12">
+        <div class="mx-6 py-12">
           <!-- Loop through your data -->
           <div v-for="(item, index) in cardData" :key="index" class="bg-white shadow-md rounded-lg overflow-hidden">
             <div class="flex flex-col md:flex-row">
@@ -133,6 +27,7 @@
               </div>
             </div>
         </div>
+      </div>
       </div>
     </section>
   </div>
@@ -146,7 +41,7 @@ const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
 
 const cardData = [
   {
-    title: 'Clearly outline the pillars that guide Catalysts',
+    title: 'Overview of Abortion laws by country, In Africa',
     message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
       consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
@@ -155,16 +50,7 @@ const cardData = [
       maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
       aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
       Vel pharetra vel turpis nunc eget.
-      <br>
-      <br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc 
-      consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices 
-      sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor 
-      commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam 
-      maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla 
-      aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. 
-      Vel pharetra vel turpis nunc eget.`
+      <br>`
   }
 ];
 </script>
