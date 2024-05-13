@@ -16,6 +16,9 @@ export default {
         },
         blue: {
           primary: '#00C4B3'
+        },
+        grey: {
+          primary: '#404041'
         }
       }
     }
