@@ -122,9 +122,7 @@
         </section>
       </div>
 
-      <section
-        class="pb-10 px-20 bg-[url('@/assets/images/pattern_vector_grey.svg')] bg-cover bg-center relative overflow-hidden"
-      >
+      <section class="relative pb-10 px-20 bg-brown-primary overflow-hidden">
         <div class="px-4">
           <!-- ReusableSvg component -->
           <RectangleSvg

@@ -37,40 +37,31 @@
           </div>
         </div>
         <div class="flex justify-between">
-          <RectangleSvg
-            fill="#00C4B3"
-            width="450"
-            height="116"
-            viewBox="0 0 614 116"
-            :path="path2"
-            text="Join As A Donor"
-            textFill="white"
-            class=""
-          />
-
-          <RectangleSvg
-            fill="#943700"
-            width="450"
-            height="116"
-            viewBox="0 0 613 116"
-            :path="path3"
-            text="Join the alliance"
-            textFill="white"
-            class=""
-          />
+          <RouterLink to="/contact-us">
+            <RectangleSvg
+              fill="#00C4B3"
+              width="450"
+              height="116"
+              viewBox="0 0 614 116"
+              :path="path2"
+              text="Join As A Donor"
+              textFill="white"
+              class=""
+            />
+          </RouterLink>
+          <RouterLink to="/contact-us">
+            <RectangleSvg
+              fill="#943700"
+              width="450"
+              height="116"
+              viewBox="0 0 613 116"
+              :path="path3"
+              text="Join the alliance"
+              textFill="white"
+              class=""
+            />
+          </RouterLink>
         </div>
-      </section>
-      <section class="bg-[#808083] flex justify-center items h-80">
-        <RectangleSvg
-          fill="#CDDE00"
-          width="450"
-          height="116"
-          viewBox="0 0 613 116"
-          :path="path3"
-          text="Download Photo Frames"
-          textFill="black"
-          class=""
-        />
       </section>
     </main>
   </div>
