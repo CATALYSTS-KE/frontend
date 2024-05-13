@@ -159,7 +159,7 @@
               <a
                 :href="`@/assets/images/socials_frames.png`"
                 download="socials_frames.png"
-                class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors"
+                class="bg-blue-primary text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors"
               >
                 Download
               </a>
