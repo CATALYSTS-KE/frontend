@@ -1,6 +1,7 @@
 <template>
   <div>
     <main>
+      
       <section id="mission" class="h-screen px-20 relative overflow-hidden">
         <!-- Background image -->
         <div class="absolute inset-0 bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center"></div>

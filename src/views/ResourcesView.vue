@@ -41,7 +41,7 @@ const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
 
 const cardData = [
   {
-    title: 'Clearly outline the pillars that guide Catalysts',
+    title: 'Overview of Abortion laws by country, In Africa',
     message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
       consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
@@ -50,16 +50,7 @@ const cardData = [
       maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
       aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
       Vel pharetra vel turpis nunc eget.
-      <br>
-      <br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc 
-      consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices 
-      sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor 
-      commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam 
-      maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla 
-      aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. 
-      Vel pharetra vel turpis nunc eget.`
+      <br>`
   }
 ];
 </script>
