@@ -16,7 +16,7 @@
             class=""
           />
         </div>
-        <div class="mx-24 py-12">
+        <div class="mx-6 py-12">
           <!-- Loop through your data -->
           <div v-for="(item, index) in cardData" :key="index" class="bg-white shadow-md rounded-lg overflow-hidden">
             <div class="flex flex-col md:flex-row">
