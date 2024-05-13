@@ -125,7 +125,7 @@
       <section
         class="pb-10 px-20 bg-[url('@/assets/images/pattern_vector_grey.svg')] bg-cover bg-center relative overflow-hidden"
       >
-        <div class="p-4">
+        <div class="px-4">
           <!-- ReusableSvg component -->
           <RectangleSvg
             fill="#701012"
@@ -139,7 +139,7 @@
           />
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-20">
           <!-- Loop through frames -->
           <div
             v-for="index in 4"
@@ -174,7 +174,7 @@
 import RectangleSvg from '@/components/common/RectangleSvg.vue'
 const path1 = 'M483.92 14.01V101.44L5.14008 112.86V7.63013L483.92 14.01Z'
 const path2 = 'M359.86 13.4299V100.86L0 105.22V0L359.86 13.4299Z'
-const path3 = 'M717.75 6.37988V93.8003L0 105.23V0L717.75 6.37988Z'
+const path3 = 'M717.75 6.37964V93.8L0 105.23V-0.000244141L717.75 6.37964Z'
 </script>
 <style scoped>
 /* width */
