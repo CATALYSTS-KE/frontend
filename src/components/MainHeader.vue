@@ -4,15 +4,42 @@
       <img alt="Catalysts logo" class="logo" src="@/assets/images/catalysts-logo.svg" />
     </router-link>
 
-    <nav class="flex justify-end items-center gap-x-4">
+    <!-- Mobile Menu Button -->
+    <button class="block md:hidden" @click="toggleMobileMenu">
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex justify-end items-center gap-x-4">
       <div v-for="(page, index) in pages" :key="index" class="relative flex items-center">
         <router-link
           @click="setActiveTab(index)"
           :to="page.route"
           class="text-xs md:text-base flex justify-between page-link"
-          :class="{ 'text-orange-primary': activeTabIndex === index }"
+          :class="{
+            'text-orange-primary': activeTabIndex === index
+          }"
         >
-          <span class="md:uppercase">{{ page.label }}</span>
+          <span
+            class="md:uppercase"
+            :class="{
+              'border-b border-orange-primary': activeTabIndex === index
+            }"
+            >{{ page.label }}</span
+          >
           <img
             @click="toggleSubMenu(index)"
             class="arrow-icon cursor-pointer w-5 h-6 ml-2 pt-1"
@@ -22,12 +49,30 @@
         </router-link>
         <div
           v-if="activeSubMenuIndex === index"
-          class="absolute left-1/2 mt-20 w-40 bg-white shadow-xl border border-orange-primary"
+          class="absolute left-1/2 mt-20 w-40 bg-white shadow-xl"
         >
+          <!-- <div
+          v-if="activeSubMenuIndex === index"
+          class="absolute left-1/2 mt-20 w-40 bg-white shadow-xl border border-orange-primary"
+        > -->
           <!-- Your sub-menu content goes here -->
-          <div class="px-4 divider-b">Sub-menu1</div>
-          <div class="px-4">Sub-menu2</div>
+          <!-- <div class="px-4 divider-b">Sub-menu1</div>
+          <div class="px-4">Sub-menu2</div> -->
         </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav class="md:hidden" v-show="showMobileMenu">
+      <div v-for="(page, index) in pages" :key="index" class="py-2">
+        <router-link
+          @click="toggleMobileMenu"
+          :to="page.route"
+          class="block text-center text-xs md:text-base"
+          :class="{ 'text-orange-primary': activeTabIndex === index }"
+        >
+          {{ page.label }}
+        </router-link>
       </div>
     </nav>
   </header>
@@ -38,9 +83,9 @@ export default {
   components: {},
   data() {
     return {
-      // isActiveTab: false,
       activeTabIndex: null,
-
+      activeSubMenuIndex: null,
+      showMobileMenu: false,
       pages: [
         { label: 'Who We Are', route: '/who-we-are' },
         { label: 'What We Do', route: '/what-we-do' },
@@ -48,11 +93,9 @@ export default {
         { label: 'Resources', route: '/resources' },
         { label: 'Join Us', route: '/join-us' },
         { label: 'Contact Us', route: '/contact-us' }
-      ],
-      activeSubMenuIndex: null
+      ]
     }
   },
-
   methods: {
     setActiveTab(index) {
       this.activeTabIndex = index
@@ -62,10 +105,14 @@ export default {
     },
     toggleSubMenu(index) {
       this.activeSubMenuIndex = this.activeSubMenuIndex === index ? null : index
+    },
+    toggleMobileMenu() {
+      this.showMobileMenu = !this.showMobileMenu
     }
   }
 }
 </script>
+
 <style scoped>
 /* Add margin-right to the logo to create spacing between logo and navigation */
 .logo {

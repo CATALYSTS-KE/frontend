@@ -2,8 +2,8 @@
   <div class="">
     <section class="section-with-background">
       <!-- Container -->
-      <div class="px-20">
-        <div class="p-4">
+      <div class="md:px-20">
+        <div class="md:p-4">
           <!-- ReusableSvg component -->
           <RectangleSvg
             fill="#FF5F00"
@@ -18,9 +18,9 @@
         </div>
 
         <!-- 5 C'S content -->
-        <div class="mx-56 py-12">
+        <div class="px-14 md:mx-56 py-12">
           <div
-            class="container h-96 px-20 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
+            class="container h-96 md:px-20 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
           >
             <div class="grid gap-6 w-full">
               <!-- Loop through your data -->
@@ -60,8 +60,8 @@
     <!-- Thematic section -->
     <section class="thematic-section bg-yellow-primary pb-20">
       <!-- Container -->
-      <div class="px-20">
-        <div class="px-4">
+      <div class="md:px-20">
+        <div class="pb-8 md:px-4">
           <!-- ReusableSvg component -->
           <RectangleSvg
             fill="#FF5F00"
@@ -75,7 +75,7 @@
           />
         </div>
 
-        <div>
+        <div class="px-4 md:px-0">
           <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
             Explain the origins and goals of Catalysts:
           </h1>
@@ -105,9 +105,9 @@
 
     <!-- Member Videos -->
     <section
-      class="pb-10 px-20 bg-orange-primary bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
+      class="pb-10 md:px-20 bg-orange-primary bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
     >
-      <div class="px-4">
+      <div class="md:px-4">
         <!-- ReusableSvg component -->
         <RectangleSvg
           fill="#00C4B3"
@@ -121,12 +121,14 @@
         />
       </div>
 
-      <div class="pl-40 grid grid-cols-2 2xl:grid-cols-4 gap-y-8 2xl:gap-6 pt-12">
+      <div
+        class="md:pl-10 xl:pl-20 2xl:pl-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-12"
+      >
         <!-- Loop through frames -->
         <div
           v-for="index in 6"
           :key="index"
-          class="w-96 h-60border-2 bg-white border-gray-400 rounded-lg p-4"
+          class="w-full border-2 bg-white border-gray-400 rounded-lg p-4"
         >
           <div class="px-2">
             <img

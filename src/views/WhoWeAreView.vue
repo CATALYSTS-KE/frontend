@@ -1,9 +1,9 @@
 <template>
   <div class="">
-    <section class="section-with-background">
+    <section class="section-with-background p-4">
       <!-- Container -->
-      <div class="px-20">
-        <div class="p-4">
+      <div class="md:px-20">
+        <div class="md:p-4 pb-8">
           <!-- ReusableSvg component -->
           <RectangleSvg
             fill="#00C4B3"
@@ -17,10 +17,8 @@
           />
         </div>
 
-        
-
         <!-- Manifesto -->
-        <div class="pb-20">
+        <div class="px-4 pb-20">
           <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-primary">
             Explain the origins and goals of Catalysts
           </h1>
@@ -38,13 +36,13 @@
       </div>
     </section>
 
-    <!-- Mission and Vision  -->
+    <!-- Vission only -->
     <section
-      class="pb-10 -mt-6 bg-yellow-primary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center relative overflow-hidden"
+      class="px-4 pb-10 -mt-6 bg-yellow-primary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center relative overflow-hidden"
     >
       <!-- Container -->
-      <div class="px-20">
-        <div class="px-4">
+      <div class="md:px-20">
+        <div class="md:px-4">
           <!-- ReusableSvg component -->
           <RectangleSvg
             fill="#943700"
@@ -58,30 +56,7 @@
           />
         </div>
 
-        <div class="py-20">
-          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-primary uppercase">
-            Mission
-          </h1>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
+        <div class="py-8">
           <h1 class="text-4xl font-normal leading-tight px-4 py-8 text-gray-900 uppercase">
             Vision
           </h1>
@@ -111,8 +86,8 @@
 
     <!-- Our Story -->
     <section class="thematic-section bg-teal-400 pb-0">
-      <div class="px-20">
-        <div class="px-4">
+      <div class="md:px-20">
+        <div class="">
           <!-- ReusableSvg component -->
           <RectangleSvg
             fill="#453635"
@@ -126,7 +101,7 @@
           />
         </div>
       </div>
-      <div class="mx-24 py-12 h-full">
+      <div class="mx-8 md:mx-24 py-12 h-full">
         <!-- Loop through your data -->
         <div
           v-for="(item, index) in cardData"
@@ -138,7 +113,7 @@
             <div class="p-4">
               <h2 class="text-2xl px-12 text-red-primary">{{ item.title }}</h2>
               <p
-                class="text-lg font-normal leading-snug px-12 py-6 text-justify mt-2 text-gray-600"
+                class="text-lg font-normal leading-snug px-4 md:px-12 py-6 text-justify mt-2 text-gray-600"
                 v-html="item.message"
               ></p>
             </div>

@@ -1,7 +1,7 @@
 <template>
   <svg
     :width="width"
-    :height="height"
+    :height="calculateHeight"
     :viewBox="viewBox"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -59,6 +59,10 @@ export default {
     calculateFontSize() {
       // Adjust the factor (0.8) as needed to occupy almost the whole width
       return Math.floor(parseFloat(this.width) / this.text.length)
+    },
+    calculateHeight() {
+      // Calculate height based on aspect ratio
+      return this.width * (106 / 718)
     }
   }
 }

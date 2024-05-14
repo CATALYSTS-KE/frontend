@@ -1,10 +1,8 @@
 <template>
-  <div
-    class="footer bg-[url('@/assets/images/footer_bg.png')] text-white flex flex-col items-center w-full"
-  >
+  <div class="footer bg-black text-white flex flex-col md:items-center w-full">
     <!-- link to the pages container -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 text-lg">
-      <div class="mb-6 mx-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 text-lg">
+      <div class="mb-6 md:mx-20 mx-10">
         <h2>ABOUT US</h2>
         <div class="flex flex-col text-sm tracking-wider">
           <RouterLink to="/">Who we are</RouterLink>

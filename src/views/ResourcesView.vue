@@ -2,13 +2,13 @@
   <div class="min-h-screen">
     <section class="section-with-background min-h-screen">
       <!-- Container -->
-      <div class="px-20">
-        <div class="px-4 pb-20">
+      <div class="px-4 md:px-10 lg:px-20 xl:px-32">
+        <div class="pb-20">
           <!-- ReusableSvg component -->
           <RectangleSvg
             fill="#EE3B26"
-            width="482"
-            height="100"
+            :width="getWidth()"
+            :height="getHeight()"
             viewBox="0 0 482 100"
             :path="path3"
             text="Research"
@@ -16,31 +16,19 @@
             class=""
           />
         </div>
-        <div class="p-14 bg-white shadow-md rounded-lg overflow-auto h-[700px]">
+        <div class="p-4 md:p-8 lg:p-14 md:h-[700px] bg-white shadow-md rounded-lg overflow-auto">
           <!-- Loop through your data -->
-          <div v-for="index in 4" :key="index" class="">
-            <div class="flex flex-col md:flex-row pb">
+          <div v-for="index in 4" :key="index" class="pb-8">
+            <div class="flex flex-col md:flex-row">
               <!-- Text Content -->
-              <div class="p-4 pb-8">
-                <h2 class="text-2xl px-12 text-red-primary">{{ cardData.title }}</h2>
+              <div class="p-4 md:pb-0">
+                <h2 class="text-2xl px-4 md:px-12 text-red-primary">{{ cardData.title }}</h2>
                 <p
-                  class="text-lg font-normal leading-snug px-12 py-6 text-justify mt-2 text-gray-600"
+                  class="text-lg font-normal leading-snug px-4 md:px-12 py-6 text-justify mt-2 text-gray-600"
                   v-html="cardData.message"
                 ></p>
                 <!-- Download and Share Buttons -->
-                <div class="flex items-center justify-between px-14">
-                  <!-- Download Button -->
-                  <!-- <RectangleSvg
-                     fill="#00C4B3"
-                     width="215"
-                     height="62"
-                     viewBox="0 0 215 62"
-                     :path="path1"
-                     text="Download"
-                     textFill="white"
-                     class=""
-                     @click="downloadPDF(item)"
-                   /> -->
+                <div class="flex items-center justify-between px-4 md:px-14">
                   <!-- Download Button -->
                   <button
                     class="bg-blue-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
@@ -48,11 +36,6 @@
                   >
                     DOWNLOAD
                   </button>
-                  <!-- <div
-                    class=""
-                  >
-                  <img src="@/assets/images/download_button.png"  alt="Download PDF"  @click="downloadPDF(item)"/>
-                </div> -->
                   <!-- Share Button -->
                   <button
                     class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
@@ -107,6 +90,14 @@ const shareItem = (item) => {
   console.log(item)
   const url = window.location.href // Get the current URL
   alert(`Share this URL: ${url}`)
+}
+const getWidth = () => {
+  // Adjust width based on viewport size
+  return window.innerWidth < 768 ? '100%' : 482 // Example breakpoint is 768px
+}
+const getHeight = () => {
+  // Adjust height based on viewport size
+  return window.innerWidth < 768 ? 'auto' : 100 // Example breakpoint is 768px
 }
 </script>
 

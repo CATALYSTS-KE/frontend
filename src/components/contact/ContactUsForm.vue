@@ -17,12 +17,12 @@
             <div class="pb-4 md:pb-36 flex flex-col justify-between">
               <div class="flex justify-center">
                 <img
-                  class="w-full h-80"
+                  class="w-full mdh-80"
                   alt="contact page dubai image"
                   src="@/assets/images/contact/Dubai-image.webp"
                 />
               </div>
-              <div class="px-4 md:px">
+              <div class="px-4">
                 <p class="font-semibold pt-10 pb-3 md:pb-6 mb-4 text-base md:text-lg leading-6">
                   Need help? Want to Join Us?
                   <br />
