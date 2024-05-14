@@ -37,16 +37,10 @@
         class="relative pb-10 flex flex-col justify-center bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center"
       >
         <div class="">
-          <!-- ReusableSvg component -->
-          <RectangleSvg
-            fill="#00C4B3"
-            width="493"
-            height="123"
-            viewBox="0 0 493 123"
-            :path="path1"
-            text="WHO WE ARE"
-            textFill="white"
-            class=""
+          <img
+            src="@/assets/images/who-we-are.svg"
+            alt="Title Image"
+            class="block relative px-4 py-2 z-10"
           />
         </div>
 
@@ -173,7 +167,7 @@
 </template>
 <script setup>
 import RectangleSvg from '@/components/common/RectangleSvg.vue'
-const path1 = 'M483.92 14.01V101.44L5.14008 112.86V7.63013L483.92 14.01Z'
+// const path1 = 'M483.92 14.01V101.44L5.14008 112.86V7.63013L483.92 14.01Z'
 const path2 = 'M359.86 13.4299V100.86L0 105.22V0L359.86 13.4299Z'
 </script>
 <style scoped>
