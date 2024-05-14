@@ -96,9 +96,10 @@
       </div>
     </section>
     <!-- Upcoming Events  -->
-    <section
+    <section class="pb-10 -mt-6 bg-orange-700 bg-cover bg-center relative overflow-hidden">
+      <!-- <section
       class="pb-10 -mt-6 bg-orange-700 bg-[url('@/assets/images/brown_bg.svg')] bg-cover bg-center relative overflow-hidden"
-    >
+    > -->
       <!-- Container -->
       <div class="px-20">
         <div class="px-4">
