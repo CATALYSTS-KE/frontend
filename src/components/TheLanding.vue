@@ -3,34 +3,28 @@
     <main>
       <section
         id="mission"
-        class="pb-10 px-20 bg-[#943700] bg-cover bg-center relative overflow-hidden"
+        class="pb-10 px-20 bg-brown-primary bg-cover bg-center relative overflow-hidden"
       >
-        <div class="mx-auto">
+        <div class="">
           <img
-            src="@/assets/images/Bold_Unapologetic_Africaled.png"
+            src="@/assets/images/Catalyst.svg"
             alt="Title Image"
             class="block relative px-4 py-2 z-10"
           />
         </div>
-        <!-- <div class="">
-          <img
-            src="@/assets/images/Bold_Unapologetic_Africaled.png"
-            alt="Title Image"
-            class="block relative px-4 py-2 z-10"
-          />
-        </div> -->
-        <div class="flex justify-center my-8">
-          <div class="relative bg-white shadow-md rounded-md p-8 max-w-2xl">
-            <p class="font-inter text-xl font-normal leading-snug px-4 py-2 text-justify">
-              <span class="font-bold text-red-500">CATALYSTS:</span> An Africa-led alliance
-              connecting and amplifying African voices and efforts towards universal abortion rights
-              and quality abortion care for all.
+        <div class="flex 7xl:justify-center my-8">
+          <div class="relative">
+            <p
+              class="font-inter text-6xl font-normal leading-snug px-4 py-2 text-white text-center"
+            >
+              An Africa-led alliance connecting and amplifying African voices and efforts towards
+              universal abortion rights and quality abortion care for all.
             </p>
           </div>
         </div>
 
         <!-- Home page video container -->
-        <div class="max-w-5xl mx-auto">
+        <div class="">
           <img
             src="@/assets/images/home_video.png"
             alt="Catalyst Video Animation"
@@ -40,7 +34,7 @@
       </section>
       <!-- Who we are -->
       <section
-        class="relative pb-10 px-20 flex flex-col justify-center items-center bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center"
+        class="relative pb-10 flex flex-col justify-center bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center"
       >
         <div class="">
           <!-- ReusableSvg component -->
@@ -56,9 +50,9 @@
           />
         </div>
 
-        <div class="h-full pt-10 p-4">
+        <div class="h-full pt-10 p-4 md:px-20">
           <div
-            class="bg-white bg-opacity-60 p-8 rounded-lg shadow-lg md:w-9/12 h-96 overflow-y-auto relative mx-auto"
+            class="bg-white bg-opacity-60 p-8 rounded-lg shadow-lg h-96 overflow-y-auto relative mx-auto"
           >
             <!-- bg-opacity-50 makes the background slightly transparent -->
             <p class="text-lg font-normal leading-snug px-2 md:px-4 text-justify">
@@ -100,9 +94,9 @@
       <!-- <div class="bg-black"> -->
       <div class="bg-[#FF5F00]">
         <section
-          class="pb-10 px-20 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
+          class="pb-10 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
         >
-          <div class="px-4">
+          <div class="">
             <!-- ReusableSvg component -->
             <RectangleSvg
               fill="black"
@@ -110,20 +104,20 @@
               height="105"
               viewBox="0 0 360 105"
               :path="path2"
-              text="JOIN US"
+              text="Join Us"
               textFill="white"
               class=""
             />
           </div>
 
-          <div class="h-full">
+          <div class="h-full px-20">
             <img src="@/assets/images/magaphone.png" />
           </div>
         </section>
       </div>
 
       <section class="relative pb-10 px-20 bg-brown-primary overflow-hidden">
-        <div class="px-4">
+        <div class="">
           <!-- ReusableSvg component -->
           <div class="div">
             <img
