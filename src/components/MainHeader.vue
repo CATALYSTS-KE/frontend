@@ -5,7 +5,7 @@
     </router-link>
 
     <!-- Mobile Menu Button -->
-    <button class="block md:hidden" @click="toggleMobileMenu">
+    <!-- <button class="block md:hidden" @click="toggleMobileMenu">
       <svg
         class="w-6 h-6"
         fill="none"
@@ -20,7 +20,45 @@
           d="M4 6h16M4 12h16m-7 6h7"
         ></path>
       </svg>
-    </button>
+    </button> -->
+
+    <!-- Mobile Vavigation -->
+    <!-- Mobile Vavigation -->
+    <div class="md:hidden mx-auto flex w-full items-center justify-end">
+      <div class="group relative cursor-pointer py-2">
+        <div class="flex items-center justify-between space-x-5 bg-white px-12">
+          <svg
+            class="w-11 h-11"
+            fill="none"
+            stroke="#FF5F00"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </div>
+
+        <div
+          class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-3 text-gray-800 shadow-xl group-hover:visible"
+        >
+          <div v-for="(page, index) in pages" :key="index" class="py-2">
+            <router-link
+              @click="toggleMobileMenu"
+              :to="page.route"
+              class="my-1 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-orange-primary md:mx-2"
+              :class="{ 'text-orange-primary': activeTabIndex === index }"
+            >
+              {{ page.label }}
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex justify-end items-center gap-x-4">
@@ -63,7 +101,7 @@
     </nav>
 
     <!-- Mobile Navigation -->
-    <nav class="md:hidden" v-show="showMobileMenu">
+    <!-- <nav class="md:hidden" v-show="showMobileMenu">
       <div v-for="(page, index) in pages" :key="index" class="py-2">
         <router-link
           @click="toggleMobileMenu"
@@ -74,7 +112,7 @@
           {{ page.label }}
         </router-link>
       </div>
-    </nav>
+    </nav> -->
   </header>
 </template>
 
