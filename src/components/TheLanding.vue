@@ -3,7 +3,7 @@
     <main>
       <section
         id="mission"
-        class="pb-10 px-20 bg-brown-primary bg-cover bg-center relative overflow-hidden"
+        class="pb-10 md:px-20 bg-brown-primary bg-cover bg-center relative overflow-hidden"
       >
         <div class="">
           <img
@@ -15,7 +15,7 @@
         <div class="flex 7xl:justify-center my-8">
           <div class="relative">
             <p
-              class="font-inter text-6xl font-normal leading-snug px-4 py-2 text-white text-center"
+              class="font-inter md:text-6xl font-normal leading-snug px-4 py-2 text-white text-center"
             >
               An Africa-led alliance connecting and amplifying African voices and efforts towards
               universal abortion rights and quality abortion care for all.
@@ -105,6 +105,7 @@
               viewBox="0 0 360 105"
               :path="path2"
               text="Join Us"
+              uppercase="false"
               textFill="white"
               class=""
             />

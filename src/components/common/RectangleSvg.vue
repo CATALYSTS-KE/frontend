@@ -16,7 +16,7 @@
       :class="{ uppercase: uppercase }"
       :font-size="calculateFontSize"
     >
-      {{ uppercase ? text.toUpperCase() : text }}
+      {{ uppercase ? text.toUpperCase() : text.capitalize }}
     </text>
   </svg>
 </template>
