@@ -2,7 +2,7 @@
   <div>
     <main>
       <section
-        class="pb-10 px-20 bg-[url('@/assets/images/pattern_vector_grey.svg')] bg-cover bg-center relative overflow-hidden"
+        class="pb-10 px-6 md:px-20 bg-[url('@/assets/images/pattern_vector_grey.svg')] bg-cover bg-center relative overflow-hidden"
       >
         <div class="p-4">
           <!-- ReusableSvg component -->
@@ -18,7 +18,7 @@
           />
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Loop through organizations -->
           <div
             v-for="index in 8"
@@ -36,7 +36,7 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-between">
+        <div class="flex flex-col md:flex-row md:justify-between">
           <RouterLink to="/contact-us">
             <RectangleSvg
               fill="#00C4B3"
@@ -44,7 +44,7 @@
               height="116"
               viewBox="0 0 614 116"
               :path="path2"
-              text="Join As A Donor"
+              text="JOIN AS A DONOR"
               textFill="white"
               class=""
             />
@@ -56,7 +56,7 @@
               height="116"
               viewBox="0 0 613 116"
               :path="path3"
-              text="Join the alliance"
+              text="JOIN THE ALLIANCE"
               textFill="white"
               class=""
             />
