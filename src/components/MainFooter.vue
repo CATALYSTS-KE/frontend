@@ -5,7 +5,7 @@
       <div class="mb-6 md:mx-20 mx-10">
         <h2>ABOUT US</h2>
         <div class="flex flex-col text-sm tracking-wider">
-          <RouterLink to="/">Who we are</RouterLink>
+          <RouterLink to="/">Who We Are</RouterLink>
           <RouterLink to="/"> What We Do</RouterLink>
         </div>
       </div>
