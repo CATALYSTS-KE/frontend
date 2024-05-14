@@ -28,7 +28,7 @@
           <img
             src="@/assets/images/home_video.png"
             alt="Catalyst Video Animation"
-            class="w-full px-4 py-2"
+            class="w-full md:px-4 py-2"
           />
         </div>
       </section>
