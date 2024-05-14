@@ -15,7 +15,7 @@
         <div class="flex 7xl:justify-center my-8">
           <div class="relative">
             <p
-              class="font-inter md:text-6xl font-normal leading-snug px-4 py-2 text-white text-center"
+              class="text-xl md:text-6xl font-normal leading-snug px-4 py-2 text-white text-center"
             >
               An Africa-led alliance connecting and amplifying African voices and efforts towards
               universal abortion rights and quality abortion care for all.
@@ -28,23 +28,19 @@
           <img
             src="@/assets/images/home_video.png"
             alt="Catalyst Video Animation"
-            class="w-full md:px-4 py-2"
+            class="w-full px-4 py-2"
           />
         </div>
       </section>
       <!-- Who we are -->
       <section
-        class="relative pb-10 flex flex-col justify-center bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center"
+        class="relative px-4 md:px-20 pb-10 flex flex-col justify-center bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center"
       >
         <div class="">
-          <img
-            src="@/assets/images/who-we-are.svg"
-            alt="Title Image"
-            class="block relative px-4 py-2 z-10"
-          />
+          <img src="@/assets/images/who-we-are.svg" alt="Title Image" class="block relative z-10" />
         </div>
 
-        <div class="h-full pt-10 p-4 md:px-20">
+        <div class="h-full pt-10 py-4">
           <div
             class="bg-white bg-opacity-60 p-8 rounded-lg shadow-lg h-96 overflow-y-auto relative mx-auto"
           >
@@ -88,30 +84,23 @@
       <!-- <div class="bg-black"> -->
       <div class="bg-[#FF5F00]">
         <section
-          class="pb-10 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
+          class="px-4 md:px-20 pb-10 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
         >
-          <div class="">
-            <!-- ReusableSvg component -->
-            <RectangleSvg
-              fill="black"
-              width="360"
-              height="105"
-              viewBox="0 0 360 105"
-              :path="path2"
-              text="Join Us"
-              uppercase="false"
-              textFill="white"
-              class=""
+          <div class="container">
+            <img
+              src="@/assets/images/join_us_landing.svg"
+              alt="Title Image"
+              class="block max-w-full h-auto"
             />
           </div>
 
           <div class="h-full px-20">
-            <img src="@/assets/images/magaphone.png" />
+            <img src="@/assets/images/magaphone.png" class="max-w-full h-auto" />
           </div>
         </section>
       </div>
 
-      <section class="relative pb-10 px-20 bg-brown-primary overflow-hidden">
+      <section class="relative px-4 md:px-20 pb-10 bg-brown-primary overflow-hidden">
         <div class="">
           <!-- ReusableSvg component -->
           <div class="div">
@@ -134,7 +123,7 @@
           /> -->
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-20">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 py-20">
           <!-- Loop through frames -->
           <div
             v-for="index in 4"
@@ -166,9 +155,9 @@
   </div>
 </template>
 <script setup>
-import RectangleSvg from '@/components/common/RectangleSvg.vue'
+// import RectangleSvg from '@/components/common/RectangleSvg.vue'
 // const path1 = 'M483.92 14.01V101.44L5.14008 112.86V7.63013L483.92 14.01Z'
-const path2 = 'M359.86 13.4299V100.86L0 105.22V0L359.86 13.4299Z'
+// const path2 = 'M359.86 13.4299V100.86L0 105.22V0L359.86 13.4299Z'
 </script>
 <style scoped>
 /* width */
