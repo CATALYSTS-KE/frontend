@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <section class="section-with-background">
+    <section class="section-with-background px-4">
       <!-- Container -->
       <div class="md:px-20">
         <div class="md:p-4">
@@ -18,9 +18,9 @@
         </div>
 
         <!-- 5 C'S content -->
-        <div class="px-14 md:mx-56 py-12">
+        <div class="px-8 md:px-10 py-12">
           <div
-            class="container h-96 md:px-20 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
+            class="container h-96 md:px-10 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
           >
             <div class="grid gap-6 w-full">
               <!-- Loop through your data -->
@@ -58,7 +58,7 @@
     </section>
 
     <!-- Thematic section -->
-    <section class="thematic-section bg-yellow-primary pb-20">
+    <section class="thematic-section px-4 bg-yellow-primary pb-20">
       <!-- Container -->
       <div class="md:px-20">
         <div class="pb-8 md:px-4">
@@ -75,7 +75,7 @@
           />
         </div>
 
-        <div class="px-4 md:px-0">
+        <div class="px-2 md:px-0">
           <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
             Explain the origins and goals of Catalysts:
           </h1>
