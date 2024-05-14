@@ -12,7 +12,7 @@
             height="116"
             viewBox="0 0 371 116"
             :path="path1"
-            text="Support"
+            text="ALLIANCE MEMBERS"
             textFill="white"
             class=""
           />
@@ -21,17 +21,21 @@
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Loop through organizations -->
           <div
-            v-for="index in 8"
-            :key="index"
+            v-for="item in OrganizationData"
+            :key="item.title"
             class="border-2 bg-white border-gray-400 rounded-lg p-4"
           >
-            <div class="flex flex-col justify-center">
-              <img
-                src="@/assets/images/organization.png"
-                alt="Organization"
-                class="mb-4 rounded-md"
-              />
-              <h2 class="text-lg font-semibold mb-2">Organization Title</h2>
+            <div class="flex flex-col justify-center items-center">
+              <!-- Center images vertically and horizontally -->
+              <div class="w-full aspect-w-16 aspect-h-9">
+                <!-- Aspect ratio container -->
+                <img
+                  :src="`./src/assets/images/members/${item.image}`"
+                  alt="Organization"
+                  class="object-cover rounded-md w-full h-full"
+                />
+              </div>
+              <h2 class="text-lg font-semibold my-2 text-center">{{ item.title }}</h2>
               <p class="text-gray-600">Organization Tagline</p>
             </div>
           </div>
@@ -71,4 +75,26 @@ import RectangleSvg from '@/components/common/RectangleSvg.vue'
 const path1 = 'M362.841 11.544V91.974L3.64062 105.074V6.84399L362.841 11.544Z'
 const path2 = 'M607.84 12.09V92.51L3.2002 105.61V7.38L607.84 12.09Z'
 const path3 = 'M3 100.9V20.48L607.64 7.38V105.61L3 100.9Z'
+const OrganizationData = [
+  {
+    title: 'Figo',
+    image: 'figo_logo.png'
+  },
+  {
+    title: 'Center For Reproductive Rights Africa',
+    image: 'crr_logo.jpeg'
+  },
+  {
+    title: 'IPAS',
+    image: 'IPAS_Logo_RGB_sm.webp'
+  },
+  {
+    title: 'IPPFAR',
+    image: 'IPPFAR_logo.jpeg'
+  },
+  {
+    title: 'Population Council',
+    image: 'Pop_Council_logo.png'
+  }
+]
 </script>
