@@ -30,7 +30,7 @@
               <div class="w-full aspect-w-16 aspect-h-9">
                 <!-- Aspect ratio container -->
                 <img
-                  :src="`./src/assets/images/members/${item.image}`"
+                  :src="`./public/members/${item.image}`"
                   alt="Organization"
                   class="object-cover rounded-md w-full h-full"
                 />
