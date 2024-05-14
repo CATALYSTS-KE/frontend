@@ -40,43 +40,24 @@
           <img src="@/assets/images/who-we-are.svg" alt="Title Image" class="block relative z-10" />
         </div>
 
-        <div class="h-full pt-10 py-4">
+        <div class="h-full pt-10 py-8 md:py-24">
           <div
-            class="bg-white bg-opacity-60 p-8 rounded-lg shadow-lg h-96 overflow-y-auto relative mx-auto"
+            class="bg-white bg-opacity-60 p-8 rounded-lg shadow-lg overflow-y-auto relative mx-auto"
           >
             <!-- bg-opacity-50 makes the background slightly transparent -->
             <p class="text-lg font-normal leading-snug px-2 md:px-4 text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-              consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-              sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-              commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-              maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+              We are an African-led alliance, committed to championing quality abortion care across
+              the continent by uniting and amplifying African voices.
             </p>
             <p class="text-lg font-normal leading-snug px-2 md:px-4 py-2 text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-              consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-              sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-              commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-              maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+              As CATALYSTS, we leverage the strengths of our members to catalyze impactful change in
+              abortion care. We champion the protection of reproductive rights, to ensure that every
+              individual can access high-quality abortion care without barriers.
             </p>
             <p class="text-lg font-normal leading-snug px-2 md:px-4 text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-              consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-              sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-              commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-              maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+              Coming together elevates our capacity to unlock flexible resources and establish
+              meaningful partnerships. We are unapologetic and united towards sparking change for
+              abortion care across the continent.
             </p>
           </div>
         </div>

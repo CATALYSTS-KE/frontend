@@ -1,28 +1,28 @@
 <template>
   <div class="">
-    <section class="section-with-background p-4">
+    <section class="section-with-background px-4 md:px-20">
       <!-- Container -->
-      <div class="md:px-20">
-        <div class="md:p-4 pb-8">
-          <!-- ReusableSvg component -->
-          <RectangleSvg
-            fill="#00C4B3"
-            width="482"
-            height="99"
-            viewBox="0 0 482 99"
-            :path="path3"
-            text="MANIFESTO"
-            textFill="white"
-            class=""
-          />
-        </div>
-
+      <div class="pb-8">
+        <!-- ReusableSvg component -->
+        <!-- <RectangleSvg
+          fill="#00C4B3"
+          width="482"
+          height="99"
+          viewBox="0 0 482 99"
+          :path="path3"
+          text="MANIFESTO"
+          textFill="white"
+          class=""
+        /> -->
+        <img src="@/assets/images/manifesto.svg" alt="Manifesto image" class="" />
+      </div>
+      <div class="">
         <!-- Manifesto -->
-        <div class="px-4 pb-20">
-          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-primary">
+        <div class="pb-20 px-4 md:px-0">
+          <h1 class="text-4xl font-normal leading-tight py-2 text-gray-primary">
             Explain the origins and goals of Catalysts
           </h1>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+          <p class="text-lg font-normal leading-snug py-2 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
             consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
@@ -36,15 +36,15 @@
       </div>
     </section>
 
-    <!-- Vission only -->
+    <!-- Vision only -->
     <section
-      class="px-4 pb-10 -mt-6 bg-yellow-primary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center relative overflow-hidden"
+      class="px-4 md:px-20 pb-10 -mt-6 bg-yellow-primary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center relative overflow-hidden"
     >
       <!-- Container -->
-      <div class="md:px-20">
-        <div class="md:px-4">
+      <div class="">
+        <div class="">
           <!-- ReusableSvg component -->
-          <RectangleSvg
+          <!-- <RectangleSvg
             fill="#943700"
             width="482"
             height="99"
@@ -53,14 +53,13 @@
             text="VISION"
             textFill="white"
             class="text"
-          />
+          /> -->
+          <img src="@/assets/images/Vision.svg" alt="Vision image" class="" />
         </div>
 
         <div class="py-8">
-          <h1 class="text-4xl font-normal leading-tight px-4 py-8 text-gray-900 uppercase">
-            Vision
-          </h1>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+          <h1 class="text-4xl font-normal leading-tight py-6 text-gray-700 uppercase">Vision</h1>
+          <p class="text-lg font-normal leading-snug text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
             consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
@@ -70,7 +69,7 @@
             aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
             Vel pharetra vel turpis nunc eget.
           </p>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
+          <p class="text-lg font-normal leading-snug py-2 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
             consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
@@ -86,7 +85,7 @@
 
     <!-- Our Story -->
     <section class="thematic-section bg-teal-400 pb-0">
-      <div class="md:px-20">
+      <div class="px-4 md:px-20">
         <div class="">
           <!-- ReusableSvg component -->
           <RectangleSvg
@@ -95,13 +94,13 @@
             height="99"
             viewBox="0 0 482 99"
             :path="path2"
-            text="OUR STORY"
+            text="Our Story"
             textFill="white"
             class="svg-text"
           />
         </div>
       </div>
-      <div class="mx-8 md:mx-24 py-12 h-full">
+      <div class="mx-4 md:mx-20 py-12 h-full">
         <!-- Loop through your data -->
         <div
           v-for="(item, index) in cardData"
@@ -128,7 +127,7 @@
 import RectangleSvg from '@/components/common/RectangleSvg.vue'
 
 const path2 = 'M481.67 4.69995V85.1299L0 98.23V0L481.67 4.69995Z'
-const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
+// const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
 
 const cardData = [
   {

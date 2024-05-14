@@ -1,7 +1,7 @@
 <template>
   <svg
     :width="width"
-    :height="calculateHeight"
+    :height="height"
     :viewBox="viewBox"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -13,10 +13,9 @@
       dominant-baseline="middle"
       text-anchor="middle"
       :fill="textFill"
-      :class="{ uppercase: uppercase }"
       :font-size="calculateFontSize"
     >
-      {{ uppercase ? text.toUpperCase() : text.capitalize }}
+      {{ text }}
     </text>
   </svg>
 </template>
@@ -53,6 +52,11 @@ export default {
       required: true,
       default: 'M362.841 11.544V91.974L3.64062 105.074V6.84399L362.841 11.544Z'
     },
+    changeCase: {
+      type: String,
+      required: true,
+      default: 'toUpperCase'
+    },
     uppercase: { type: Boolean, default: true }
   },
   computed: {
@@ -62,7 +66,9 @@ export default {
     },
     calculateHeight() {
       // Calculate height based on aspect ratio
-      return this.width * (106 / 718)
+
+      // return this.width * (106 / 718)
+      return console.log('jheight')
     }
   }
 }
