@@ -20,7 +20,7 @@
         <!-- 5 C'S content -->
         <div class="px-8 md:px-10 py-12">
           <div
-            class="container h-96 md:px-10 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
+            class="container md:px-10 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
           >
             <div class="grid gap-6 w-full">
               <!-- Loop through your data -->
@@ -31,22 +31,25 @@
               >
                 <div class="flex flex-col md:flex-row">
                   <!-- Image -->
-                  <div class="">
-                    <img
-                      src="@/assets/images/5Cboy.png"
-                      alt="Card image"
-                      class="h-auto w-full object-cover"
-                    />
-                    <!-- <img :src="item.image" alt="Card image" class="h-auto w-full object-cover" /> -->
+                  <div class="md:w-1/3">
+                    <div class="aspect-w-16 aspect-h-9">
+                      <img
+                        :src="`/5C/${item.image}`"
+                        alt="Card image"
+                        class="h-full w-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+                      />
+                    </div>
                   </div>
                   <!-- Text Content -->
-                  <div class="p-4">
-                    <div class="max-w-xs">
+                  <div class="p-4 flex justify-center md:justify-start items-center">
+                    <div class="max-w-full">
                       <!-- Limit width of text content -->
-                      <h2 class="text-lg font-semibold text-red-primary uppercase">
+                      <h2
+                        class="text-lg font-semibold text-red-primary uppercase mb-2 text-center md:text-left"
+                      >
                         {{ item.title }}
                       </h2>
-                      <p class="mt-2 text-gray-600">{{ item.message }}</p>
+                      <p class="text-gray-600 text-center md:text-left">{{ item.message }}</p>
                     </div>
                   </div>
                 </div>
@@ -159,25 +162,31 @@ const cardData = [
     title: 'CO-ORDINATING FOR SUCCESS',
     message:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id tincidunt arcu. Sed sodales risus vel efficitur pretium.',
-    image: '../assets/images/5Cboy.png'
+    image: 'AI-Generated-C_1.jpg'
   },
   {
     title: 'CONNECTING AND CONVENING',
     message:
       'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer luctus purus ac ligula semper ullamcorper.',
-    image: 'https://via.placeholder.com/150'
+    image: 'AI-Generated-C_2.jpg'
   },
   {
     title: 'CULTIVATING TECHNICAL EXCELLENCE',
     message:
       'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
-    image: 'https://via.placeholder.com/150'
+    image: 'AI-Generated-C_3.jpg'
   },
   {
     title: 'Card 4',
     message:
       'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
-    image: 'https://via.placeholder.com/150'
+    image: 'AI-Generated-C_4.jpg'
+  },
+  {
+    title: 'Card 5',
+    message:
+      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
+    image: 'AI-Generated-C_5.jpg'
   }
 ]
 

@@ -124,10 +124,7 @@ const cardData = [
       commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam 
       maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla 
       aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget. 
-      Vel pharetra vel turpis nunc eget.
-      
-      
-      `
+      Vel pharetra vel turpis nunc eget.`
   }
 ]
 </script>
