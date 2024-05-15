@@ -60,52 +60,6 @@
       </div>
     </section>
 
-    <!-- Thematic section -->
-    <section class="thematic-section px-4 bg-yellow-primary pb-20">
-      <!-- Container -->
-      <div class="md:px-20">
-        <div class="pb-8 md:px-4">
-          <!-- ReusableSvg component -->
-          <RectangleSvg
-            fill="#FF5F00"
-            width="482"
-            height="99"
-            viewBox="0 0 482 99"
-            :path="path3"
-            text="Thematic Areas"
-            textFill="white"
-            class=""
-          />
-        </div>
-
-        <div class="px-2 md:px-0">
-          <h1 class="text-4xl font-normal leading-tight px-4 py-2 text-gray-900">
-            Explain the origins and goals of Catalysts:
-          </h1>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
-          <p class="text-lg font-normal leading-snug px-4 py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
-        </div>
-      </div>
-    </section>
-
     <!-- Member Videos -->
     <section
       class="pb-10 md:px-20 bg-orange-primary bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"

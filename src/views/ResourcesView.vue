@@ -103,7 +103,7 @@ const getHeight = () => {
 
 <style scoped>
 .section-with-background {
-  @apply relative bg-[rgba(0,196,179,1)] bg-[url('@/assets/images/pattern_green.png')] bg-cover bg-center py-12;
+  @apply relative bg-[rgba(195,217,60,1)] bg-[url('@/assets/images/pattern_green.png')] bg-cover bg-center py-12;
 }
 
 ::-webkit-scrollbar {
