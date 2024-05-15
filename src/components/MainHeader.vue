@@ -1,7 +1,7 @@
 <template>
   <header class="px-8 flex justify-between items-center">
     <router-link to="/" class="" @click="resetActiveTab()">
-      <img alt="Catalysts logo" class="logo mr-20" src="@/assets/images/catalysts-logo.svg" />
+      <img alt="Catalysts logo" class="logo md:mr-20" src="@/assets/images/catalysts-logo.svg" />
     </router-link>
 
     <!-- Mobile Menu Button -->
@@ -25,7 +25,7 @@
     <!-- Mobile Vavigation -->
     <div class="md:hidden mx-auto flex w-full justify-end">
       <div class="group relative cursor-pointer py-2">
-        <div class="flex items-end justify-between bg-white pl-12">
+        <div class="flex items-end bg-white pl-12">
           <svg
             class="w-11 h-11"
             fill="none"
@@ -37,19 +37,19 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
+              d="M4 8h16M4 12h16M4 16h16"
             ></path>
           </svg>
         </div>
 
         <div
-          class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-3 text-gray-800 shadow-xl group-hover:visible"
+          class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-2 text-gray-800 shadow-xl group-hover:visible"
         >
           <div v-for="(page, index) in pages" :key="index" class="py-2">
             <router-link
               @click="toggleMobileMenu"
               :to="page.route"
-              class="my-1 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-orange-primary md:mx-2"
+              class="block border-b text-sm border-gray-100 py-1 font-semibold text-gray-500 hover:text-orange-primary"
               :class="{ 'text-orange-primary': activeTabIndex === index }"
             >
               {{ page.label }}
