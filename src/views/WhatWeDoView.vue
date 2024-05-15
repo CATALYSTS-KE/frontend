@@ -121,21 +121,23 @@
         />
       </div>
 
-      <div
-        class="md:pl-10 xl:pl-20 2xl:pl-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-12"
-      >
+      <div class="md:pl-10 xl:pl-20 2xl:pl-40 grid grid-cols-1 md:grid-cols-2 gap-6 pt-12">
         <!-- Loop through frames -->
-        <div
-          v-for="index in 6"
-          :key="index"
-          class="w-full border-2 bg-white border-gray-400 rounded-lg p-4"
-        >
-          <div class="px-2">
-            <img
-              src="@/assets/images/video_placeholder.png"
-              alt="Organization"
-              class="mb-4 rounded-md w-full"
-            />
+        <div v-for="index in 4" :key="index" class="w-full mt-4 px-8 border-gray-400 rounded-lg">
+          <div
+            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden"
+            class=""
+          >
+            <iframe
+              class="w-full"
+              title="What is CATALYSTS? Dr. Angela Akol - Ipas Africa Alliance"
+              style="position: absolute; top: 0; left: 0; height: 100%"
+              src="https://www.youtube.com/embed/QtJ8g9Wtou4?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
           </div>
         </div>
       </div>
