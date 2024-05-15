@@ -41,44 +41,22 @@
       class="px-4 md:px-20 pb-10 -mt-6 bg-yellow-primary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center relative overflow-hidden"
     >
       <!-- Container -->
-      <div class="">
-        <div class="">
-          <!-- ReusableSvg component -->
-          <!-- <RectangleSvg
-            fill="#943700"
-            width="482"
-            height="99"
-            viewBox="0 0 482 99"
-            :path="path3"
-            text="VISION"
-            textFill="white"
-            class="text"
-          /> -->
+      <div class="max-w-screen-xl">
+        <div>
           <img src="@/assets/images/Vision.svg" alt="Vision image" class="" />
         </div>
 
-        <div class="py-8">
-          <h1 class="text-4xl font-normal leading-tight py-6 text-gray-700 uppercase">Vision</h1>
-          <p class="text-lg font-normal leading-snug text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
-          <p class="text-lg font-normal leading-snug py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
+        <div class="py-8 w-full aspect-w-16 aspect-h-9">
+          <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vSKHnZPO-AOqlqL5EfMfaMNMJmVwPv2suA1r0qJ6M2bmC1Wmhy2AxKb2GdgRZhyUw/embed?start=true&loop=true&delayms=3000"
+            frameborder="0"
+            width="962"
+            height="564"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            class=""
+          ></iframe>
         </div>
       </div>
     </section>
