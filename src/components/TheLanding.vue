@@ -125,35 +125,36 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 py-20">
+        <div class="grid md:grid-cols-3 py-20 px-4 md:px-1.5 gap-6">
           <!-- Loop through frames -->
           <div
-            v-for="index in 4"
+            v-for="(frame, index) in socialFrames"
             :key="index"
-            class="border-2 bg-white border-gray-400 rounded-lg p-4"
+            class="md:py-2 border bg-white border-gray-400 rounded-sm"
           >
-            <div class="flex flex-col justify-center items-center">
-              <img
-                src="@/assets/images/socials_frames.png"
-                alt="Organization"
-                class="mb-4 rounded-md"
-              />
-              <h2 class="text-lg font-semibold mb-2">
-                Social Media Frame
-                <span class="border rounded-full p-2 border-yellow-400">0{{ index }}</span>
+            <div class="p-1.5 md:p-2 flex flex-col justify-center items-center">
+              <div class="w-full">
+                <img
+                  :src="`/frames/${frame.image}`"
+                  alt="Organization"
+                  class="mb-4 rounded-md w-full"
+                />
+              </div>
+
+              <h2 class="text-lg font-semibold mb-2 text-center">
+                Social Media Frame: <span class="p-0.5">({{ frame.name }})</span>
               </h2>
               <a
-                :href="`@/assets/images/socials_frames.png`"
-                download="socials_frames.png"
-                class="bg-blue-primary text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors"
+                :href="`/frames/${frame.image}`"
+                :download="`/frames/${frame.image}`"
+                class="bg-blue-primary text-white px-8 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors"
               >
-                Download
+                Try It Out
               </a>
             </div>
+            <!-- If there are only 3 items, add an empty div to center the last item -->
           </div>
         </div>
-
-        <div class="py-20"></div>
       </section>
     </main>
   </div>
@@ -166,9 +167,20 @@
 // import 'swiper/css/navigation';
 // import 'swiper/css/pagination';
 // import 'swiper/css/scrollbar'
-// import RectangleSvg from '@/components/common/RectangleSvg.vue'
-// const path1 = 'M483.92 14.01V101.44L5.14008 112.86V7.63013L483.92 14.01Z'
-// const path2 = 'M359.86 13.4299V100.86L0 105.22V0L359.86 13.4299Z'
+const socialFrames = [
+  {
+    name: 'Jessica',
+    image: 'Catalysts_C_Hand_KV_1.jpg'
+  },
+  {
+    name: 'Angela',
+    image: 'Catalysts_C_Hand_KV_2.jpg'
+  },
+  {
+    name: 'Mallah',
+    image: 'Catalysts_C_Hand_KV_3.jpg'
+  }
+]
 </script>
 <style scoped>
 /* width */
