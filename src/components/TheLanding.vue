@@ -14,7 +14,9 @@
         </div>
         <div class="flex 7xl:justify-center my-8">
           <div class="relative">
-            <p class="text-xl md:text-6xl font-light leading-snug px-4 py-2 text-white text-center">
+            <p
+              class="text-4xl md:text-6xl font-light leading-snug px-4 py-2 text-white text-center"
+            >
               An
               <span class="text-yellow-secondary font-bold"> Africa-led Alliance </span> Connecting
               and Amplifying African Voices and Efforts towards
