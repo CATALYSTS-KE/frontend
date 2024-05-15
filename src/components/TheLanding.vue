@@ -43,9 +43,9 @@
           >
             <iframe
               class="w-full"
-              title="The CATALYSTS Manifesto"
+              title="The CATALYSTS"
               style="position: absolute; top: 0; left: 0; height: 100%"
-              src="https://www.youtube.com/embed/IooUuE711cA?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1"
+              src="https://www.youtube.com/embed/mkOmMkuIPUU?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
