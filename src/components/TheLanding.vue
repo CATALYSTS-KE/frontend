@@ -87,7 +87,7 @@
       <!-- <div class="bg-black"> -->
       <div class="bg-[#FF5F00]">
         <section
-          class="px-4 md:px-20 pb-10 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
+          class="px-4 md:px-20 pb-10 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden h-screen"
         >
           <div class="container">
             <img
@@ -102,8 +102,9 @@
             />
           </div>
 
-          <div class="h-full px-20">
-            <img src="@/assets/images/magaphone.png" class="max-w-full h-auto" />
+          <div class="w-full h-full md:px-20">
+            <img src="@/assets/images/magaphone.png" class="w-full h-full" />
+            <!-- <img src="@/assets/images/magaphone_sm.png" class="w-full h-auto" /> -->
           </div>
         </section>
       </div>
