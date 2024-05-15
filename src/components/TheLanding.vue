@@ -27,16 +27,7 @@
             </p>
           </div>
         </div>
-
-        <!-- Home page video container -->
-        <!-- <div class="">
-          <img
-            src="@/assets/images/home_video.png"
-            alt="Catalyst Video Animation"
-            class="w-full px-4 py-2"
-          />
-        </div> -->
-        <div class="mt-4 px-8">
+        <div class="mt-4 px-8 2xl:px-56">
           <div class="relative w-full" style="padding-bottom: 56.25%">
             <iframe
               class="absolute top-0 left-0 w-full h-full"

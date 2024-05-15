@@ -27,6 +27,6 @@ import MainFooter from '@/components/MainFooter.vue'
 html,
 body {
   height: 100%;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 </style>
