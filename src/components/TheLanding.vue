@@ -113,9 +113,14 @@
           <!-- ReusableSvg component -->
           <div class="div">
             <img
-              src="@/assets/images/become_a_catalyst.svg"
+              src="@/assets/images/become_a_catalyst_sm.svg"
               alt="Title Image"
-              class="h-auto block relative"
+              class="h-auto hidden md:block relative"
+            />
+            <img
+              src="@/assets/images/become_a_catalyst_sm.svg"
+              alt="Title Image"
+              class="h-auto block md:hidden relative"
             />
           </div>
         </div>
