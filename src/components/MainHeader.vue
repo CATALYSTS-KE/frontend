@@ -23,10 +23,9 @@
     </button> -->
 
     <!-- Mobile Vavigation -->
-    <!-- Mobile Vavigation -->
-    <div class="md:hidden mx-auto flex w-full items-center justify-end">
+    <div class="md:hidden mx-auto flex w-full justify-end">
       <div class="group relative cursor-pointer py-2">
-        <div class="flex items-center justify-between space-x-5 bg-white px-12">
+        <div class="flex items-end justify-between bg-white pl-12">
           <svg
             class="w-11 h-11"
             fill="none"
@@ -59,7 +58,6 @@
         </div>
       </div>
     </div>
-
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex justify-end items-center md:space-x-4">
       <div v-for="(page, index) in pages" :key="index" class="relative flex items-center">
