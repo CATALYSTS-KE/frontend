@@ -123,7 +123,11 @@
 
       <div class="md:pl-10 xl:pl-20 2xl:pl-40 grid grid-cols-1 md:grid-cols-2 gap-6 pt-12">
         <!-- Loop through frames -->
-        <div v-for="index in 4" :key="index" class="w-full mt-4 px-8 border-gray-400 rounded-lg">
+        <div
+          v-for="member in memberVideos"
+          :key="member"
+          class="w-full mt-4 px-8 border-gray-400 rounded-lg"
+        >
           <div
             style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden"
             class=""
@@ -132,7 +136,7 @@
               class="w-full"
               title="What is CATALYSTS? Dr. Angela Akol - Ipas Africa Alliance"
               style="position: absolute; top: 0; left: 0; height: 100%"
-              src="https://www.youtube.com/embed/QtJ8g9Wtou4?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1"
+              :src="member.video"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -174,6 +178,31 @@ const cardData = [
     message:
       'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
     image: 'https://via.placeholder.com/150'
+  }
+]
+
+const memberVideos = [
+  {
+    title: 'Dr. Angela Akol',
+    video:
+      'https://www.youtube.com/embed/QtJ8g9Wtou4?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+  },
+  {
+    title: 'Dr Harriet Birungi',
+    video:
+      'https://www.youtube.com/embed/KkI9bWXrMbs?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+  },
+  {
+    title: 'CULTIVATING TECHNICAL EXCELLENCE',
+    video:
+      'https://www.youtube.com/embed/KkI9bWXrMbs?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+  },
+  {
+    title: 'Card 4',
+    message:
+      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
+    video:
+      'https://www.youtube.com/embed/QtJ8g9Wtou4?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
   }
 ]
 </script>
