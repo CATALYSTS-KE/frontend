@@ -88,16 +88,7 @@
       <div class="px-4 md:px-20">
         <div class="">
           <!-- ReusableSvg component -->
-          <RectangleSvg
-            fill="#453635"
-            width="482"
-            height="99"
-            viewBox="0 0 482 99"
-            :path="path2"
-            text="Our Story"
-            textFill="white"
-            class="svg-text"
-          />
+          <img src="@/assets/images/our_story.svg" alt="Our Story" class="" />
         </div>
       </div>
       <div class="mx-4 md:mx-20 py-12 h-full">
@@ -124,9 +115,6 @@
 </template>
 
 <script setup>
-import RectangleSvg from '@/components/common/RectangleSvg.vue'
-
-const path2 = 'M481.67 4.69995V85.1299L0 98.23V0L481.67 4.69995Z'
 // const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
 
 const cardData = [
