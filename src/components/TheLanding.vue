@@ -9,7 +9,12 @@
           <img
             src="@/assets/images/Catalyst.svg"
             alt="Title Image"
-            class="block relative px-4 py-2 z-10"
+            class="hidden md:block relative px-4 py-2 z-10"
+          />
+          <img
+            src="@/assets/images/Catalyst_sm.svg"
+            alt="Title Image"
+            class="block md:hidden relative px-4 py-2 z-10"
           />
         </div>
         <div class="flex 7xl:justify-center my-8">
@@ -45,7 +50,16 @@
         class="relative px-4 md:px-20 pb-10 flex flex-col justify-center bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center"
       >
         <div class="">
-          <img src="@/assets/images/who-we-are.svg" alt="Title Image" class="block relative z-10" />
+          <img
+            src="@/assets/images/who-we-are.svg"
+            alt="Title Image"
+            class="hidden md:block relative z-10"
+          />
+          <img
+            src="@/assets/images/who-we-are-sm.svg"
+            alt="Title Image"
+            class="block md:hidden relative z-10"
+          />
         </div>
 
         <div class="h-full pt-10 py-8 md:py-24">
@@ -78,8 +92,13 @@
           <div class="container">
             <img
               src="@/assets/images/join_us_landing.svg"
-              alt="Title Image"
-              class="block max-w-full h-auto"
+              alt="Join Us Title"
+              class="hidden md:block max-w-full h-auto"
+            />
+            <img
+              src="@/assets/images/join_us_landing_sm.svg"
+              alt="Join Us Title"
+              class="block md:hidden max-w-full h-auto"
             />
           </div>
 
