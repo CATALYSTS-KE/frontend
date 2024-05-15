@@ -10,7 +10,8 @@ export default {
         },
         yellow: {
           primary: '#FFDD00',
-          secondary: '#FFB500'
+          secondary: '#FFB500',
+          tertiary: '#F7A800'
         },
         red: {
           primary: '#EE3B26'
@@ -18,11 +19,11 @@ export default {
         blue: {
           primary: '#00C4B3'
         },
-        grey: {
+        gray: {
           primary: '#404041'
         },
         brown: {
-          primary: '#943700',
+          primary: '#943700'
         }
       }
     }
