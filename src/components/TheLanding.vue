@@ -18,10 +18,10 @@
               class="text-4xl md:text-6xl font-light leading-snug px-4 py-2 text-white text-center"
             >
               An
-              <span class="text-yellow-secondary font-bold"> Africa-led Alliance </span> Connecting
-              and Amplifying African Voices and Efforts towards
+              <span class="text-yellow-secondary font-bold"> Africa-Led Alliance </span> Connecting
+              And Amplifying African Voices and Efforts towards
               <span class="text-yellow-secondary font-bold">
-                Universal Abortion Rights and Quality Abortion Care</span
+                Universal Abortion Rights And Care</span
               >
               for all.
             </p>
@@ -37,15 +37,11 @@
           />
         </div> -->
         <div class="mt-4 px-8">
-          <div
-            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden"
-            class="px-4"
-          >
+          <div class="relative w-full" style="padding-bottom: 56.25%">
             <iframe
-              class="w-full"
+              class="absolute top-0 left-0 w-full h-full"
               title="The CATALYSTS"
-              style="position: absolute; top: 0; left: 0; height: 100%"
-              src="https://www.youtube.com/embed/mkOmMkuIPUU?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1"
+              src="https://www.youtube.com/embed/deh16wy6_7I?autoplay=0&loop=1&rel=0&showinfo=0&modestbranding=0&controls=1&enablejsapi=1"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -67,16 +63,16 @@
             class="bg-white bg-opacity-60 p-8 rounded-lg shadow-lg overflow-y-auto relative mx-auto"
           >
             <!-- bg-opacity-50 makes the background slightly transparent -->
-            <p class="text-lg font-normal leading-snug px-2 md:px-4 text-justify">
+            <p class="text-lg md:text-3xl font-normal leading-snug px-2 md:px-4 text-justify">
               We are an African-led alliance, committed to championing quality abortion care across
               the continent by uniting and amplifying African voices.
             </p>
-            <p class="text-lg font-normal leading-snug px-2 md:px-4 py-2 text-justify">
+            <p class="text-lg md:text-3xl font-normal leading-snug px-2 md:px-4 py-2 text-justify">
               As CATALYSTS, we leverage the strengths of our members to catalyze impactful change in
               abortion care. We champion the protection of reproductive rights, to ensure that every
               individual can access high-quality abortion care without barriers.
             </p>
-            <p class="text-lg font-normal leading-snug px-2 md:px-4 text-justify">
+            <p class="text-lg md:text-3xl font-normal leading-snug px-2 md:px-4 text-justify">
               Coming together elevates our capacity to unlock flexible resources and establish
               meaningful partnerships. We are unapologetic and united towards sparking change for
               abortion care across the continent.
