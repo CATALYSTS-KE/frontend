@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'], //remove unused styles
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'], //remove unused styles
   theme: {
     extend: {
       colors: {
@@ -9,7 +9,8 @@ export default {
           primary: '#FF5F00'
         },
         yellow: {
-          primary: '#FFDD00'
+          primary: '#FFDD00',
+          secondary: '#FFB500'
         },
         red: {
           primary: '#EE3B26'
@@ -21,7 +22,7 @@ export default {
           primary: '#404041'
         },
         brown: {
-          primary: '#943700'
+          primary: '#943700',
         }
       }
     }

@@ -1,7 +1,7 @@
 <template>
   <header class="px-8 flex justify-between items-center">
     <router-link to="/" class="" @click="resetActiveTab()">
-      <img alt="Catalysts logo" class="logo" src="@/assets/images/catalysts-logo.svg" />
+      <img alt="Catalysts logo" class="logo mr-20" src="@/assets/images/catalysts-logo.svg" />
     </router-link>
 
     <!-- Mobile Menu Button -->
@@ -61,18 +61,18 @@
     </div>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden md:flex justify-end items-center gap-x-4">
+    <nav class="hidden md:flex justify-end items-center md:space-x-4">
       <div v-for="(page, index) in pages" :key="index" class="relative flex items-center">
         <router-link
           @click="setActiveTab(index)"
           :to="page.route"
-          class="text-xs md:text-base flex justify-between page-link"
+          class="text-2xs md:text-base flex justify-between page-link"
           :class="{
             'text-orange-primary': activeTabIndex === index
           }"
         >
           <span
-            class="md:uppercase"
+            class="capitalize md:uppercase"
             :class="{
               'border-b border-orange-primary': activeTabIndex === index
             }"
@@ -80,7 +80,7 @@
           >
           <img
             @click="toggleSubMenu(index)"
-            class="arrow-icon cursor-pointer w-5 h-6 ml-2 pt-1"
+            class="arrow-icon cursor-pointer w-5 h-6 md:ml-2 md:pt-1"
             src="@/assets/images/arrow.svg"
             alt="Arrow Icon"
           />
@@ -153,7 +153,4 @@ export default {
 
 <style scoped>
 /* Add margin-right to the logo to create spacing between logo and navigation */
-.logo {
-  margin-right: 20px; /* Adjust the value as needed */
-}
 </style>

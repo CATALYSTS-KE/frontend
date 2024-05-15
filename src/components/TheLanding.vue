@@ -3,7 +3,7 @@
     <main>
       <section
         id="mission"
-        class="pb-10 md:px-20 bg-brown-primary bg-cover bg-center relative overflow-hidden"
+        class="pb-10 md:px-20 bg-brown-primary bg-[url('@/assets/images/pattern_brown.svg')] bg-cover bg-center relative overflow-hidden"
       >
         <div class="">
           <img
@@ -14,11 +14,14 @@
         </div>
         <div class="flex 7xl:justify-center my-8">
           <div class="relative">
-            <p
-              class="text-xl md:text-6xl font-normal leading-snug px-4 py-2 text-white text-center"
-            >
-              An Africa-led alliance connecting and amplifying African voices and efforts towards
-              universal abortion rights and quality abortion care for all.
+            <p class="text-xl md:text-6xl font-light leading-snug px-4 py-2 text-white text-center">
+              An
+              <span class="text-yellow-secondary font-bold"> Africa-led Alliance </span> Connecting
+              and Amplifying African Voices and Efforts towards
+              <span class="text-yellow-secondary font-bold">
+                Universal Abortion Rights and Quality Abortion Care</span
+              >
+              for all.
             </p>
           </div>
         </div>
@@ -91,17 +94,6 @@
               class="h-auto block relative"
             />
           </div>
-
-          <!-- <RectangleSvg
-            fill="#701012"
-            width="718"
-            height="106"
-            viewBox="0 0 718 106"
-            :path="path3"
-            text="Become a catalyst"
-            textFill="white"
-            class="hidden md:block"
-          /> -->
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 py-20">
@@ -131,11 +123,20 @@
             </div>
           </div>
         </div>
+
+        <div class="py-20"></div>
       </section>
     </main>
   </div>
 </template>
 <script setup>
+// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+// import { Swiper, SwiperSlide } from 'swiper/vue';
+//   // Import Swiper styles
+//   import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar'
 // import RectangleSvg from '@/components/common/RectangleSvg.vue'
 // const path1 = 'M483.92 14.01V101.44L5.14008 112.86V7.63013L483.92 14.01Z'
 // const path2 = 'M359.86 13.4299V100.86L0 105.22V0L359.86 13.4299Z'
