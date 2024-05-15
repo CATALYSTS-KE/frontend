@@ -29,12 +29,29 @@
         </div>
 
         <!-- Home page video container -->
-        <div class="">
+        <!-- <div class="">
           <img
             src="@/assets/images/home_video.png"
             alt="Catalyst Video Animation"
             class="w-full px-4 py-2"
           />
+        </div> -->
+        <div class="mt-4 px-8">
+          <div
+            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden"
+            class="px-4"
+          >
+            <iframe
+              class="w-full"
+              title="The CATALYSTS Manifesto"
+              style="position: absolute; top: 0; left: 0; height: 100%"
+              src="https://www.youtube.com/embed/IooUuE711cA?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
         </div>
       </section>
       <!-- Who we are -->
