@@ -2,9 +2,8 @@
   <!-- <div>
     <img src="@/assets/images/coming_soon.jpg" />
   </div> -->
-  <div class="hidden">
     <!-- News & Articles  -->
-    <section class="pb-10 -mt-6 bg-teal-400">
+    <section class="pb-10 py-10 bg-teal-400">
       <!-- Container -->
       <div class="px-20">
         <div class="px-4">
@@ -15,13 +14,40 @@
             height="99"
             viewBox="0 0 482 99"
             :path="path3"
-            text="New & Articles"
+            text="News & Articles"
             textFill="white"
             class="text"
           />
         </div>
+        <div class="px-4 md:p-2 lg:p-2 md:h-[600px] mb-12 bg-white shadow-md rounded-lg overflow-auto">
+          <!-- Loop through your data -->
+          <div v-for="index in 2" :key="index" class="pb-8">
+            <div class="flex flex-col md:flex-row">
+              <!-- Text Content -->
+              <div class="p-4 md:pb-0">
+                <h2 class="text-2xl px-4 md:px-12 text-red-primary">{{ cardData.title }}</h2>
+                <p
+                  class="text-lg font-normal leading-snug px-4 md:px-12 py-6 text-justify mt-2 text-gray-600"
+                  v-html="cardData.message"
+                ></p>
+                  <!-- Read More -->
+                  <RectangleSvg
+                    fill="#00C4B3"
+                    width="240"
+                    height="100"
+                    viewBox="0 5 232 56"
+                    :path="path2"
+                    text="Read More"
+                    textFill="black"
+                    class="text"
+                  />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <div class="hidden">
     <!-- Testimonies  -->
     <section
       class="pb-10 -mt-6 bg-orange-primary bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
@@ -95,8 +121,8 @@
         </div>
       </div>
     </section>
-  </div>
-    <section class="pb-10 -mt-6 bg-[url('@/assets/images/events_bg.png')] bg-cover bg-center relative overflow-hidden">
+    </div>
+    <section class="pb-10 -mt-10 bg-[url('@/assets/images/events_bg.png')] bg-cover bg-center relative overflow-hidden">
       <div class="px-20">
         <div class="px-4">
           <RectangleSvg
@@ -112,15 +138,16 @@
       </div>
       <div class="pt-4 grid-cols-1 sm:grid md:grid-cols-3">
         <div v-for="index in 3" :key="index" class=" flex flex-col items-center">
-          <img
+          <div class="bg-white m-2 p-1 rounded-md w-11/12">
+            <img
             src="@/assets/images/team_pic.png"
             alt="Organization"
-            class="mb-4 rounded-md w-2/3"
+            class="mb-4 w-full"
           />
-          <div class="bg-white m-2 p-8 rounded-md w-2/3">
-            <h3 class="font-semibold text-xl text-gray-400">Header one here</h3>
-            <p class="mt-1 text-gray-500 text-justify pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at.</p>
-            <RectangleSvg
+            <h3 class="font-semibold text-xl text-gray-400 p-4">Header one here</h3>
+            <p class=" mb-1 text-gray-500 text-justify p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum. Eget arcu dictum varius duis at.</p>
+            <div class="mb-6 px-4">
+              <RectangleSvg
               fill="#EE3b26"
               width="250"
               height="99"
@@ -130,13 +157,14 @@
               textFill="white"
               class="text"
             />
+            </div>
           </div>
           <div class="flex flex col -mt-4">
             <RectangleSvg
             fill="#00C4B3"
-            width="250"
+            width="225"
             height="99"
-            viewBox="10 0 200 50"
+            viewBox="10 0 200 55"
             :path="path1"
             text="Register"
             textFill="white"
@@ -144,7 +172,7 @@
           />
           <RectangleSvg
             fill="#F7A800"
-            width="250"
+            width="225"
             height="99"
             viewBox="10 0 200 50"
             :path="path1"
@@ -185,36 +213,43 @@ import RectangleSvg from '@/components/common/RectangleSvg.vue'
 // const path2 = 'M600.84 4.69995V85.1301L0 98.23V0L600.84 4.69995Z'
 const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
 
-const cardData = [
-  {
-    title: 'Overview of Abortion laws by country, In Africa',
-    message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+const cardData = {
+  title: 'Overview of Abortion laws by country, In Africa',
+  message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
       consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
       sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
       commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
       maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
       aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-      Vel pharetra vel turpis nunc eget.
-      <br>`
-  },
-  {
-    title: 'Overview of Abortion laws by country, In Africa',
-    message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-      consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-      sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-      commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-      maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-      aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-      Vel pharetra vel turpis nunc eget.
-      <br>`
-  }
-]
+      Vel pharetra vel turpis nunc eget.`
+}
 </script>
 
 <style scoped>
 .section-with-background {
   @apply relative bg-[rgba(0,196,179,1)] bg-[url('@/assets/images/manifesto_bg.svg')] bg-cover bg-center py-12;
 }
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(77, 72, 72);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ee3b26;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
 </style>
+
