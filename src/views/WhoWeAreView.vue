@@ -16,22 +16,21 @@
         /> -->
         <img src="@/assets/images/manifesto.svg" alt="Manifesto image" class="" />
       </div>
-      <div class="">
-        <!-- Manifesto -->
-        <div class="pb-20 px-4 md:px-0">
-          <h1 class="text-4xl font-normal leading-tight py-2 text-gray-primary">
-            Explain the origins and goals of Catalysts
-          </h1>
-          <p class="text-lg font-normal leading-snug py-2 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at. Sollicitudin aliquam ultrices
-            sagittis orci a scelerisque purus semper eget. Ac turpis egestas sed tempus. Tempor
-            commodo ullamcorper a lacus vestibulum sed arcu non. Suscipit tellus mauris a diam
-            maecenas sed enim ut sem. Viverra nibh cras pulvinar mattis. Vulputate enim nulla
-            aliquet porttitor lacus luctus accumsan tortor posuere. Eu sem integer vitae justo eget.
-            Vel pharetra vel turpis nunc eget.
-          </p>
+      <div class="mt-4 px-8">
+        <div
+          style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden"
+          class="px-4"
+        >
+          <iframe
+            class="w-full"
+            title="The CATALYSTS Manifesto"
+            style="position: absolute; top: 0; left: 0; height: 100%"
+            src="https://www.youtube.com/embed/IooUuE711cA?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
         </div>
       </div>
     </section>
