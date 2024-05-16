@@ -31,7 +31,7 @@
             </p>
           </div>
         </div>
-        <div class="mt-4 px-8 2xl:px-56">
+        <div class="mt-4 px-8 2xl:px-56 md:pb-40">
           <div class="relative w-full" style="padding-bottom: 56.25%">
             <iframe
               class="absolute top-0 left-0 w-full h-full"
@@ -47,9 +47,9 @@
       </section>
       <!-- Who we are -->
       <section
-        class="relative px-4 md:px-20 pb-10 flex flex-col justify-center bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center"
+        class="relative px-4 md:px-20 lg:py-20 flex flex-col justify-center bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center"
       >
-        <div class="">
+        <div class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16">
           <img
             src="@/assets/images/who-we-are.svg"
             alt="Title Image"
@@ -62,21 +62,28 @@
           />
         </div>
 
+        <!-- <div class="flex flex-1 items-center justify-center"> -->
         <div class="h-full pt-10 py-8 md:py-24">
           <div
-            class="bg-white bg-opacity-60 p-8 rounded-lg shadow-lg overflow-y-auto relative mx-auto"
+            class="bg-white text-gray-primary bg-opacity-60 p-8 rounded-lg shadow-lg overflow-y-auto relative mx-auto text-center md:text-justify"
           >
             <!-- bg-opacity-50 makes the background slightly transparent -->
-            <p class="text-lg md:text-3xl font-normal leading-snug px-2 md:px-4 text-justify">
+            <p
+              class="text-lg md:text-2xl 2xl:text-3xl font-normal leading-snug md:px-4 py-1.5 md:py-2"
+            >
               We are an African-led alliance, committed to championing quality abortion care across
               the continent by uniting and amplifying African voices.
             </p>
-            <p class="text-lg md:text-3xl font-normal leading-snug px-2 md:px-4 py-2 text-justify">
+            <p
+              class="text-lg md:text-2xl 2xl:text-3xl font-normal leading-snug md:px-4 py-2 md:py-2"
+            >
               As CATALYSTS, we leverage the strengths of our members to catalyze impactful change in
               abortion care. We champion the protection of reproductive rights, to ensure that every
               individual can access high-quality abortion care without barriers.
             </p>
-            <p class="text-lg md:text-3xl font-normal leading-snug px-2 md:px-4 text-justify">
+            <p
+              class="text-lg md:text-2xl 2xl:text-3xl font-normal leading-snug md:px-4 py-1.5 md:py-2"
+            >
               Coming together elevates our capacity to unlock flexible resources and establish
               meaningful partnerships. We are unapologetic and united towards sparking change for
               abortion care across the continent.
@@ -85,15 +92,18 @@
         </div>
       </section>
       <!-- <div class="bg-black"> -->
+      <!-- Join Us -->
       <div class="bg-[#FF5F00]">
         <section
-          class="px-4 md:px-20 pb-10 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden h-screen"
+          class="relative h-screen px-4 md:px-20 pb-10 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center"
         >
-          <div class="container">
+          <div
+            class="container lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16 md:px-20"
+          >
             <img
               src="@/assets/images/join_us_landing.svg"
               alt="Join Us Title"
-              class="hidden md:block max-w-full h-auto"
+              class="hidden md:block max-w-full h-auto z-40"
             />
             <img
               src="@/assets/images/join_us_landing_sm.svg"
@@ -102,31 +112,28 @@
             />
           </div>
 
-          <div class="w-full h-full md:px-20">
+          <div class="w-full h-full md:px-20 absolute bottom-0">
             <img src="@/assets/images/magaphone.png" class="w-full h-full" />
             <!-- <img src="@/assets/images/magaphone_sm.png" class="w-full h-auto" /> -->
           </div>
         </section>
       </div>
 
-      <section class="relative px-4 md:px-20 pb-10 bg-brown-primary overflow-hidden">
-        <div class="">
-          <!-- ReusableSvg component -->
-          <div class="div">
-            <img
-              src="@/assets/images/become_a_catalyst_sm.svg"
-              alt="Title Image"
-              class="h-auto hidden md:block relative"
-            />
-            <img
-              src="@/assets/images/become_a_catalyst_sm.svg"
-              alt="Title Image"
-              class="h-auto block md:hidden relative"
-            />
-          </div>
+      <section class="relative px-4 md:px-20 pb-10 bg-brown-primary">
+        <div class="div lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-20">
+          <img
+            src="@/assets/images/become_a_catalyst.svg"
+            alt="Title Image"
+            class="h-auto hidden md:block relative"
+          />
+          <img
+            src="@/assets/images/become_a_catalyst_sm.svg"
+            alt="Title Image"
+            class="h-auto block md:hidden relative"
+          />
         </div>
 
-        <div class="grid md:grid-cols-3 py-20 px-4 md:px-1.5 gap-6">
+        <div class="grid md:grid-cols-3 py-20 md:py-40 px-4 md:px-1.5 gap-6">
           <!-- Loop through frames -->
           <div
             v-for="(frame, index) in socialFrames"
@@ -143,7 +150,7 @@
               </div>
 
               <h2 class="text-lg font-semibold mb-2 text-center">
-                Social Media Frame: <span class="p-0.5">({{ frame.name }})</span>
+                <span class="p-0.5">{{ frame.name }}</span>
               </h2>
               <a
                 :href="`/frames/${frame.image}`"
