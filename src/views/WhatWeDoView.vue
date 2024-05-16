@@ -77,13 +77,17 @@
           class=""
         />
       </div>
-
       <div class="md:pl-10 xl:pl-20 2xl:pl-40 grid grid-cols-1 md:grid-cols-2 gap-6 pt-12">
         <!-- Loop through frames -->
         <div
-          v-for="member in memberVideos"
-          :key="member"
-          class="w-full mt-4 px-8 border-gray-400 rounded-lg"
+          v-for="(member, index) in memberVideos"
+          :key="index"
+          :class="[
+            'w-full mt-4 px-8 border-gray-400 rounded-lg',
+            index === memberVideos.length - 1
+              ? 'md:col-span-2 md:col-start-1 md:w-1/2 md:col-end-3 md:mx-auto '
+              : ''
+          ]"
         >
           <div
             style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden"
@@ -156,16 +160,19 @@ const memberVideos = [
       'https://www.youtube.com/embed/KkI9bWXrMbs?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
   },
   {
-    title: 'CULTIVATING TECHNICAL EXCELLENCE',
+    title: 'Salima Namusobya',
     video:
-      'https://www.youtube.com/embed/KkI9bWXrMbs?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+      'https://www.youtube.com/embed/BcOPLiU45QI?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
   },
   {
-    title: 'Card 4',
-    message:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
+    title: 'Chichi Undie',
     video:
-      'https://www.youtube.com/embed/QtJ8g9Wtou4?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+      'https://www.youtube.com/embed/xn4N6-8zMg0?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+  },
+  {
+    title: 'Mallah Tabot',
+    video:
+      'https://www.youtube.com/embed/6kQwxp__W0M?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
   }
 ]
 </script>
