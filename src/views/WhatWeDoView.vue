@@ -3,22 +3,35 @@
     <section class="section-with-background px-4">
       <!-- Container -->
       <div class="md:px-20">
-        <div class="md:p-4">
-          <!-- ReusableSvg component -->
-          <RectangleSvg
-            fill="#FF5F00"
-            width="482"
-            height="99"
-            viewBox="0 0 482 99"
-            :path="path3"
-            text="The 5 C'S"
-            textFill="white"
-            class=""
+        <!-- Title Catalyst Approach -->
+        <div class="md:px-4">
+          <img
+            src="@/assets/images/catalysts_approach.svg"
+            alt="Title Catalyst Approach"
+            class="hidden md:block relative z-10"
+          />
+          <img
+            src="@/assets/images/catalysts_approach.svg"
+            alt="Title Catalyst Approach"
+            class="block md:hidden relative z-10"
+          />
+        </div>
+        <!-- Title What We Do-->
+        <div class="md:px-4">
+          <img
+            src="@/assets/images/what_we_do.svg"
+            alt="What we do title"
+            class="hidden md:block relative z-10"
+          />
+          <img
+            src="@/assets/images/what_we_do.svg"
+            alt="Title Image"
+            class="block md:hidden relative z-10"
           />
         </div>
 
         <!-- 5 C'S content -->
-        <div class="px-8 md:px-10 py-12">
+        <div class="px-2 md:px-10 py-12 md:pb-20">
           <div
             class="container md:px-10 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
           >
@@ -62,7 +75,7 @@
 
     <!-- Member Videos -->
     <section
-      class="pb-10 md:px-20 bg-orange-primary bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative overflow-hidden"
+      class="pb-10 md:px-20 bg-orange-primary bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center relative"
     >
       <div class="md:px-4">
         <!-- ReusableSvg component -->
@@ -74,10 +87,15 @@
           :path="path2"
           text="MEMBER VIDEOS"
           textFill="white"
-          class=""
+          class="hidden md:block lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16"
+        />
+        <img
+          src="@/assets/images/member_videos_sm.svg"
+          alt="Title Image"
+          class="block md:hidden px-4"
         />
       </div>
-      <div class="md:pl-10 xl:pl-20 2xl:pl-40 grid grid-cols-1 md:grid-cols-2 gap-6 pt-12">
+      <div class="md:pl-10 xl:pl-20 2xl:pl-40 grid grid-cols-1 md:grid-cols-2 gap-6 pt-12 md:pt-20">
         <!-- Loop through frames -->
         <div
           v-for="(member, index) in memberVideos"
@@ -113,7 +131,6 @@
 import RectangleSvg from '@/components/common/RectangleSvg.vue'
 // const path1 = 'M483.92 14.01V101.44L5.14008 112.86V7.63013L483.92 14.01Z'
 const path2 = 'M600.84 4.69995V85.1301L0 98.23V0L600.84 4.69995Z'
-const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
 
 const cardData = [
   {
@@ -196,7 +213,7 @@ const memberVideos = [
 
 /* width */
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 12px;
 }
 
 /* Track */
