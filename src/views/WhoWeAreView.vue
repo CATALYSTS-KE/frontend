@@ -27,16 +27,16 @@
 
     <!-- Vision only -->
     <section
-      class="px-4 md:px-20 pb-10 -mt-6 bg-yellow-tertiary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center relative overflow-hidden"
+      class="relative px-4 md:px-20 pb-10 -mt-6 bg-yellow-tertiary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center"
     >
       <!-- Container -->
       <div class="max-w-screen-xl">
-        <div>
+        <div class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16">
           <img src="@/assets/images/Vision.svg" alt="Vision image" class="hidden md:block" />
           <img src="@/assets/images/vision_sm.svg" alt="Vision image" class="block md:hidden" />
         </div>
 
-        <div class="py-8 md:text-3xl text-gray-primary text-justify">
+        <div class="py-8 md:py-28 md:text-3xl text-gray-primary text-justify">
           <p>
             Our vision is to create a vibrant, diverse network of supporters, financiers,
             researchers, and activists who are dedicated to upholding and expanding the rights to
@@ -53,15 +53,15 @@
     </section>
 
     <!-- Our Story -->
-    <section class="thematic-section bg-teal-400 pb-0">
+    <section class="relative thematic-section bg-teal-400 pb-0">
       <div class="px-4 md:px-20">
-        <div class="">
+        <div class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16">
           <!-- ReusableSvg component -->
           <img src="@/assets/images/our_story.svg" alt="Our Story" class="hidden md:block" />
           <img src="@/assets/images/our_story_sm.svg" alt="Our Story" class="block md:hidden" />
         </div>
       </div>
-      <div class="mx-4 md:mx-20 py-12 h-full">
+      <div class="mx-4 md:mx-20 py-12 md:py-28 h-full">
         <!-- Loop through your data -->
         <div
           v-for="(item, index) in cardData"
