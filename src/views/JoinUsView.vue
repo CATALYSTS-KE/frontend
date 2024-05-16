@@ -25,9 +25,14 @@
     <div class="flex flex-wrap justify-center md:justify-between items-center">
       <!-- Loop through organizations -->
       <div v-for="item in OrganizationData" :key="item.title" class="p-4">
-        <img :src="`/members/${item.image}`" alt="Organization" class="w-28 h-auto mx-2 my-2" />
+        <img
+          :src="`/members/${item.image}`"
+          alt="Organization"
+          class="w-24 md:w-40 h-auto mx-2 my-2"
+        />
       </div>
     </div>
+
     <div class="hidden flex-col md:flex-row md:justify-between">
       <RouterLink to="/contact-us">
         <!-- <RectangleSvg
