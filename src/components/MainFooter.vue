@@ -51,7 +51,7 @@ import { RouterLink } from 'vue-router'
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 0px;
-  padding-top: 100px;
+  padding-top: 20px;
   text-align: center;
 }
 
