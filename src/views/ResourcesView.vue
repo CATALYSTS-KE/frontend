@@ -11,9 +11,9 @@
             :height="getHeight()"
             viewBox="0 0 482 100"
             :path="path3"
-            text="Research"
+            text="RESEARCH"
             textFill="white"
-            class=""
+            class="font-bold"
           />
         </div>
         <div class="p-4 md:p-8 lg:p-14 md:h-[700px] bg-white shadow-md rounded-lg overflow-auto">
