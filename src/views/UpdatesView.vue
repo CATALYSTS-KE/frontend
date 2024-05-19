@@ -63,27 +63,29 @@
     class="pb-10 -mt-10 bg-[url('@/assets/images/events_bg.png')] bg-cover bg-center relative"
   >
     <div class="px-20">
-      <div class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-8">
+      <div
+        class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-8 font-bold"
+      >
         <RectangleSvg
-          fill="#00C4B3"
+          fill="#CDDE00"
           width="482"
           height="99"
           viewBox="0 0 482 99"
           :path="path3"
           text="UPCOMING EVENTS"
-          textFill="white"
+          textFill="black"
           class="hidden md:block font-bold"
         />
         <RectangleSvg
-          fill="#00C4B3"
+          fill="#CDDE00"
           width="143"
           height="44"
           viewBox="0 0 143 44"
           :path="path5"
           text="UPCOMING EVENTS"
           textFill="white"
-          class="md:hidden block font-bold mt-20"
-        /> 
+          class="md:hidden block font-bold mt-20 font-bold"
+        />
       </div>
     </div>
     <div class="px-8 pt-14 md:pt-24 grid-cols-1 grid md:grid-cols-3 gap-x-4">
@@ -101,7 +103,7 @@
             consequat interdum. Eget arcu dictum varius duis at.
           </p>
           <div class="mb-3 px-4">
-            <p class="mb-6 py-1 bg-[#EE3b26] text-white text-xl inline-block">
+            <p class="mb-6 py-1 bg-[#EE3b26] text-white text-xl inline-block font-bold">
               5<sup>th</sup> AUGUST, NAIROBI
             </p>
           </div>
@@ -115,7 +117,7 @@
             :path="path6"
             text="REGISTER"
             textFill="white"
-            class="text"
+            class="font-bold"
           />
           <RectangleSvg
             fill="#FFDD00"
@@ -125,7 +127,7 @@
             :path="path7"
             text="REMIND ME"
             textFill="black"
-            class="text"
+            class="text font-bold"
           />
         </div>
       </div>

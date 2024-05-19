@@ -87,7 +87,7 @@
           :path="path2"
           text="MEMBER VIDEOS"
           textFill="white"
-          class="hidden md:block lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16"
+          class="hidden md:block lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16 font-bold"
         />
         <img
           src="@/assets/images/member_videos_sm.svg"

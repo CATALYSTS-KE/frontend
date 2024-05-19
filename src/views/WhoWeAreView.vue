@@ -71,7 +71,6 @@
           <div class="flex flex-col md:flex-row">
             <!-- Text Content -->
             <div class="p-4">
-              <h2 class="text-2xl px-4 md:px-12 text-red-primary font-bold">{{ item.title }}</h2>
               <p
                 class="text-base md:text-2xl font-normal leading-snug px-2 md:px-12 py-6 text-justify mt-2 text-gray-600"
                 v-html="item.message"

@@ -22,7 +22,9 @@
             <div class="flex flex-col md:flex-row">
               <!-- Text Content -->
               <div class="p-4 md:pb-0">
-                <h2 class="text-2xl px-4 md:px-12 text-red-primary">{{ cardData.title }}</h2>
+                <h2 class="text-2xl px-4 md:px-12 text-red-primary font-bold">
+                  {{ cardData.title }}
+                </h2>
                 <p
                   class="text-lg font-normal leading-snug px-4 md:px-12 py-6 text-justify mt-2 text-gray-600"
                   v-html="cardData.message"
