@@ -64,13 +64,13 @@
         <router-link
           @click="setActiveTab(index)"
           :to="page.route"
-          class="text-2xs md:text-base flex justify-between page-link"
+          class="text-2xs md:text-base flex justify-between page-link tracking-wider"
           :class="{
             'text-orange-primary': activeTabIndex === index
           }"
         >
           <span
-            class="capitalize md:uppercase"
+            class="capitalize md:uppercase font-bold"
             :class="{
               'border-b border-orange-primary': activeTabIndex === index
             }"

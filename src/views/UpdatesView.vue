@@ -83,7 +83,7 @@
           text="UPCOMING EVENTS"
           textFill="white"
           class="md:hidden block font-bold mt-20"
-        />
+        /> 
       </div>
     </div>
     <div class="px-8 pt-14 md:pt-24 grid-cols-1 grid md:grid-cols-3 gap-x-4">
