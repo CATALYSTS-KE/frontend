@@ -134,33 +134,33 @@ const path2 = 'M600.84 4.69995V85.1301L0 98.23V0L600.84 4.69995Z'
 
 const cardData = [
   {
-    title: 'CO-ORDINATING FOR SUCCESS',
+    title: 'CONVENING AND CONNECTING:',
     message:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id tincidunt arcu. Sed sodales risus vel efficitur pretium.',
+      'CATALYSTS seeks to establish a central space for dialogue, resources, and information on abortion rights. Through events, we will foster informed discussions and attract donors interested in supporting these conversations. By providing spaces for interaction and networking we aim to build meaningful connections and collaborations among stakeholders in abortion care and rights.',
     image: 'AI-Generated-C_1.jpg'
   },
   {
-    title: 'CONNECTING AND CONVENING',
+    title: 'COORDINATING FOR SUCCESS:',
     message:
-      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer luctus purus ac ligula semper ullamcorper.',
+      "CATALYSTS seek to strengthen abortion rights activists in targeted African nations. We intend to build solidarity, amplify voices, and facilitate coordinated responses for a constructive, Africa-led movement focused on justice. This will include exchanging resources, and organizing concerted efforts to enhance the movement's overall ability to defend and advance abortion rights.",
     image: 'AI-Generated-C_2.jpg'
   },
   {
-    title: 'CULTIVATING TECHNICAL EXCELLENCE',
+    title: 'CULTIVATING TECHNICAL EXCELLENCE:',
     message:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
+      'CATALYSTS will leverage the combined knowledge, skills, and resources of our members to offer valuable support to organizations working in the abortion rights space. We shall establish CATALYSTS as a reliable source of knowledge by continuously creating and sharing insightful content that strengthens the entire field.',
     image: 'AI-Generated-C_3.jpg'
   },
   {
-    title: 'Card 4',
+    title: 'CENTRALIZING RESEARCH:',
     message:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
+      'CATALYSTS aims to be the go-to source for up-to-date information on cutting-edge techniques, best practices, and research on abortion rights. We will create a Research and Knowledge hub, compiling cutting-edge research, working on joint projects with research centers and academic institutions, curating and disseminating research findings widely, and establishing credibility and value.',
     image: 'AI-Generated-C_4.jpg'
   },
   {
-    title: 'Card 5',
+    title: 'BUILDING CATALYTIC CAPITAL:',
     message:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor ullamcorper nibh, vel varius turpis tincidunt vitae.',
+      'Recognizing the urgent need for greater, non-traditional funding for abortion rights, CATALYSTS we will form a donor taskforce. We aim to redefine best practices in feminist philanthropy and influence the philanthropic landscape. Our goal is to accelerate experimentation and the development of significant solutions in abortion care by bringing together conventional and non-traditional donors to explore novel funding strategies. This will promote learning and advancements in the field.',
     image: 'AI-Generated-C_5.jpg'
   }
 ]
