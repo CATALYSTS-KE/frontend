@@ -31,7 +31,7 @@
         </div>
 
         <!-- 5 C'S content -->
-        <div class="px-2 md:px-10 py-12 md:pb-20">
+        <div class="px-2 md:px-10 py-8 md:pb-20">
           <div
             class="container md:px-10 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
           >
@@ -44,7 +44,7 @@
               >
                 <div class="flex flex-col md:flex-row">
                   <!-- Image -->
-                  <div class="md:w-1/4">
+                  <div class="md:w-full 2xl:w-1/4">
                     <div class="aspect-w-16 aspect-h-9">
                       <img
                         :src="`/5C/${item.image}`"
@@ -54,7 +54,7 @@
                     </div>
                   </div>
                   <!-- Text Content -->
-                  <div class="p-4 flex justify-center md:justify-start items-center">
+                  <div class="p-4 flex justify-center md:justify-start items-end">
                     <div class="max-w-full">
                       <!-- Limit width of text content -->
                       <h2
@@ -137,12 +137,7 @@ const cardData = [
     title: 'CONVENING AND CONNECTING:',
     message:
       'CATALYSTS seeks to establish a central space for dialogue, resources, and information on abortion rights. Through events, we will foster informed discussions and attract donors interested in supporting these conversations. By providing spaces for interaction and networking we aim to build meaningful connections and collaborations among stakeholders in abortion care and rights.',
-    image: 'AI-Generated-C_1.jpg'
-  },
-  {
-    title: 'COORDINATING FOR SUCCESS:',
-    message:
-      "CATALYSTS seek to strengthen abortion rights activists in targeted African nations. We intend to build solidarity, amplify voices, and facilitate coordinated responses for a constructive, Africa-led movement focused on justice. This will include exchanging resources, and organizing concerted efforts to enhance the movement's overall ability to defend and advance abortion rights.",
+
     image: 'AI-Generated-C_2.jpg'
   },
   {
@@ -150,6 +145,12 @@ const cardData = [
     message:
       'CATALYSTS will leverage the combined knowledge, skills, and resources of our members to offer valuable support to organizations working in the abortion rights space. We shall establish CATALYSTS as a reliable source of knowledge by continuously creating and sharing insightful content that strengthens the entire field.',
     image: 'AI-Generated-C_3.jpg'
+  },
+  {
+    title: 'COORDINATING FOR SUCCESS:',
+    message:
+      "CATALYSTS seek to strengthen abortion rights activists in targeted African nations. We intend to build solidarity, amplify voices, and facilitate coordinated responses for a constructive, Africa-led movement focused on justice. This will include exchanging resources, and organizing concerted efforts to enhance the movement's overall ability to defend and advance abortion rights.",
+    image: 'AI-Generated-C_1.jpg'
   },
   {
     title: 'CENTRALIZING RESEARCH:',
