@@ -65,7 +65,7 @@
       </div>
     </div>
     <!-- Desktop Navigation -->
-    <nav class="hidden md:flex justify-end items-center md:space-x-2 lg:space-x-6">
+    <nav class="hidden md:flex justify-end items-center md:space-x-2 lg:space-x-4">
       <div v-for="(page, index) in pages" :key="index" class="relative flex items-center">
         <router-link
           @click="setActiveTab(index)"
