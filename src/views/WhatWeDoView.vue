@@ -8,17 +8,17 @@
           <img
             src="@/assets/images/catalysts_approach.svg"
             alt="Title Catalyst Approach"
-            class="hidden md:block relative z-10"
+            class="relative z-10"
           />
-          <img
+          <!-- <img
             src="@/assets/images/catalysts_approach.svg"
             alt="Title Catalyst Approach"
             class="block md:hidden relative z-10"
-          />
+          /> -->
         </div>
         <!-- Title What We Do-->
         <div class="md:px-4">
-          <img
+          <!-- <img
             src="@/assets/images/what_we_do.svg"
             alt="What we do title"
             class="hidden md:block relative z-10"
@@ -27,7 +27,7 @@
             src="@/assets/images/what_we_do.svg"
             alt="Title Image"
             class="block md:hidden relative z-10"
-          />
+          /> -->
         </div>
 
         <!-- 5 C'S content -->
