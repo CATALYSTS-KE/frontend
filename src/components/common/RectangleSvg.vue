@@ -12,7 +12,7 @@
       y="50%"
       dominant-baseline="middle"
       text-anchor="middle"
-      class="font-bold"
+      class=""
       :fill="textFill"
       :font-size="calculateFontSize"
     >

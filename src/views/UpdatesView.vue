@@ -61,7 +61,7 @@
     </section>
 
     <section
-      class="pb-10 -mt-10 bg-[url('@/assets/images/events_bg.png')] bg-cover bg-center relative"
+      class="pb-10 -mt-10 bg-[#943700] bg-[url('@/assets/images/events_bg.png')] bg-cover bg-center relative"
     >
       <div class="px-20">
         <div
@@ -91,17 +91,18 @@
       </div>
       <div class="px-8 pt-14 md:pt-24 grid-cols-1 grid md:grid-cols-3 gap-x-4">
         <div v-for="index in 3" :key="index" class="flex flex-col items-">
-          <div class="bg-white m-2 p-1 rounded-md">
+          <div class="bg-white m-2 p-1 rounded-sm">
             <img
               src="@/assets/images/team_pic.png"
               alt="Organization"
               class="mb-4 w-full shadow-md"
             />
-            <h3 class="font-semibold text-xl text-gray-400 p-4">Header one here</h3>
-            <p class="mb-1 text-gray-500 text-justify p-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-              consequat interdum. Eget arcu dictum varius duis at.
+            <h3 class="text-xl font-black md:text-3xl text-gray-primary px-4 tracking-wide">
+              Header one here
+            </h3>
+            <p class="mb-1 text-gray-500 text-justify p-4 md:text-xl">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+              euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
             </p>
             <div class="mb-3 px-4">
               <p class="mb-6 py-1 px-2 bg-[#EE3b26] text-white text-xl inline-block font-bold">
@@ -128,7 +129,7 @@
               :path="path7"
               text="REMIND ME"
               textFill="black"
-              class="text"
+              class="text font-extrabold"
             />
           </div>
         </div>
