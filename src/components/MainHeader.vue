@@ -84,7 +84,7 @@
           >
           <img
             @click="toggleSubMenu(index)"
-            class="arrow-icon cursor-pointer w-5 h-6 lg:ml-3 lg:pt-1"
+            class="arrow-icon cursor-pointer w-5 h-6 lg:ml-2 lg:pt-1"
             src="@/assets/images/arrow.svg"
             alt="Arrow Icon"
           />
