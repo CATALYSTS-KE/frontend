@@ -14,7 +14,7 @@
             :path="path3"
             text="NEWS & ARTICLES"
             textFill="white"
-            class="hidden md:block font-bold"
+            class="hidden md:block font-black text-5xl"
           />
           <RectangleSvg
             fill="#FF5F00"
@@ -104,7 +104,7 @@
               consequat interdum. Eget arcu dictum varius duis at.
             </p>
             <div class="mb-3 px-4">
-              <p class="mb-6 py-1 bg-[#EE3b26] text-white text-xl inline-block font-bold">
+              <p class="mb-6 py-1 px-2 bg-[#EE3b26] text-white text-xl inline-block font-bold">
                 5<sup>th</sup> AUGUST, NAIROBI
               </p>
             </div>
