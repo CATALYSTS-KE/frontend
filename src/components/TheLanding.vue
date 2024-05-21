@@ -58,7 +58,7 @@
           <img
             src="@/assets/images/who-we-are-sm.svg"
             alt="Title Image"
-            class="block md:hidden relative z-10"
+            class="block md:hidden relative z-10 top-0 transform -translate-x-0.5 -translate-y-4"
           />
         </div>
 
@@ -93,7 +93,7 @@
       </section>
       <!-- <div class="bg-black"> -->
       <!-- Join Us -->
-      <div class="bg-[#FF5F00]">
+      <!-- <div class="bg-[#FF5F00]">
         <section
           class="relative h-screen px-4 md:px-20 pb-10 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center"
         >
@@ -108,19 +108,44 @@
             <img
               src="@/assets/images/join_us_landing_sm.svg"
               alt="Join Us Title"
-              class="block md:hidden max-w-full h-auto"
+              class="block md:hidden max-w-full h-auto top-0 transform -translate-x-0.5 -translate-y-4"
             />
           </div>
 
-          <div class="w-full h-full md:px-20 absolute bottom-0">
-            <img src="@/assets/images/magaphone.png" class="w-full h-full" />
-            <!-- <img src="@/assets/images/magaphone_sm.png" class="w-full h-auto" /> -->
+          <div class="w-full h-full md:px-20 absolute bottom-0 pt-16">
+            <img src="@/assets/images/magaphone.png" class="w-full h-full md:h-auto" />
+           
+          </div>
+        </section>
+      </div> -->
+
+      <div class="bg-[#FF5F00]">
+        <section
+          class="relative bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center pl-20"
+        >
+          <div
+            class="container lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16 md:px-20"
+          >
+            <img
+              src="@/assets/images/join_us_landing.svg"
+              alt="Join Us Title"
+              class="hidden md:block max-w-full h-auto z-40"
+            />
+            <img
+              src="@/assets/images/join_us_landing_sm.svg"
+              alt="Join Us Title"
+              class="block md:hidden max-w-full h-auto top-0 transform -translate-x-0.5 -translate-y-4"
+            />
+          </div>
+
+          <div class="h-full pt-12">
+            <img src="@/assets/images/magaphone.png" />
           </div>
         </section>
       </div>
 
       <section class="relative px-4 md:px-20 pb-10 bg-brown-primary">
-        <div class="div lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-20">
+        <div class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-12">
           <img
             src="@/assets/images/become_a_catalyst.svg"
             alt="Title Image"
@@ -129,7 +154,7 @@
           <img
             src="@/assets/images/become_a_catalyst_sm.svg"
             alt="Title Image"
-            class="h-auto block md:hidden relative"
+            class="h-auto block md:hidden top-0 transform -translate-y-6"
           />
         </div>
 
