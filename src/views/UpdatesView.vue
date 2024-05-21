@@ -6,15 +6,10 @@
       <div class="px-4 md:px-20 pb-20">
         <div class="md:px-0 pb-11">
           <!-- ReusableSvg component -->
-          <RectangleSvg
-            fill="#FF5F00"
-            width="482"
-            height="99"
-            viewBox="0 0 482 99"
-            :path="path3"
-            text="NEWS & ARTICLES"
-            textFill="white"
-            class="hidden md:block font-black text-5xl"
+          <img
+            src="@/assets/images/articles_title.svg"
+            alt="NEWS & ARTICLES"
+            class="hidden md:block object-none"
           />
           <RectangleSvg
             fill="#FF5F00"
@@ -67,15 +62,10 @@
         <div
           class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-8 font-bold"
         >
-          <RectangleSvg
-            fill="#CDDE00"
-            width="482"
-            height="99"
-            viewBox="0 0 482 99"
-            :path="path3"
-            text="UPCOMING EVENTS"
-            textFill="black"
-            class="hidden md:block font-bold"
+          <img
+            src="@/assets/images/events_title.svg"
+            alt="Upcomin Events"
+            class="hidden md:block object-none"
           />
           <RectangleSvg
             fill="#CDDE00"
@@ -100,7 +90,7 @@
             <h3 class="text-xl font-black md:text-3xl text-gray-primary px-4 tracking-wide">
               Header one here
             </h3>
-            <p class="mb-1 text-gray-500 text-justify p-4 md:text-xl">
+            <p class="mb-1 text-gray-500 text-left p-4 md:text-xl">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
               euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
             </p>
@@ -119,7 +109,7 @@
               :path="path6"
               text="REGISTER"
               textFill="white"
-              class="font-bold"
+              class=""
             />
             <RectangleSvg
               fill="#FFDD00"
@@ -141,7 +131,7 @@
 <script setup>
 import RectangleSvg from '@/components/common/RectangleSvg.vue'
 const path2 = 'M188.695 1.4411V27.9419L0 31.9555V0L188.695 1.4411Z'
-const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
+// const path3 = 'M481.68 4.70001V85.13L0 98.22V0L481.68 4.70001Z'
 const path4 =
   'M194.85 5.25L194.83 5.22003H194.69C194.55 5.19003 194.43 5.14001 194.28 5.14001C194.17 5.14001 194.07 5.19002 193.96 5.21002L2.22998 0L2.17999 0.039978C2.09999 0.029978 2.03999 0 1.95999 0C0.879991 0 0 0.870002 0 1.94V45.37C0 46.44 0.879991 47.32 1.95999 47.32L98.12 44.515L194.28 41.71C195.37 41.71 196.24 40.84 196.24 39.76V7.09003C196.25 6.21003 195.66 5.49 194.85 5.25Z'
 const path5 =
