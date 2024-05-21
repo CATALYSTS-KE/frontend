@@ -80,7 +80,7 @@
       <div class="md:px-4">
         <!-- ReusableSvg component -->
         <RectangleSvg
-          fill="#00C4B3"
+          fill="#FFDD00"
           width="601"
           height="99"
           viewBox="0 0 601 99"
