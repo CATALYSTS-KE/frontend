@@ -12,6 +12,7 @@
       y="50%"
       dominant-baseline="middle"
       text-anchor="middle"
+      class="font-bold"
       :fill="textFill"
       :font-size="calculateFontSize"
     >
@@ -51,13 +52,7 @@ export default {
       type: String,
       required: true,
       default: 'M362.841 11.544V91.974L3.64062 105.074V6.84399L362.841 11.544Z'
-    },
-    changeCase: {
-      type: String,
-      required: true,
-      default: 'toUpperCase'
-    },
-    uppercase: { type: Boolean, default: true }
+    }
   },
   computed: {
     calculateFontSize() {

@@ -59,7 +59,7 @@
       </div>
     </div>
     <!-- Desktop Navigation -->
-    <nav class="hidden md:flex justify-end items-center md:space-x-4">
+    <nav class="hidden md:flex justify-end items-center lg:space-x-6">
       <div v-for="(page, index) in pages" :key="index" class="relative flex items-center">
         <router-link
           @click="setActiveTab(index)"
@@ -78,7 +78,7 @@
           >
           <img
             @click="toggleSubMenu(index)"
-            class="arrow-icon cursor-pointer w-5 h-6 md:ml-2 md:pt-1"
+            class="arrow-icon cursor-pointer w-5 h-6 md:ml-3 md:pt-1"
             src="@/assets/images/arrow.svg"
             alt="Arrow Icon"
           />

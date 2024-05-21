@@ -1,138 +1,140 @@
 <template>
-  <!-- News & Articles  -->
-  <section class="pb-10 py-10 bg-teal-400">
-    <!-- Container -->
-    <div class="px-4 md:px-20 pb-20">
-      <div class="md:px-0 pb-11">
-        <!-- ReusableSvg component -->
-        <RectangleSvg
-          fill="#FF5F00"
-          width="482"
-          height="99"
-          viewBox="0 0 482 99"
-          :path="path3"
-          text="NEWS & ARTICLES"
-          textFill="white"
-          class="hidden md:block font-bold"
-        />
-        <RectangleSvg
-          fill="#FF5F00"
-          width="189"
-          height="32"
-          viewBox="0 0 189 32"
-          :path="path2"
-          text="NEWS & ARTICLES"
-          textFill="white"
-          class="block md:hidden font-bold"
-        />
-      </div>
-      <div
-        class="px-4 md:p-2 lg:p-2 md:h-[600px] mb-12 bg-white shadow-md rounded-lg overflow-auto"
-      >
-        <!-- Loop through your data -->
-        <div v-for="index in 2" :key="index" class="pb-8">
-          <div class="flex flex-col md:flex-row">
-            <!-- Text Content -->
-            <div class="p-4 md:pb-0">
-              <h2 class="text-2xl px-4 md:px-12 text-red-primary">{{ cardData.title }}</h2>
-              <p
-                class="text-lg font-normal leading-snug px-4 md:px-12 py-6 text-justify mt-2 text-gray-600"
-                v-html="cardData.message"
-              ></p>
-              <!-- Read More -->
-              <div class="px-12">
-                <RectangleSvg
-                  fill="#CDDE00"
-                  width="197"
-                  height="48"
-                  viewBox="0 0 197 48"
-                  :path="path4"
-                  text="Read More"
-                  textFill="black"
-                  class="hidden md:block font-bold"
-                />
+  <div>
+    <!-- News & Articles  -->
+    <section class="pb-10 py-10 bg-teal-400">
+      <!-- Container -->
+      <div class="px-4 md:px-20 pb-20">
+        <div class="md:px-0 pb-11">
+          <!-- ReusableSvg component -->
+          <RectangleSvg
+            fill="#FF5F00"
+            width="482"
+            height="99"
+            viewBox="0 0 482 99"
+            :path="path3"
+            text="NEWS & ARTICLES"
+            textFill="white"
+            class="hidden md:block font-bold"
+          />
+          <RectangleSvg
+            fill="#FF5F00"
+            width="189"
+            height="32"
+            viewBox="0 0 189 32"
+            :path="path2"
+            text="NEWS & ARTICLES"
+            textFill="white"
+            class="block md:hidden font-bold"
+          />
+        </div>
+        <div
+          class="px-4 md:p-2 lg:p-2 md:h-[600px] mb-12 bg-white shadow-md rounded-lg overflow-auto"
+        >
+          <!-- Loop through your data -->
+          <div v-for="index in 2" :key="index" class="pb-8">
+            <div class="flex flex-col md:flex-row">
+              <!-- Text Content -->
+              <div class="p-4 md:pb-0">
+                <h2 class="text-2xl px-4 md:px-12 text-red-primary">{{ cardData.title }}</h2>
+                <p
+                  class="text-lg font-normal leading-snug px-4 md:px-12 py-6 text-justify mt-2 text-gray-600"
+                  v-html="cardData.message"
+                ></p>
+                <!-- Read More -->
+                <div class="px-12">
+                  <RectangleSvg
+                    fill="#CDDE00"
+                    width="197"
+                    height="48"
+                    viewBox="0 0 197 48"
+                    :path="path4"
+                    text="Read More"
+                    textFill="black"
+                    class="hidden md:block font-bold"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section
-    class="pb-10 -mt-10 bg-[url('@/assets/images/events_bg.png')] bg-cover bg-center relative"
-  >
-    <div class="px-20">
-      <div
-        class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-8 font-bold"
-      >
-        <RectangleSvg
-          fill="#CDDE00"
-          width="482"
-          height="99"
-          viewBox="0 0 482 99"
-          :path="path3"
-          text="UPCOMING EVENTS"
-          textFill="black"
-          class="hidden md:block font-bold"
-        />
-        <RectangleSvg
-          fill="#CDDE00"
-          width="143"
-          height="44"
-          viewBox="0 0 143 44"
-          :path="path5"
-          text="UPCOMING EVENTS"
-          textFill="white"
-          class="md:hidden block font-bold mt-20 font-bold"
-        />
-      </div>
-    </div>
-    <div class="px-8 pt-14 md:pt-24 grid-cols-1 grid md:grid-cols-3 gap-x-4">
-      <div v-for="index in 3" :key="index" class="flex flex-col items-">
-        <div class="bg-white m-2 p-1 rounded-md">
-          <img
-            src="@/assets/images/team_pic.png"
-            alt="Organization"
-            class="mb-4 w-full shadow-md"
-          />
-          <h3 class="font-semibold text-xl text-gray-400 p-4">Header one here</h3>
-          <p class="mb-1 text-gray-500 text-justify p-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
-            consequat interdum. Eget arcu dictum varius duis at.
-          </p>
-          <div class="mb-3 px-4">
-            <p class="mb-6 py-1 bg-[#EE3b26] text-white text-xl inline-block font-bold">
-              5<sup>th</sup> AUGUST, NAIROBI
-            </p>
-          </div>
-        </div>
-        <div class="flex justify-between -mt-5 px-4">
+    <section
+      class="pb-10 -mt-10 bg-[url('@/assets/images/events_bg.png')] bg-cover bg-center relative"
+    >
+      <div class="px-20">
+        <div
+          class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-8 font-bold"
+        >
           <RectangleSvg
-            fill="#00C4B3"
-            width="142"
-            height="44"
-            viewBox="0 0 142 44"
-            :path="path6"
-            text="REGISTER"
-            textFill="white"
-            class="font-bold"
+            fill="#CDDE00"
+            width="482"
+            height="99"
+            viewBox="0 0 482 99"
+            :path="path3"
+            text="UPCOMING EVENTS"
+            textFill="black"
+            class="hidden md:block font-bold"
           />
           <RectangleSvg
-            fill="#FFDD00"
+            fill="#CDDE00"
             width="143"
             height="44"
             viewBox="0 0 143 44"
-            :path="path7"
-            text="REMIND ME"
-            textFill="black"
-            class="text font-bold"
+            :path="path5"
+            text="UPCOMING EVENTS"
+            textFill="white"
+            class="md:hidden block font-bold mt-20"
           />
         </div>
       </div>
-    </div>
-  </section>
+      <div class="px-8 pt-14 md:pt-24 grid-cols-1 grid md:grid-cols-3 gap-x-4">
+        <div v-for="index in 3" :key="index" class="flex flex-col items-">
+          <div class="bg-white m-2 p-1 rounded-md">
+            <img
+              src="@/assets/images/team_pic.png"
+              alt="Organization"
+              class="mb-4 w-full shadow-md"
+            />
+            <h3 class="font-semibold text-xl text-gray-400 p-4">Header one here</h3>
+            <p class="mb-1 text-gray-500 text-justify p-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc
+              consequat interdum. Eget arcu dictum varius duis at.
+            </p>
+            <div class="mb-3 px-4">
+              <p class="mb-6 py-1 bg-[#EE3b26] text-white text-xl inline-block font-bold">
+                5<sup>th</sup> AUGUST, NAIROBI
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-between -mt-5 px-4">
+            <RectangleSvg
+              fill="#00C4B3"
+              width="142"
+              height="44"
+              viewBox="0 0 142 44"
+              :path="path6"
+              text="REGISTER"
+              textFill="white"
+              class="font-bold"
+            />
+            <RectangleSvg
+              fill="#FFDD00"
+              width="143"
+              height="44"
+              viewBox="0 0 143 44"
+              :path="path7"
+              text="REMIND ME"
+              textFill="black"
+              class="text"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script setup>
