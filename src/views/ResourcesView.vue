@@ -3,7 +3,7 @@
     <section class="section-with-background min-h-screen">
       <!-- Container -->
       <div class="px-4 md:px-10 lg:px-20 xl:px-32">
-        <div class="pb-20">
+        <div class="md:pb-20 pb-10">
           <!-- ReusableSvg component -->
           <RectangleSvg
             fill="#EE3B26"
@@ -18,7 +18,7 @@
           <img
             src="@/assets/images/research_title_sm.svg"
             alt="Research"
-            class="block md:hidden relative px-4 py-2 z-10"
+            class="block md:hidden relative px-4 z-10"
           />
         </div>
         <div class="p-4 md:p-8 lg:p-14 md:h-[700px] bg-white shadow-md rounded-lg overflow-auto">
