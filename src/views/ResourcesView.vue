@@ -13,7 +13,12 @@
             :path="path3"
             text="RESEARCH"
             textFill="white"
-            class="font-bold"
+            class="font-bold hidden md:block"
+          />
+          <img
+            src="@/assets/images/research_title.svg"
+            alt="Research"
+            class="block md:hidden relative px-4 py-2 z-10"
           />
         </div>
         <div class="p-4 md:p-8 lg:p-14 md:h-[700px] bg-white shadow-md rounded-lg overflow-auto">
