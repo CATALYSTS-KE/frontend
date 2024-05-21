@@ -31,7 +31,9 @@
     >
       <!-- Container -->
       <div class="max-w-screen-xl">
-        <div class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16">
+        <div
+          class="top-0 transform -translate-y-4 lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16"
+        >
           <img src="@/assets/images/Vision.svg" alt="Vision image" class="hidden md:block" />
           <img src="@/assets/images/vision_sm.svg" alt="Vision image" class="block md:hidden" />
         </div>
@@ -55,7 +57,9 @@
     <!-- Our Story -->
     <section class="relative thematic-section bg-teal-400 pb-0">
       <div class="px-4 md:px-20">
-        <div class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16">
+        <div
+          class="top-0 transform -translate-y-4 lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16"
+        >
           <!-- ReusableSvg component -->
           <img src="@/assets/images/our_story.svg" alt="Our Story" class="hidden md:block" />
           <img src="@/assets/images/our_story_sm.svg" alt="Our Story" class="block md:hidden" />

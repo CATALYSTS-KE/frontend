@@ -92,7 +92,7 @@
         <img
           src="@/assets/images/member_videos_sm.svg"
           alt="Title Image"
-          class="block md:hidden px-4"
+          class="block md:hidden px-4 absolute top-0 transform -translate-x-0.5 -translate-y-6"
         />
       </div>
       <div class="md:pl-10 xl:pl-20 2xl:pl-40 grid grid-cols-1 md:grid-cols-2 gap-6 pt-12 md:pt-20">
