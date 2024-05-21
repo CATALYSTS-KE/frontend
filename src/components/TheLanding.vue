@@ -93,35 +93,10 @@
       </section>
       <!-- <div class="bg-black"> -->
       <!-- Join Us -->
-      <!-- <div class="bg-[#FF5F00]">
-        <section
-          class="relative h-screen px-4 md:px-20 pb-10 bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center"
-        >
-          <div
-            class="container lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16 md:px-20"
-          >
-            <img
-              src="@/assets/images/join_us_landing.svg"
-              alt="Join Us Title"
-              class="hidden md:block max-w-full h-auto z-40"
-            />
-            <img
-              src="@/assets/images/join_us_landing_sm.svg"
-              alt="Join Us Title"
-              class="block md:hidden max-w-full h-auto top-0 transform -translate-x-0.5 -translate-y-4"
-            />
-          </div>
-
-          <div class="w-full h-full md:px-20 absolute bottom-0 pt-16">
-            <img src="@/assets/images/magaphone.png" class="w-full h-full md:h-auto" />
-           
-          </div>
-        </section>
-      </div> -->
 
       <div class="bg-[#FF5F00]">
         <section
-          class="relative bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center pl-20"
+          class="relative bg-[url('@/assets/images/vector_orange.svg')] bg-cover bg-center px-4 md:pl-20"
         >
           <div
             class="container lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16 md:px-20"
@@ -138,10 +113,75 @@
             />
           </div>
 
-          <div class="h-full pt-12">
-            <img src="@/assets/images/magaphone.png" />
+          <div class="h-full pt-12 flex justify-center">
+            <img
+              src="@/assets/images/magaphone.png"
+              @click="showForm = true"
+              class="cursor-pointer"
+              alt="Megaphone"
+            />
           </div>
         </section>
+
+        <!-- Pop-up Form -->
+        <div
+          v-if="showForm"
+          class="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50"
+        >
+          <div
+            class="bg-white rounded-lg p-8 w-full max-w-lg mx-4 transform transition-transform duration-500 ease-in-out"
+            :class="showForm ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'"
+          >
+            <h2 class="text-2xl font-bold mb-4">Join Us</h2>
+            <form @submit.prevent="submitForm">
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  v-model="formData.name"
+                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  v-model="formData.email"
+                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea
+                  id="message"
+                  v-model="formData.message"
+                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="flex justify-end">
+                <button
+                  type="button"
+                  class="mr-4 py-2 px-4 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400"
+                  @click="showForm = false"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  class="py-2 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
 
       <section class="relative px-4 md:px-20 pb-10 bg-brown-primary">
@@ -193,13 +233,21 @@
   </div>
 </template>
 <script setup>
+import { ref } from 'vue'
 // import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 // import { Swiper, SwiperSlide } from 'swiper/vue';
 //   // Import Swiper styles
 //   import 'swiper/css';
 // import 'swiper/css/navigation';
 // import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar'
+// import 'swiper/css/scrollbar'import { ref } from 'vue';
+
+const showForm = ref(false)
+const formData = ref({
+  name: '',
+  email: '',
+  message: ''
+})
 const socialFrames = [
   {
     name: 'Jessica',
@@ -214,6 +262,16 @@ const socialFrames = [
     image: 'Catalysts_C_Hand_KV_3.jpg'
   }
 ]
+
+const submitForm = () => {
+  console.log('Form submitted:', formData.value)
+  showForm.value = false
+  formData.value = {
+    name: '',
+    email: '',
+    message: ''
+  }
+}
 </script>
 <style scoped>
 /* width */

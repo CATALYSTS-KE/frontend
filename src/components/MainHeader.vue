@@ -1,6 +1,12 @@
 <template>
+  <!-- <header class="px-8 flex justify-between items-center sticky top-0 z-50 shadow-md bg-white"> -->
   <header class="px-8 flex justify-between items-center">
-    <router-link to="/" class="" @click="resetActiveTab()">
+    <router-link
+      to="/"
+      data-active="true"
+      class="motion-safe:active:-translate-y-0.5 motion-safe:transition"
+      @click="resetActiveTab()"
+    >
       <img alt="Catalysts logo" class="logo md:mr-20" src="@/assets/images/catalysts-logo.svg" />
     </router-link>
 
@@ -43,7 +49,7 @@
         </div>
 
         <div
-          class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-2 text-gray-800 shadow-xl group-hover:visible"
+          class="invisible absolute z-50 flex w-full flex-col bg-gray-100 px-2 text-gray-800 shadow-xl group-hover:visible"
         >
           <div v-for="(page, index) in pages" :key="index" class="py-2">
             <router-link
@@ -64,7 +70,7 @@
         <router-link
           @click="setActiveTab(index)"
           :to="page.route"
-          class="md:text-3xs lg:text-base flex justify-between md:items-center page-link tracking-wider"
+          class="md:text-3xs lg:text-base flex justify-between md:items-center page-link tracking-wider hover:text-orange-700 motion-safe:hover:-translate-x-0.5 motion-safe:transition"
           :class="{
             'text-orange-primary': activeTabIndex === index
           }"
@@ -72,7 +78,7 @@
           <span
             class="capitalize md:uppercase font-bold"
             :class="{
-              'border-b border-orange-primary': activeTabIndex === index
+              'border-orange-primary': activeTabIndex === index
             }"
             >{{ page.label }}</span
           >
