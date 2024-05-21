@@ -16,7 +16,7 @@
             class="font-bold hidden md:block"
           />
           <img
-            src="@/assets/images/research_title.svg"
+            src="@/assets/images/research_title_sm.svg"
             alt="Research"
             class="block md:hidden relative px-4 py-2 z-10"
           />
