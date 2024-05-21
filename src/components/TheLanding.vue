@@ -47,7 +47,7 @@
       </section>
       <!-- Who we are -->
       <section
-        class="relative px-4 md:px-20 lg:py-20 flex flex-col justify-center bg-[url('@/assets/images/who-we-are-bg.png')] bg-cover bg-center"
+        class="relative px-4 md:px-20 lg:py-20 flex flex-col justify-center bg-[url('@/assets/images/who-we-are-bg.webp')] bg-cover bg-center"
       >
         <div class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16">
           <img
