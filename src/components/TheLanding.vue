@@ -69,7 +69,7 @@
           >
             <!-- bg-opacity-50 makes the background slightly transparent -->
             <p
-              class="text-lg md:text-2xl 2xl:text-3xl font-normal leading-snug md:px-4 py-1.5 md:py-2"
+              class="text-base md:text-2xl 2xl:text-3xl font-normal leading-snug md:px-4 py-1.5 md:py-2"
             >
               We are an African-led alliance, committed to championing quality abortion care across
               the continent by uniting and amplifying African voices.
