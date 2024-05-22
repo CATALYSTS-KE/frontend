@@ -213,13 +213,9 @@
                   class="mb-4 rounded-md w-full"
                 />
               </div>
-
-              <h2 class="text-lg font-semibold mb-2 text-center">
-                <span class="p-0.5">{{ frame.name }}</span>
-              </h2>
               <a
                 :href="`/frames/${frame.image}`"
-                :download="`/frames/${frame.image}`"
+                :download="`/frames/${frame.frame}`"
                 class="bg-blue-primary text-white px-8 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors"
               >
                 Try It Out
@@ -251,15 +247,18 @@ const formData = ref({
 const socialFrames = [
   {
     name: 'Jessica',
-    image: 'Catalysts_C_Hand_KV_1.jpg'
+    image: 'Catalysts_C_Hand_KV_1.jpg',
+    frame: 'Catalysts_C_Hand_KV_1_frame.png'
   },
   {
     name: 'Angela',
-    image: 'Catalysts_C_Hand_KV_2.jpg'
+    image: 'Catalysts_C_Hand_KV_2.jpg',
+    frame: 'Catalysts_C_Hand_KV_2_frame.jpg'
   },
   {
     name: 'Mallah',
-    image: 'Catalysts_C_Hand_KV_3.jpg'
+    image: 'Catalysts_C_Hand_KV_3.jpg',
+    frame: 'Catalysts_C_Hand_KV_3_frame.png'
   }
 ]
 
