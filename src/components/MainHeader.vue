@@ -133,8 +133,7 @@ export default {
         { label: 'What We Do', route: '/what-we-do' },
         { label: 'Updates', route: '/updates' },
         { label: 'Resources', route: '/resources' },
-        { label: 'Join Us', route: '/join-us' },
-        { label: 'Contact Us', route: '/contact-us' }
+        { label: 'Join Us', route: '/join-us' }
       ]
     }
   },

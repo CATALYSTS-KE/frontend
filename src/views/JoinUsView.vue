@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative pb-10 px-6 md:px-20 bg-[url('@/assets/images/pattern_vector_grey.png')] bg-cover bg-center"
+    class="relative pb-24 px-6 md:px-20 bg-[url('@/assets/images/pattern_vector_grey.png')] bg-cover bg-center"
   >
     <div class="p-4">
       <!-- ReusableSvg component -->
@@ -30,40 +30,17 @@
         />
       </div>
     </div>
-
-    <div
-      class="absolute bottom-0 md:left-0 md:right-0 md:px-20 flex md:flex-row md:justify-between"
-    >
-      <RouterLink to="/contact-us" class="px-4 py-2">
-        <!-- <RectangleSvg
-          fill="#00C4B3"
-          width="450"
-          height="116"
-          viewBox="0 0 614 116"
-          :path="path2"
-          text="JOIN AS A DONOR"
-          textFill="white"
-          class=""
-        /> -->
-        <img src="@/assets/images/join_as_donor.svg" alt="Join as a donor" />
-      </RouterLink>
-
-      <RouterLink to="/contact-us" class="px-4 py-2">
-        <img
-          src="@/assets/images/join_catalysts.svg"
-          alt="Join Catalysts"
-          class="hidden md:block"
-        />
-        <img
-          src="@/assets/images/join_catalysts_sm.svg"
-          alt="Join Catalysts"
-          class="block md:hidden"
-        />
-      </RouterLink>
-    </div>
   </section>
+  <div class="bg-yellow-primary min-h-screen">
+    <section
+      class="pb-10 px-20 bg-[url('@/assets/images/pattern_vector.svg')] bg-cover bg-center relative"
+    >
+      <ContactForm />
+    </section>
+  </div>
 </template>
 <script setup>
+import ContactForm from '@/components/contact/ContactUsForm.vue'
 const OrganizationData = [
   {
     title: 'Figo',
