@@ -54,7 +54,7 @@
                     </div>
                   </div>
                   <!-- Text Content -->
-                  <div class="p-4 flex justify-center md:justify-start items-end">
+                  <div class="p-4 flex justify-center items-center">
                     <div class="max-w-full">
                       <!-- Limit width of text content -->
                       <h2
@@ -144,7 +144,7 @@ const cardData = [
     title: 'CULTIVATING TECHNICAL EXCELLENCE:',
     message:
       'CATALYSTS will leverage the combined knowledge, skills, and resources of our members to offer valuable support to organizations working in the abortion rights space. We shall establish CATALYSTS as a reliable source of knowledge by continuously creating and sharing insightful content that strengthens the entire field.',
-    image: 'AI-Generated-C_3.jpg'
+    image: 'AI-Generated-C_5.jpg'
   },
   {
     title: 'COORDINATING FOR SUCCESS:',
@@ -162,7 +162,7 @@ const cardData = [
     title: 'BUILDING CATALYTIC CAPITAL:',
     message:
       'Recognizing the urgent need for greater, non-traditional funding for abortion rights, CATALYSTS we will form a donor taskforce. We aim to redefine best practices in feminist philanthropy and influence the philanthropic landscape. Our goal is to accelerate experimentation and the development of significant solutions in abortion care by bringing together conventional and non-traditional donors to explore novel funding strategies. This will promote learning and advancements in the field.',
-    image: 'AI-Generated-C_5.jpg'
+    image: 'AI-Generated-C_3.jpg'
   }
 ]
 
