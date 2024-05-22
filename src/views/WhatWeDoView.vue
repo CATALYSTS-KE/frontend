@@ -100,12 +100,7 @@
         <div
           v-for="(member, index) in memberVideos"
           :key="index"
-          :class="[
-            'w-full mt-4 px-8 border-gray-400 rounded-lg',
-            index === memberVideos.length - 1
-              ? 'md:col-span-2 md:col-start-1 md:w-1/2 md:col-end-3 md:mx-auto '
-              : ''
-          ]"
+          :class="['w-full mt-4 px-8 border-gray-400 rounded-lg']"
         >
           <div
             style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden"
@@ -191,6 +186,11 @@ const memberVideos = [
     title: 'Mallah Tabot',
     video:
       'https://www.youtube.com/embed/6kQwxp__W0M?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+  },
+  {
+    title: 'Dr Odula',
+    video:
+      'https://www.youtube.com/embed/_2Mfxkl9vIo?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
   }
 ]
 </script>
