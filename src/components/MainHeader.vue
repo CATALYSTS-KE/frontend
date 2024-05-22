@@ -1,6 +1,6 @@
 <template>
-  <!-- <header class="px-8 flex justify-between items-center sticky top-0 z-50 shadow-md bg-white"> -->
-  <header class="px-8 flex justify-between items-center">
+  <header class="px-8 flex justify-between items-center sticky top-0 z-50 shadow-md bg-white">
+    <!-- <header class="px-8 flex justify-between items-center"> -->
     <router-link
       to="/"
       data-active="true"

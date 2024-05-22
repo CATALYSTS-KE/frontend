@@ -113,7 +113,7 @@
             />
           </div>
 
-          <div class="h-full pt-12 flex justify-center">
+          <div class="h-full pt-12 md:pt-44 flex justify-center">
             <img
               src="@/assets/images/magaphone.png"
               @click="showForm = true"
