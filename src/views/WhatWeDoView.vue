@@ -44,7 +44,7 @@
               >
                 <div class="flex flex-col md:flex-row">
                   <!-- Image -->
-                  <div class="md:w-full 2xl:w-1/4">
+                  <div class="md:w-1/4">
                     <div class="aspect-w-16 aspect-h-9">
                       <img
                         :src="`/5C/${item.image}`"
@@ -54,7 +54,7 @@
                     </div>
                   </div>
                   <!-- Text Content -->
-                  <div class="p-4 flex justify-center items-center">
+                  <div class="p-4 flex justify-center items-center md:w-2/3">
                     <div class="max-w-full">
                       <!-- Limit width of text content -->
                       <h2
