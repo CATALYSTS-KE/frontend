@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="bg-teal-400">
     <!-- News & Articles  -->
-    <section class="pb-10 py-10 bg-teal-400">
+    <section class="pt-10">
       <!-- Container -->
-      <div class="px-4 md:px-20 pb-20">
+      <div class="px-4 md:px-20 md:pb-20">
         <div class="md:px-0 pb-11">
           <!-- ReusableSvg component -->
           <img
@@ -26,13 +26,13 @@
           class="px-4 md:p-2 lg:p-2 md:h-[600px] mb-12 bg-white shadow-md rounded-lg overflow-auto"
         >
           <!-- Loop through your data -->
-          <div v-for="index in 2" :key="index" class="pb-8">
+          <div v-for="index in 2" :key="index" class="md:pb-8">
             <div class="flex flex-col md:flex-row">
               <!-- Text Content -->
               <div class="p-4 md:pb-0">
                 <h2 class="text-2xl px-4 md:px-12 text-red-primary">{{ cardData.title }}</h2>
                 <p
-                  class="text-lg font-normal leading-snug px-4 md:px-12 py-6 text-justify mt-2 text-gray-600"
+                  class="text-lg font-normal leading-snug px-4 md:px-12 md:py-6 text-justify text-gray-600"
                   v-html="cardData.message"
                 ></p>
                 <!-- Read More -->
@@ -56,11 +56,11 @@
     </section>
 
     <section
-      class="pb-10 -mt-10 bg-[#943700] bg-[url('@/assets/images/events_bg.png')] bg-cover bg-center relative"
+      class="pb-10 bg-[#943700] bg-[url('@/assets/images/events_bg.png')] bg-cover bg-center relative"
     >
       <div class="px-20">
         <div
-          class="lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-8 font-bold"
+          class="absolute top-0 transform -translate-x-0.5 -translate-y-24 md:-translate-y-8 font-bold"
         >
           <img
             src="@/assets/images/events_title.svg"

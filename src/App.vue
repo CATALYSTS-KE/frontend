@@ -5,7 +5,7 @@ import MainFooter from '@/components/MainFooter.vue'
 </script>
 
 <template class="">
-  <div class="md:px-4 mx-auto min-h-screen flex flex-col relative">
+  <div class="md:px-4 mx-auto min-h-screen flex flex-col relative snap-mandatory snap-y">
     <!-- <header class="flex items-center justify-between px-24 h-56"> -->
     <MainHeader />
     <RouterView class="wrapper relative" />

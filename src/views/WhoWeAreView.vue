@@ -6,7 +6,7 @@
         <img src="@/assets/images/manifesto.svg" alt="Manifesto image" class="hidden md:block" />
         <img src="@/assets/images/manifesto_sm.svg" alt="Manifesto image" class="block md:hidden" />
       </div>
-      <div class="mt-4 2xl:px-56 pb-20">
+      <div class="mt-4 2xl:px-56 pb-8 lg:pb-20">
         <div
           style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden"
           class="px-4"
@@ -27,7 +27,7 @@
 
     <!-- Vision only -->
     <section
-      class="relative px-4 md:px-20 pb-10 -mt-6 bg-yellow-tertiary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center"
+      class="relative px-4 md:px-20 pb-10 bg-yellow-tertiary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center"
     >
       <!-- Container -->
       <div class="max-w-screen-xl">
@@ -55,7 +55,7 @@
     </section>
 
     <!-- Our Story -->
-    <section class="relative thematic-section bg-teal-400 pb-0">
+    <section class="relative thematic-section bg-teal-400 pb-0 snap-top">
       <div class="px-4 md:px-20">
         <div
           class="top-0 transform -translate-y-4 lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16"
@@ -65,18 +65,18 @@
           <img src="@/assets/images/our_story_sm.svg" alt="Our Story" class="block md:hidden" />
         </div>
       </div>
-      <div class="mx-4 md:mx-20 py-12 md:py-28 h-full">
+      <div class="mx-4 md:mx-20 py-8 md:py-28 h-full">
         <!-- Loop through your data -->
         <div
           v-for="(item, index) in cardData"
           :key="index"
-          class="bg-white shadow-md rounded-lg h-96 overflow-auto"
+          class="bg-white shadow-md rounded-lg h-96 overflow-auto scroll-smooth"
         >
           <div class="flex flex-col md:flex-row">
             <!-- Text Content -->
-            <div class="p-4">
+            <div class="px-4">
               <p
-                class="text-base md:text-2xl font-normal leading-snug px-2 md:px-12 py-6 text-justify mt-2 text-gray-600"
+                class="text-base md:text-2xl font-normal leading-snug px-2 md:px-12 py-6 text-left mt-2 text-gray-600"
                 v-html="item.message"
               ></p>
             </div>
