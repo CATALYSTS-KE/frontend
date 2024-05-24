@@ -12,25 +12,25 @@
       <div class="mb-6">
         <h2>UPDATES</h2>
         <div class="flex flex-col text-sm md:text-lg tracking-wider">
-          <RouterLink to="/">Stories</RouterLink>
-          <RouterLink to="/">News/Articles</RouterLink>
-          <RouterLink to="/">Events</RouterLink>
+          <RouterLink to="/updates">Stories</RouterLink>
+          <RouterLink to="/updates">News/Articles</RouterLink>
+          <RouterLink to="/updates">Events</RouterLink>
         </div>
       </div>
       <div class="mb-6">
         <h2>RESOURCES</h2>
         <div class="flex flex-col text-sm md:text-lg tracking-wider">
-          <RouterLink to="/">Guidelines</RouterLink>
-          <RouterLink to="/">Toolkits</RouterLink>
-          <RouterLink to="/">Resources</RouterLink>
+          <RouterLink to="/resources">Guidelines</RouterLink>
+          <RouterLink to="/resources">Toolkits</RouterLink>
+          <RouterLink to="/resources">Resources</RouterLink>
         </div>
       </div>
       <div class="mb-6">
         <h2>JOIN US</h2>
         <div class="flex flex-col text-sm md:text-lg tracking-wider">
-          <RouterLink to="/">Individual</RouterLink>
-          <RouterLink to="/">Organization</RouterLink>
-          <RouterLink to="/">Donor</RouterLink>
+          <RouterLink to="/join-us">Individual</RouterLink>
+          <RouterLink to="/join-us">Organization</RouterLink>
+          <RouterLink to="/join-us">Donor</RouterLink>
         </div>
       </div>
     </div>

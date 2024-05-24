@@ -45,6 +45,20 @@ const router = createRouter({
       component: () => import('../views/ContactUsView.vue')
     }
   ]
+  // scrollBehavior(to, from, savedPosition) {
+  //   // Always scroll to top
+  //   return { top: 0 }
+  // }
+})
+
+// Add a navigation guard to handle smooth scrolling
+// navigation guard that executes before each route transition.
+router.beforeEach((to, from, next) => {
+  next()
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
 })
 
 export default router

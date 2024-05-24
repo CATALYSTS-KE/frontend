@@ -32,6 +32,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 13px;
+  height: 10px; /* Height of the horizontal scrollbar */
 }
 
 /* Track */

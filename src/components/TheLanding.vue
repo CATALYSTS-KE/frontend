@@ -2,8 +2,8 @@
   <div class="min-h-screen">
     <main>
       <section
-        id="mission"
-        class="pb-10 md:px-20 bg-brown-primary bg-[url('@/assets/images/pattern_brown.svg')] bg-cover bg-center relative overflow-hidden"
+        id=""
+        class="pb-16 md:pb-10 md:px-20 bg-brown-primary bg-[url('@/assets/images/pattern_brown.svg')] bg-cover bg-center relative overflow-hidden"
       >
         <div class="">
           <img
@@ -63,13 +63,13 @@
         </div>
 
         <!-- <div class="flex flex-1 items-center justify-center"> -->
-        <div class="h-full pt-10 py-8 md:py-24">
+        <div class="h-full pt-10 py-20 md:py-24">
           <div
             class="bg-white text-gray-primary bg-opacity-60 p-8 rounded-lg shadow-lg overflow-y-auto relative mx-auto text-center md:text-justify"
           >
             <!-- bg-opacity-50 makes the background slightly transparent -->
             <p
-              class="text-base md:text-2xl 2xl:text-3xl font-normal leading-snug md:px-4 py-1.5 md:py-2"
+              class="text-lg md:text-2xl 2xl:text-3xl font-normal leading-snug md:px-4 py-1.5 md:py-2"
             >
               We are an African-led alliance, committed to championing quality abortion care across
               the continent by uniting and amplifying African voices.
@@ -109,7 +109,7 @@
             <img
               src="@/assets/images/join_us_landing_sm.svg"
               alt="Join Us Title"
-              class="block md:hidden max-w-full h-auto top-0 transform -translate-x-0.5 -translate-y-4"
+              class="block md:hidden max-w-full h-auto top-0 transform -translate-x-0.5 -translate-y-6"
             />
           </div>
 
@@ -117,7 +117,13 @@
             <img
               src="@/assets/images/magaphone.png"
               @click="showForm = true"
-              class="cursor-pointer"
+              class="cursor-pointer hidden md:block"
+              alt="Megaphone"
+            />
+            <img
+              src="@/assets/images/magaphone_sm.png"
+              @click="showForm = true"
+              class="cursor-pointer block md:hidden w-full"
               alt="Megaphone"
             />
           </div>
@@ -198,7 +204,7 @@
           />
         </div>
 
-        <div class="grid md:grid-cols-3 py-20 md:py-40 px-4 md:px-1.5 gap-6">
+        <div class="grid md:grid-cols-3 py-12 md:py-40 px-4 md:px-1.5 gap-6">
           <!-- Loop through frames -->
           <div
             v-for="(frame, index) in socialFrames"
@@ -214,7 +220,7 @@
                 />
               </div>
               <a
-                :href="`/frames/${frame.image}`"
+                :href="`/frames/${frame.frame}`"
                 :download="`/frames/${frame.frame}`"
                 class="bg-blue-primary text-white px-8 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors"
               >
