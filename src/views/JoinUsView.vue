@@ -19,15 +19,13 @@
     </div>
 
     <div
-      class="flex md:flex-row flex-wrap justify-center md:justify-between items-center overflowauto"
+      class="flex md:flex-row flex-wrap justify-center md:justify-evenly items-center overflowauto"
     >
       <!-- Loop through organizations -->
-      <div v-for="item in OrganizationData" :key="item.title" class="px-4 py-2 md:p-4">
-        <img
-          :src="`/members/${item.image}`"
-          alt="Organization"
-          class="w-24 md:w-40 h-auto mx-2 my-2"
-        />
+      <div v-for="item in OrganizationData" :key="item.title" class="px-4 py-2 md:px-0">
+        <div class="w-24 md:w-56 h-auto">
+          <img :src="`/members/${item.image}`" alt="Organization" class="w-full" />
+        </div>
       </div>
     </div>
   </section>
@@ -48,11 +46,7 @@ const OrganizationData = [
   },
   {
     title: 'Center For Reproductive Rights Africa',
-    image: 'crr_logo.jpeg'
-  },
-  {
-    title: 'IPAS',
-    image: 'IPAS_Logo_RGB_sm.webp'
+    image: 'CRR.png'
   },
   {
     title: 'IPPFAR',
@@ -60,7 +54,11 @@ const OrganizationData = [
   },
   {
     title: 'Population Council',
-    image: 'Pop_Council_logo.png'
+    image: 'Pop_Council_logo.jpg'
+  },
+  {
+    title: 'IPAS',
+    image: 'IPAS_Logo_RGB.jpg'
   }
 ]
 </script>

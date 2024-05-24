@@ -24,7 +24,7 @@
             >
               An
               <span class="text-yellow-secondary font-bold"> Africa-Led Alliance </span> Connecting
-              And Amplifying African Voices and Efforts towards
+              And Amplifying African Voices And Efforts towards
               <span class="text-yellow-secondary font-bold">
                 Universal Abortion Rights And Care.</span
               >
