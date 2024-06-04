@@ -38,17 +38,17 @@
           <img src="@/assets/images/vision_sm.svg" alt="Vision image" class="block md:hidden" />
         </div>
 
-        <div class="py-8 md:py-28 md:text-3xl text-gray-primary text-justify">
+        <div class="py-8 md:py-28 md:text-3xl text-gray-primary text-center">
           <p>
-            Our vision is to create a vibrant, diverse network of supporters, financiers,
-            researchers, and activists who are dedicated to upholding and expanding the rights to
-            abortion. We envision a time when everyone has access to and uses high-quality,
-            rights-based abortion services.
+            Our vision is to create a vibrant, diverse alliance of advocates, activists,
+            programmatic folks, researchers, healthcare workers, donors, and anyone else who is
+            dedicated to upholding and expanding the rights to abortion.
           </p>
           <p class="pt-4">
-            Our purpose is to change societal norms, push for legislation and policies that support
-            abortion care, and advance research and evidence-based procedures. We all work towards a
-            future in which everyone has access to safe and authorized abortion care.
+            We envision a time when everyone has access to high-quality, rights-based abortion
+            services. Our purpose is to connect and amplify the critical work being done by
+            individuals, organisations, and networks in the abortion field. We all work towards a
+            future in which everyone has reproductive justice!
           </p>
         </div>
       </div>
