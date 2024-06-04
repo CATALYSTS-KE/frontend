@@ -2,9 +2,20 @@
   <main class="">
     <!-- Introduction  -->
     <section>
-      <div class="px-4 py-4 mx-auto max-w-screen-xl 2xl:max-w-screen-2xl">
+      <div class="px-4 md:px-0 py-2 md:py-8 mx-auto">
+        <div class="text-center absolute top-0 transform -translate-y-10">
+          <img
+            src="@/assets/images/join_catalysts_lg.svg"
+            alt="Join Catalysts"
+            class="hidden md:block"
+          />
+        </div>
         <div class="text-center absolute top-0 transform -translate-x-0.5 -translate-y-6">
-          <img src="@/assets/images/join_catalysts_sm.svg" alt="Join Catalysts" class="" />
+          <img
+            src="@/assets/images/join_catalysts_sm.svg"
+            alt="Join Catalysts"
+            class="block md:hidden"
+          />
         </div>
       </div>
     </section>
