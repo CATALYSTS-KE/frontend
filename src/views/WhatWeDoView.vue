@@ -44,14 +44,13 @@
               >
                 <div class="flex flex-col md:flex-row">
                   <!-- Image -->
-                  <div class="md:w-1/4">
-                    <div class="aspect-w-16 aspect-h-9">
-                      <img
-                        :src="`/5C/${item.image}`"
-                        alt="Card image"
-                        class="h-full w-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none"
-                      />
-                    </div>
+
+                  <div class="">
+                    <img
+                      :src="`/5C/${item.image}`"
+                      alt="Card image"
+                      class="h-full w-full object-contain rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+                    />
                   </div>
                   <!-- Text Content -->
                   <div class="p-4 flex justify-center items-center md:w-2/3">
