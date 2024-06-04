@@ -6,15 +6,15 @@
         <!-- Title Catalyst Approach -->
         <div class="md:px-4">
           <img
-            src="@/assets/images/catalysts_approach.svg"
+            src="@/assets/images/catalysts_approach_lg.svg"
             alt="Title Catalyst Approach"
-            class="relative z-10"
+            class="hidden md:block relative z-10"
           />
-          <!-- <img
+          <img
             src="@/assets/images/catalysts_approach.svg"
             alt="Title Catalyst Approach"
             class="block md:hidden relative z-10"
-          /> -->
+          />
         </div>
         <!-- Title What We Do-->
         <div class="md:px-4">
