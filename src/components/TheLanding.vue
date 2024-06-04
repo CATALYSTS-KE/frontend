@@ -115,7 +115,7 @@
 
           <div class="h-full pt-10 flex justify-center">
             <img
-              src="@/assets/images/magaphone.png"
+              src="@/assets/images/magaphone.webp"
               @click="showForm = true"
               class="cursor-pointer hidden md:block"
               alt="Megaphone"
