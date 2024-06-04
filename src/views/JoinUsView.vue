@@ -39,23 +39,23 @@ import ContactForm from '@/components/contact/ContactUsForm.vue'
 const OrganizationData = [
   {
     title: 'Figo',
-    image: 'figo_logo.png'
+    image: 'figo_logo.jpg'
   },
   {
     title: 'Center For Reproductive Rights Africa',
-    image: 'CRR.png'
+    image: 'CRR.jpg'
   },
   {
     title: 'IPPFAR',
-    image: 'IPPFAR_logo.png'
+    image: 'IPPFAR_logo.jpg'
   },
   {
     title: 'Population Council',
-    image: 'Pop_Council_logo.png'
+    image: 'Pop_Council_logo.jpg'
   },
   {
     title: 'IPAS',
-    image: 'IPAS_Logo_RGB.png'
+    image: 'IPAS_Logo_RGB.jpg'
   }
 ]
 </script>
