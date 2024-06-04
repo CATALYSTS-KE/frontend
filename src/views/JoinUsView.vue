@@ -3,27 +3,24 @@
     class="relative pb-14 md:pb-24 px-6 md:px-20 bg-[url('@/assets/images/pattern_vector_grey.png')] bg-cover bg-center"
   >
     <div class="p-4">
-      <!-- ReusableSvg component -->
-      <!-- <RectangleSvg
-          fill="#EE3B26"
-          width="371"
-          height="116"
-          viewBox="0 0 371 116"
-          :path="path1"
-          text="ALLIANCE MEMBERS"
-          textFill="white"
-          class="font-bold"
-        /> -->
-
-      <img src="@/assets/images/catalysts_members.svg" alt="Catalysts Members" />
+      <img
+        src="@/assets/images/catalysts_members_lg.svg"
+        alt="Catalysts Members"
+        class="hidden md:block"
+      />
+      <img
+        src="@/assets/images/catalysts_members.svg"
+        alt="Catalysts Members"
+        class="block md:hidden"
+      />
     </div>
 
     <div
-      class="flex md:flex-row flex-wrap justify-start md:space-x-6 space-y-4 md:justify-evenly items-center overflow-auto"
+      class="flex flex-wrap justify-start md:space-x-6 space-y-4 md:justify-evenly items-center overflow-auto"
     >
       <!-- Loop through organizations -->
-      <div v-for="item in OrganizationData" :key="item.title" class="px-4 py-2 md:px-0">
-        <div class="w-36 md:w-60">
+      <div v-for="item in OrganizationData" :key="item.title" class="px-4 py-2 md:px-2">
+        <div class="w-36 md:w-64">
           <img :src="`/members/${item.image}`" alt="Organization" class="w-full" />
         </div>
       </div>
@@ -31,7 +28,7 @@
   </section>
   <div class="bg-yellow-primary min-h-screen">
     <section
-      class="pb-10 px-20 bg-[url('@/assets/images/pattern_vector.svg')] bg-cover bg-center relative"
+      class="pb-10 md:px-20 bg-[url('@/assets/images/pattern_vector.svg')] bg-cover bg-center relative"
     >
       <ContactForm />
     </section>
