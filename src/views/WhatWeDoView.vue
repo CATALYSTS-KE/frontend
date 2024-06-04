@@ -197,7 +197,7 @@ const memberVideos = [
 
 <style scoped>
 .section-with-background {
-  @apply relative bg-[rgba(0,196,179,1)] bg-[url('@/assets/images/what_we_do.png')] bg-cover bg-center py-12;
+  @apply relative bg-[rgba(0,196,179,1)] bg-[url('@/assets/images/pattern_vector_blue.svg')] bg-cover bg-center py-12;
 }
 
 .content {
