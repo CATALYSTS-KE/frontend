@@ -65,7 +65,7 @@
         <!-- <div class="flex flex-1 items-center justify-center"> -->
         <div class="h-full pt-10 py-20 md:py-24">
           <div
-            class="bg-white text-gray-primary bg-opacity-60 p-8 rounded-lg shadow-lg overflow-y-auto relative mx-auto text-center md:text-justify"
+            class="bg-white text-gray-primary bg-opacity-60 p-8 rounded-lg shadow-lg overflow-y-auto relative mx-auto text-center"
           >
             <!-- bg-opacity-50 makes the background slightly transparent -->
             <p
@@ -146,7 +146,7 @@
                   type="text"
                   id="name"
                   v-model="formData.name"
-                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  class="mt-1 py-2 md:py-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   required
                 />
               </div>
@@ -156,7 +156,7 @@
                   type="email"
                   id="email"
                   v-model="formData.email"
-                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  class="mt-1 py-2 md:py-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   required
                 />
               </div>
@@ -165,10 +165,36 @@
                 <textarea
                   id="message"
                   v-model="formData.message"
-                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  class="mt-1 px-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   rows="4"
+                  placeholder="Write your message here"
                   required
                 ></textarea>
+              </div>
+              <div class="mb-4">
+                <label class="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    v-model="formData.consentNewsletter"
+                    class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
+                  />
+                  <span class="ml-2 text-sm text-gray-700"
+                    >I agree to sign up to the CATALYSTS newsletter and receive CATALYSTS update
+                    messages. You may unsubscribe at any time.</span
+                  >
+                </label>
+              </div>
+              <div class="mb-4">
+                <label class="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    v-model="formData.consentPrivacy"
+                    class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
+                  />
+                  <span class="ml-2 text-sm text-gray-700"
+                    >I agree to the CATALYSTS Privacy Policy.</span
+                  >
+                </label>
               </div>
               <div class="flex justify-end">
                 <button
@@ -248,7 +274,9 @@ const showForm = ref(false)
 const formData = ref({
   name: '',
   email: '',
-  message: ''
+  message: '',
+  consentNewsletter: false,
+  consentPrivacy: false
 })
 const socialFrames = [
   {

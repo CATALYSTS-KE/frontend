@@ -40,7 +40,7 @@
     </div>
     <!-- contact info -->
     <div class="pt-2 pb-10 text-lg md:text-lg">
-      <span class="text-white">SECURITY, PRIVACY & TERMS</span>
+      <span class="text-white">Privacy Policy</span>
     </div>
   </div>
 </template>
