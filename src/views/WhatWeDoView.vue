@@ -165,32 +165,32 @@ const memberVideos = [
   {
     title: 'Dr. Angela Akol',
     video:
-      'https://www.youtube.com/embed/QtJ8g9Wtou4?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+      'https://www.youtube.com/embed/QtJ8g9Wtou4?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1'
   },
   {
     title: 'Dr Harriet Birungi',
     video:
-      'https://www.youtube.com/embed/KkI9bWXrMbs?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+      'https://www.youtube.com/embed/KkI9bWXrMbs?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1'
   },
   {
     title: 'Salima Namusobya',
     video:
-      'https://www.youtube.com/embed/BcOPLiU45QI?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+      'https://www.youtube.com/embed/BcOPLiU45QI?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1'
   },
   {
     title: 'Chichi Undie',
     video:
-      'https://www.youtube.com/embed/xn4N6-8zMg0?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+      'https://www.youtube.com/embed/xn4N6-8zMg0?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1'
   },
   {
     title: 'Mallah Tabot',
     video:
-      'https://www.youtube.com/embed/6kQwxp__W0M?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+      'https://www.youtube.com/embed/6kQwxp__W0M?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1'
   },
   {
     title: 'Dr Odula',
     video:
-      'https://www.youtube.com/embed/_2Mfxkl9vIo?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1&enablejsapi=1'
+      'https://www.youtube.com/embed/_2Mfxkl9vIo?autoplay=0&rel=0&showinfo=0&modestbranding=0&controls=1&loop=1'
   }
 ]
 </script>
