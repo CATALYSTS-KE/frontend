@@ -20,7 +20,7 @@
     >
       <!-- Loop through organizations -->
       <div v-for="item in OrganizationData" :key="item.title" class="px-4 py-2 md:px-2">
-        <div class="w-36 md:w-64">
+        <div class="w-36 md:w-full">
           <img :src="`/members/${item.image}`" alt="Organization" class="w-full" />
         </div>
       </div>
