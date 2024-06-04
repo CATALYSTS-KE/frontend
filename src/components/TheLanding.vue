@@ -281,17 +281,17 @@ const formData = ref({
 const socialFrames = [
   {
     name: 'Jessica',
-    image: 'Catalysts_C_Hand_KV_1.jpg',
+    image: 'Catalysts_C_Hand_KV_1.wepb',
     frame: 'Catalysts_C_Hand_KV_1_frame.png'
   },
   {
     name: 'Angela',
-    image: 'Catalysts_C_Hand_KV_2.jpg',
+    image: 'Catalysts_C_Hand_KV_2.webp',
     frame: 'Catalysts_C_Hand_KV_2_frame.jpg'
   },
   {
     name: 'Mallah',
-    image: 'Catalysts_C_Hand_KV_3.jpg',
+    image: 'Catalysts_C_Hand_KV_3.webp',
     frame: 'Catalysts_C_Hand_KV_3_frame.png'
   }
 ]
