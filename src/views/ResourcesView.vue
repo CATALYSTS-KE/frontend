@@ -3,7 +3,7 @@
     <section class="section-with-background min-h-screen">
       <!-- Container -->
       <div class="px-4 md:px-10 lg:px-20 xl:px-32">
-        <div class="md:pb-14 pb-10">
+        <div class="md:pb-14 pb-10 w-full h-full">
           <!-- ReusableSvg component -->
           <img
             src="@/assets/images/research_title.svg"

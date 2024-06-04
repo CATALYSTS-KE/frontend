@@ -244,6 +244,7 @@
                   :src="`/frames/${frame.image}`"
                   alt="Organization"
                   class="mb-4 rounded-md w-full"
+                  loading="lazy"
                 />
               </div>
               <a
