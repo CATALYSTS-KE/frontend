@@ -38,15 +38,19 @@
     <div class="py-8 text-lg">
       <span class="text-orange-primary">CONTACTS:</span><span> info@catalystsafrica.org</span>
     </div>
-    <!-- contact info -->
+    <!-- privacy policy link -->
     <div class="pt-2 pb-10 text-lg md:text-lg">
-      <span class="text-white">Privacy Policy</span>
+      <span @click="showPdfModal = true" class="text-white cursor-pointer">Privacy Policy</span>
     </div>
+    <PrivacyModal :show="showPdfModal" @close="showPdfModal = false" />
   </div>
 </template>
 
 <script setup>
 import { RouterLink } from 'vue-router'
+import { ref } from 'vue'
+import PrivacyModal from '@/components/PrivacyModal.vue'
+const showPdfModal = ref(false)
 </script>
 
 <style scoped>
