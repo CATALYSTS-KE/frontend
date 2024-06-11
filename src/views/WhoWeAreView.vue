@@ -27,13 +27,11 @@
 
     <!-- Vision only -->
     <section
-      class="relative px-4 md:px-20 pb-10 bg-yellow-tertiary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center"
+      class="relative px-4 md:pl-20 pb-10 bg-yellow-tertiary bg-[url('@/assets/images/mission_bg.svg')] bg-cover bg-center"
     >
       <!-- Container -->
       <div class="max-w-screen-xl">
-        <div
-          class="top-0 transform -translate-y-4 lg:absolute lg:top-0 lg:transform lg:-translate-x-0.5 lg:-translate-y-16"
-        >
+        <div class="top-0 transform -translate-y-4 lg:absolute lg:top-0 lg:-translate-y-16">
           <img src="@/assets/images/Vision.svg" alt="Vision image" class="hidden md:block" />
           <img src="@/assets/images/vision_sm.svg" alt="Vision image" class="block md:hidden" />
         </div>
@@ -44,7 +42,7 @@
             programmatic folks, researchers, healthcare workers, donors, and anyone else who is
             dedicated to upholding and expanding the rights to abortion.
           </p>
-          <p class="pt-4">
+          <p class="pt-4 md:pt-8">
             We envision a time when everyone has access to high-quality, rights-based abortion
             services. Our purpose is to connect and amplify the critical work being done by
             individuals, organisations, and networks in the abortion field. We all work towards a
