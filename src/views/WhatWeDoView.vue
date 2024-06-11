@@ -124,7 +124,7 @@ const cardData = [
   {
     title: 'CULTIVATING TECHNICAL EXCELLENCE:',
     message:
-      'CATALYSTS will leverage the combined knowledge, skills, and resources of our members to offer valuable support to organizations working in the abortion rights space. We shall establish CATALYSTS as a reliable source of knowledge by continuously creating and sharing insightful content that strengthens the entire field.',
+      'CATALYSTS will leverage the combined knowledge, skills, and resources of our members to offer valuable support to organizations working in the abortion rights space. We shall establish CATALYSTS as a reliable source of knowledge and information by enabling the creation of relevant content and sharing insightful lessons from such content to strengthen the entire field.',
     image: 'AI-Generated-C_5.jpg'
   },
   {

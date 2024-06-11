@@ -283,7 +283,7 @@ const formData = ref({
 const socialFrames = [
   {
     name: 'Jessica',
-    image: 'Catalysts_C_Hand_KV_1.jpg',
+    image: 'Catalysts_C_Hand_KV_1.webp',
     frame: 'Catalysts_C_Hand_KV_1_frame.png'
   },
   {
