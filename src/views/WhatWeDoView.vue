@@ -16,24 +16,11 @@
             class="block md:hidden relative z-10"
           />
         </div>
-        <!-- Title What We Do-->
-        <div class="md:px-4">
-          <!-- <img
-            src="@/assets/images/what_we_do.svg"
-            alt="What we do title"
-            class="hidden md:block relative z-10"
-          />
-          <img
-            src="@/assets/images/what_we_do.svg"
-            alt="Title Image"
-            class="block md:hidden relative z-10"
-          /> -->
-        </div>
 
         <!-- 5 C'S content -->
-        <div class="px-2 md:px-10 py-8 md:pb-20">
+        <div class="px-2 md:px-4 py-8 md:pb-20">
           <div
-            class="container md:px-10 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
+            class="container md:px-5 py-4 bg-white bg-opacity-60 rounded-lg shadow-lg max-h-screen overflow-auto"
           >
             <div class="grid gap-6 w-full">
               <!-- Loop through your data -->
@@ -53,7 +40,7 @@
                     />
                   </div>
                   <!-- Text Content -->
-                  <div class="p-4 flex justify-center items-center md:w-2/3">
+                  <div class="px-2 pb-4 md:p-4 flex justify-center items-center md:w-3/4">
                     <div class="max-w-full">
                       <!-- Limit width of text content -->
                       <h2
