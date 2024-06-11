@@ -34,13 +34,33 @@
         </div>
       </div>
     </div>
-    <!-- contact info -->
-    <div class="py-8 text-lg">
-      <span class="text-orange-primary">CONTACTS:</span><span> info@catalystsafrica.org</span>
-    </div>
-    <!-- privacy policy link -->
-    <div class="pt-2 pb-10 text-lg md:text-lg">
-      <span @click="showPdfModal = true" class="text-white cursor-pointer">Privacy Policy</span>
+
+    <div
+      class="mx-auto flex md:grid grid-cols-2 md:grid-cols-4 justify-around px-4 md:px-1 md:justify-between text-sm md:text-xl text-normal tracking-wide items-center"
+    >
+      <router-link
+        to="/"
+        data-active="true"
+        class="motion-safe:active:-translate-y-0.5 motion-safe:"
+        @click="resetActiveTab()"
+      >
+        <img alt="Catalysts logo" class="logo" src="@/assets/images/catalysts-logo.svg" />
+      </router-link>
+      <div class=""></div>
+      <div class="md:col-span-2 items-center">
+        <div>
+          <div class="text-sm md:text-lg">
+            <span class="text-orange-primary">CONTACTS:</span
+            ><span class=""> info@catalystsafrica.org</span>
+          </div>
+          <!-- privacy policy link -->
+          <div class="text-sm md:text-lg">
+            <span @click="showPdfModal = true" class="text-white cursor-pointer underline"
+              >Privacy Policy</span
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <PrivacyModal :show="showPdfModal" @close="showPdfModal = false" />
   </div>

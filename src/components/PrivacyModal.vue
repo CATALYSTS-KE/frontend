@@ -55,7 +55,7 @@
               @click="closeModal"
               class="border border-blue-primary px-2 py-1 rounded bg-blue-primary hover:bg-blue-800 font-medium tracking-wide text-white"
             >
-              I understand and agree
+              I understand and Agree
             </button>
           </div>
         </div>
