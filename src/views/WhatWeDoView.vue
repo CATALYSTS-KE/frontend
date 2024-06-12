@@ -48,7 +48,7 @@
                       >
                         {{ item.title }}
                       </h2>
-                      <p class="text-gray-600 md:text-xl text-center md:text-left">
+                      <p class="text-gray-600 md:text-2xl text-center md:text-left">
                         {{ item.message }}
                       </p>
                     </div>

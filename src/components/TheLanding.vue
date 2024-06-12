@@ -40,7 +40,6 @@
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-              loading="lazy"
             >
             </iframe>
           </div>
@@ -193,8 +192,9 @@
                     class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
                   />
                   <span class="ml-2 text-sm text-gray-700"
-                    >I agree to the CATALYSTS Privacy Policy.</span
-                  >
+                    >I agree to the CATALYSTS
+                    <span class="cursor-pointer underline">Privacy Policy</span>.
+                  </span>
                 </label>
               </div>
               <div class="flex justify-end">
