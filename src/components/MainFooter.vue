@@ -36,17 +36,23 @@
     </div>
 
     <div
-      class="mx-auto flex md:grid grid-cols-2 md:grid-cols-4 justify-around px-4 md:px-1 md:justify-between text-sm md:text-xl text-normal tracking-wide items-center"
+      class="mx-auto flex md:grid grid-cols-2 md:grid-cols-3 justify-between px-4 md:px-1 md:justify-between text-sm md:text-xl text-normal tracking-wide items-center"
     >
       <router-link
         to="/"
         data-active="true"
-        class="motion-safe:active:-translate-y-0.5 motion-safe:"
+        class="motion-safe:active:-translate-y-0.5 px-4 md:pl-20"
         @click="resetActiveTab()"
       >
-        <img alt="Catalysts logo" class="logo" src="@/assets/images/catalysts-logo.svg" />
+        <div>
+          <img
+            alt="Catalysts logo"
+            class="logo h-full w-full"
+            src="@/assets/images/catalysts-logo_white.svg"
+          />
+        </div>
       </router-link>
-      <div class=""></div>
+
       <div class="md:col-span-2 items-center">
         <div>
           <div class="text-sm md:text-lg">
@@ -61,6 +67,7 @@
           </div>
         </div>
       </div>
+      <div></div>
     </div>
     <PrivacyModal :show="showPdfModal" @close="showPdfModal = false" />
   </div>
