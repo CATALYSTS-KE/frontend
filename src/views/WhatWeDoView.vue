@@ -44,11 +44,13 @@
                     <div class="max-w-full">
                       <!-- Limit width of text content -->
                       <h2
-                        class="text-lg font-semibold text-red-primary uppercase mb-2 text-center md:text-left"
+                        class="text-lg md:text-2xl font-semibold text-red-primary uppercase mb-2 text-center md:text-left"
                       >
                         {{ item.title }}
                       </h2>
-                      <p class="text-gray-600 text-center md:text-left">{{ item.message }}</p>
+                      <p class="text-gray-600 md:text-xl text-center md:text-left">
+                        {{ item.message }}
+                      </p>
                     </div>
                   </div>
                 </div>
