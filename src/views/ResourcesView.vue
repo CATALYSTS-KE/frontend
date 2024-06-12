@@ -103,7 +103,7 @@
   @apply relative bg-[rgba(195,217,60,1)] bg-[url('@/assets/images/pattern_green.png')] bg-cover bg-center py-12;
 } */
 .section-with-background {
-  @apply relative bg-[rgba(195,217,60,1)] bg-[url('@/assets/images/coming_soon.webp')] bg-cover bg-center;
+  @apply relative bg-[rgba(195,217,60,1)] bg-[url('@/assets/images/coming_soon_2.webp')] bg-cover bg-center;
 }
 ::-webkit-scrollbar {
   width: 16px;
