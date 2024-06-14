@@ -140,76 +140,91 @@
           >
             <h2 class="text-2xl font-bold mb-4">Join Us</h2>
             <form @submit.prevent="submitForm">
-              <div class="mb-4">
-                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  v-model="formData.name"
-                  class="mt-1 py-2 md:py-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                  required
-                />
-              </div>
-              <div class="mb-4">
-                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  v-model="formData.email"
-                  class="mt-1 py-2 md:py-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                  required
-                />
-              </div>
-              <div class="mb-4">
-                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                <textarea
-                  id="message"
-                  v-model="formData.message"
-                  class="mt-1 px-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                  rows="4"
-                  placeholder="Write your message here"
-                  required
-                ></textarea>
-              </div>
-              <div class="mb-4">
-                <label class="inline-flex items-center">
+              <div v-if="!showSuccess">
+                <div class="mb-4">
+                  <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                   <input
-                    type="checkbox"
-                    v-model="formData.consentNewsletter"
-                    class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
+                    type="text"
+                    id="name"
+                    v-model="formData.name"
+                    class="mt-1 py-2 md:py-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    required
                   />
-                  <span class="ml-2 text-sm text-gray-700"
-                    >I agree to sign up to the CATALYSTS newsletter and receive CATALYSTS update
-                    messages. You may unsubscribe at any time.</span
+                </div>
+                <div class="mb-4">
+                  <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    v-model="formData.email"
+                    class="mt-1 py-2 md:py-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="block text-sm font-medium text-gray-700"
+                    >Message</label
                   >
-                </label>
+                  <textarea
+                    id="message"
+                    v-model="formData.message"
+                    class="mt-1 px-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    rows="4"
+                    placeholder="Write your message here"
+                    required
+                  ></textarea>
+                </div>
+                <div class="mb-4">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      v-model="formData.consentNewsletter"
+                      class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
+                    />
+                    <span class="ml-2 text-sm text-gray-700"
+                      >I agree to sign up to the CATALYSTS newsletter and receive CATALYSTS update
+                      messages. You may unsubscribe at any time.</span
+                    >
+                  </label>
+                </div>
+                <div class="mb-4">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      v-model="formData.consentPrivacy"
+                      class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
+                      required
+                    />
+                    <span class="ml-2 text-sm text-gray-700"
+                      >I agree to the CATALYSTS
+                      <span class="cursor-pointer underline">Privacy Policy</span>.
+                    </span>
+                  </label>
+                </div>
+                <div class="flex justify-end">
+                  <button
+                    type="button"
+                    class="mr-4 py-2 px-4 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400"
+                    @click="showForm = false"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    class="py-2 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+                  >
+                    Submit
+                  </button>
+                </div>
               </div>
-              <div class="mb-4">
-                <label class="inline-flex items-center">
-                  <input
-                    type="checkbox"
-                    v-model="formData.consentPrivacy"
-                    class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out"
-                  />
-                  <span class="ml-2 text-sm text-gray-700"
-                    >I agree to the CATALYSTS
-                    <span class="cursor-pointer underline">Privacy Policy</span>.
-                  </span>
-                </label>
-              </div>
-              <div class="flex justify-end">
+              <div v-if="showSuccess">
+                <p>Thank you for connecting with CATALYSTS.</p>
                 <button
+                  class="py-2 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
                   type="button"
-                  class="mr-4 py-2 px-4 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400"
                   @click="showForm = false"
                 >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  class="py-2 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
-                >
-                  Submit
+                  Ok
                 </button>
               </div>
             </form>
@@ -273,6 +288,7 @@ import { ref } from 'vue'
 // import 'swiper/css/scrollbar'import { ref } from 'vue';
 
 const showForm = ref(false)
+const showSuccess = ref(false)
 const formData = ref({
   name: '',
   email: '',
@@ -298,13 +314,44 @@ const socialFrames = [
   }
 ]
 
-const submitForm = () => {
-  console.log('Form submitted:', formData.value)
-  showForm.value = false
-  formData.value = {
-    name: '',
-    email: '',
-    message: ''
+const submitForm = async () => {
+  try {
+    // Create a FormData object to send the form data
+    const payload = new FormData()
+    payload.append('from', 'Mailgun <mailgun@sandboxe89f5b967832460f800e77ae91fe081a.mailgun.org>')
+    payload.append('to', 'info@catalystsafrica.org')
+    payload.append('bcc', 'chanicewanjiku@gmail.com')
+    payload.append('subject', 'New Sign Up For Catalysts News Letter')
+
+    const text = `
+        Name: ${formData.value.name}\n
+        Email: ${formData.value.email}\n
+        Message: ${formData.value.message}\n
+        Receive NewsLetter: ${formData.value.consentNewsletter}\n
+      `
+
+    payload.append('text', text)
+
+    // Send a POST request to Mailgun API endpoint
+    const response = await fetch(
+      'https://api.mailgun.net/v3/sandboxe89f5b967832460f800e77ae91fe081a.mailgun.org/messages',
+      {
+        method: 'POST',
+        headers: {
+          Authorization:
+            'Basic YXBpOmM1ZjAzYTdmZmI3YWIwOWU1ZTQ2Y2ZhOTU1NDI3NTFjLTUxMzU2NTI3LWY3ZTg3MDcx'
+        },
+        body: payload
+      }
+    )
+    if (response.ok) {
+      showSuccess.value = true
+      console.log('Thank you for showing your interest, you will receive a callback soon.')
+    } else {
+      console.log('Failed to send email. Please try again.')
+    }
+  } catch (error) {
+    console.log('An error occurred. Please try again later.')
   }
 }
 </script>
