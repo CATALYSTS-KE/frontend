@@ -353,7 +353,6 @@ const submitForm = async () => {
         consentPrivacy: false
       }
       showSuccess.value = true
-      console.log('Thank you for showing your interest, you will receive a callback soon.')
     } else {
       console.log('Failed to send email. Please try again.')
     }
