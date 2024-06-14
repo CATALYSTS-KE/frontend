@@ -140,7 +140,7 @@
           >
             <h2 class="text-2xl font-bold mb-4">Join Us</h2>
             <form @submit.prevent="submitForm">
-              <div v-if="!showSuccess">
+              <div v-if="showSuccess === false">
                 <div class="mb-4">
                   <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                   <input
@@ -217,7 +217,7 @@
                   </button>
                 </div>
               </div>
-              <div v-if="showSuccess">
+              <div v-if="showSuccess === true">
                 <p>Thank you for connecting with CATALYSTS.</p>
                 <button
                   class="py-2 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
@@ -345,6 +345,13 @@ const submitForm = async () => {
       }
     )
     if (response.ok) {
+      formData.value = {
+        name: '',
+        email: '',
+        message: '',
+        consentNewsletter: false,
+        consentPrivacy: false
+      }
       showSuccess.value = true
       console.log('Thank you for showing your interest, you will receive a callback soon.')
     } else {
