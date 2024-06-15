@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="relative pb-14 md:pb-24 px-6 md:px-20 bg-[url('@/assets/images/pattern_vector_grey.png')] bg-cover bg-center"
-  >
+  <section class="relative pb-14 md:pb-24 px-6 md:px-20 bg-cover bg-center">
     <div class="p-4">
       <img
         src="@/assets/images/catalysts_members_lg.svg"
@@ -16,7 +14,7 @@
     </div>
 
     <div
-      class="flex flex-wrap justify-start md:space-x-6 space-y-4 md:justify-evenly items-center overflow-auto"
+      class="flex flex-wrap justify-start md:pr-6 space-y-4 md:justify-evenly items-center overflow-auto"
     >
       <!-- Loop through organizations -->
       <div v-for="item in OrganizationData" :key="item.title" class="px-4 py-2 md:px-2">
