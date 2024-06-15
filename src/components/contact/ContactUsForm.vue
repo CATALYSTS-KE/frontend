@@ -80,6 +80,7 @@
                   <input
                     id="full-name"
                     name="full-name"
+                    v-model="fullName"
                     type="text"
                     class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     placeholder="e.g. Jane Doe"
@@ -94,6 +95,7 @@
                   <input
                     id="email"
                     name="email"
+                    v-model="email"
                     type="email"
                     class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     placeholder="e.g. janedoe@gmail.com"
@@ -108,6 +110,7 @@
                   <input
                     id="phone-number"
                     name="phone-number"
+                    v-model="phoneNumber"
                     type="text"
                     class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     placeholder="e.g. (+254) 701234567"
@@ -126,6 +129,7 @@
                     id="org-name"
                     name="org-name"
                     type="text"
+                    v-model="organisationName"
                     class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     placeholder="e.g. Catalyst Org"
                     required
@@ -140,6 +144,7 @@
                     id="primary-contact"
                     name="primary-contact"
                     type="text"
+                    v-model="primaryContactName"
                     class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     placeholder="e.g. John Smith"
                     required
@@ -154,6 +159,7 @@
                     id="primary-email"
                     name="primary-email"
                     type="email"
+                    v-model="primaryContactEmail"
                     class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     placeholder="e.g. organisation.com"
                     required
@@ -170,6 +176,7 @@
                   <input
                     id="donor-name"
                     name="donor-name"
+                    v-model="donorName"
                     type="text"
                     class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     placeholder="e.g. Donor Name"
@@ -183,6 +190,7 @@
                   >
                   <input
                     id="primary-contact"
+                    v-model="message"
                     name="primary-contact"
                     type="text"
                     class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
@@ -198,6 +206,7 @@
                   <input
                     id="primary-email"
                     name="primary-email"
+                    v-model="primaryContactEmail"
                     type="email"
                     class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     placeholder="e.g. johnsmith@gmail.com"
@@ -211,6 +220,7 @@
                 <textarea
                   id="message"
                   name="message"
+                  v-model="message"
                   rows="4"
                   class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                   placeholder="Write your message here"
