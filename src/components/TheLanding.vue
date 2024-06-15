@@ -218,7 +218,9 @@
                 </div>
               </div>
               <div v-if="showSuccess === true">
-                <p>Thank you for connecting with CATALYSTS.</p>
+                <p class="py-4 font-bold text-lg">
+                  Thank you for connecting with <span class="text-orange-primary">CATALYSTS</span>.
+                </p>
                 <button
                   class="py-2 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
                   type="button"

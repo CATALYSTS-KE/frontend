@@ -49,45 +49,164 @@
           </div>
 
           <!-- Form Section -->
-          <div class="md:w-1/2 bg-white p-6 md:p-12 drop-shadow-2xl rounded-lg">
-            <div class="flex flex-col justify-center">
+          <!-- Form Section -->
+          <form
+            @submit.prevent="submitForm"
+            class="md:w-1/2 bg-white p-6 md:p-12 drop-shadow-2xl rounded-lg"
+          >
+            <div v-if="showSuccess === false" class="flex flex-col justify-center">
               <div class="mb-6">
-                <label for="full-name" class="block text-sm font-medium text-gray-700"
-                  >Full Name</label
+                <label for="join-type" class="block text-sm font-medium text-gray-700"
+                  >Join As?</label
                 >
-                <input
-                  id="full-name"
-                  name="full-name"
-                  type="text"
+                <select
+                  id="join-type"
+                  name="join-type"
+                  v-model="joinType"
                   class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  placeholder="e.g. Jane Doe"
-                />
-              </div>
-              <div class="mb-6">
-                <label for="email" class="block text-sm font-medium text-gray-700"
-                  >Email Address</label
                 >
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  placeholder="e.g. janedoe@gmail.com"
-                />
+                  <option value="member">Join as Member</option>
+                  <option value="organisation">Join as Organisation</option>
+                  <option value="donor">Join as Donor</option>
+                </select>
               </div>
-              <div class="mb-6">
-                <label for="phone-number" class="block text-sm font-medium text-gray-700"
-                  >Phone Number</label
-                >
-                <input
-                  id="phone-number"
-                  name="phone-number"
-                  type="text"
-                  class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  placeholder="e.g. (+254) 701234567"
-                />
+
+              <!-- Member Fields -->
+              <div v-if="joinType === 'member'">
+                <div class="mb-6">
+                  <label for="full-name" class="block text-sm font-medium text-gray-700"
+                    >Full Name</label
+                  >
+                  <input
+                    id="full-name"
+                    name="full-name"
+                    type="text"
+                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="e.g. Jane Doe"
+                    required
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="email" class="block text-sm font-medium text-gray-700"
+                    >Email Address</label
+                  >
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="e.g. janedoe@gmail.com"
+                    required
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="phone-number" class="block text-sm font-medium text-gray-700"
+                    >Phone Number</label
+                  >
+                  <input
+                    id="phone-number"
+                    name="phone-number"
+                    type="text"
+                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="e.g. (+254) 701234567"
+                    required
+                  />
+                </div>
               </div>
-              <div class="mb-6">
+
+              <!-- Organisation Fields -->
+              <div v-if="joinType === 'organisation'">
+                <div class="mb-6">
+                  <label for="org-name" class="block text-sm font-medium text-gray-700"
+                    >Organisation Name</label
+                  >
+                  <input
+                    id="org-name"
+                    name="org-name"
+                    type="text"
+                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="e.g. Catalyst Org"
+                    required
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="primary-contact" class="block text-sm font-medium text-gray-700"
+                    >Primary Contact Person</label
+                  >
+                  <input
+                    id="primary-contact"
+                    name="primary-contact"
+                    type="text"
+                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="e.g. John Smith"
+                    required
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="primary-email" class="block text-sm font-medium text-gray-700"
+                    >Primary Contact Email</label
+                  >
+                  <input
+                    id="primary-email"
+                    name="primary-email"
+                    type="email"
+                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="e.g. organisation.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Donor Fields -->
+              <div v-if="joinType === 'donor'">
+                <div class="mb-6">
+                  <label for="donor-name" class="block text-sm font-medium text-gray-700"
+                    >Donor Name</label
+                  >
+                  <input
+                    id="donor-name"
+                    name="donor-name"
+                    type="text"
+                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="e.g. Donor Name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="primary-contact" class="block text-sm font-medium text-gray-700"
+                    >Primary Contact Name</label
+                  >
+                  <input
+                    id="primary-contact"
+                    name="primary-contact"
+                    type="text"
+                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="e.g. John Smith"
+                    required
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label for="primary-email" class="block text-sm font-medium text-gray-700"
+                    >Primary Contact Email</label
+                  >
+                  <input
+                    id="primary-email"
+                    name="primary-email"
+                    type="email"
+                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="e.g. johnsmith@gmail.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-6" v-if="joinType">
                 <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                 <textarea
                   id="message"
@@ -95,20 +214,150 @@
                   rows="4"
                   class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                   placeholder="Write your message here"
+                  required
                 ></textarea>
               </div>
+
+              <div class="mb-6">
+                <label class="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    v-model="agreeToPolicy"
+                    class="form-checkbox h-5 w-5 text-orange-primary"
+                    required
+                  />
+                  <span class="ml-2 text-gray-700"
+                    >I agree to the
+                    <a href="/privacy-policy" class="text-blue-500">Privacy Policy</a></span
+                  >
+                </label>
+              </div>
+
               <div class="text-left">
                 <button
-                  type="button"
+                  type="submit"
+                  @click="submitForm"
                   class="h-[40px] px-6 font-bold text-sm md:text-base text-white bg-orange-primary inline-flex items-center justify-center rounded-lg hover:bg-secondary transition-all ease-linear duration-500"
                 >
                   Submit
                 </button>
               </div>
             </div>
-          </div>
+            <div v-if="showSuccess === true">
+              <p class="py-4 font-bold text-lg">
+                Thank You for your submission. You're one step close to being part of the
+                <span class="text-orange-primary">CATALYSTS</span>
+                Community. We'll be in touch with you soon.
+              </p>
+              <button
+                @click="showSuccess = false"
+                class="py-2 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+              >
+                Okay
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
   </main>
 </template>
+<script>
+import { sendEmail } from '../common/emailService' // Adjust the path as necessary
+
+export default {
+  data() {
+    return {
+      joinType: 'member',
+      form: {
+        fullName: '',
+        email: '',
+        phoneNumber: '',
+        organisationName: '',
+        primaryContactName: '',
+        primaryContactEmail: '',
+        donorName: '',
+        message: ''
+      },
+      agreeToPolicy: false,
+      showSuccess: false
+    }
+  },
+  computed: {
+    isFormValid() {
+      if (!this.agreeToPolicy) return false
+      if (this.joinType === 'member') {
+        return this.form.fullName && this.form.email && this.form.phoneNumber && this.form.message
+      } else if (this.joinType === 'organisation') {
+        return (
+          this.form.organisationName &&
+          this.form.primaryContactName &&
+          this.form.primaryContactEmail &&
+          this.form.message
+        )
+      } else if (this.joinType === 'donor') {
+        return (
+          this.form.donorName &&
+          this.form.primaryContactName &&
+          this.form.primaryContactEmail &&
+          this.form.message
+        )
+      }
+      return false
+    }
+  },
+  methods: {
+    async submitForm() {
+      let subject = `${this.form.fullName || this.form.organisationName || this.form.donorName} Has Joined Catalyst`
+      let text = `
+        Name: ${this.form.fullName || this.form.organisationName || this.form.donorName}\n
+        Email: ${this.form.email || this.form.primaryContactEmail}\n
+        Message: ${this.form.message}\n
+      `
+
+      if (this.joinType === 'member') {
+        subject = 'New Member Sign Up'
+        text = `
+          Full Name: ${this.form.fullName}\n
+          Email: ${this.form.email}\n
+          Phone Number: ${this.form.phoneNumber}\n
+          Message: ${this.form.message}\n
+        `
+      } else if (this.joinType === 'organisation') {
+        subject = 'New Organisation Sign Up'
+        text = `
+          Organisation Name: ${this.form.organisationName}\n
+          Primary Contact Name: ${this.form.primaryContactName}\n
+          Primary Contact Email: ${this.form.primaryContactEmail}\n
+          Message: ${this.form.message}\n
+        `
+      } else if (this.joinType === 'donor') {
+        subject = 'New Donor Sign Up'
+        text = `
+          Donor Name: ${this.form.donorName}\n
+          Primary Contact Name: ${this.form.primaryContactName}\n
+          Primary Contact Email: ${this.form.primaryContactEmail}\n
+          Message: ${this.form.message}\n
+        `
+      }
+
+      const emailSent = await sendEmail(subject, text)
+
+      if (emailSent) {
+        this.form.fullName = ''
+        this.form.email = ''
+        this.form.phoneNumber = ''
+        this.form.organisationName = ''
+        this.form.primaryContactName = ''
+        this.form.primaryContactEmail = ''
+        this.form.donorName = ''
+        this.form.message = ''
+        this.agreeToPolicy = false
+        this.showSuccess = true
+      } else {
+        console.log('Failed to submit form.')
+      }
+    }
+  }
+}
+</script>
