@@ -1,61 +1,66 @@
-<template>
-  <div class="relative">
-    <div v-if="show" class="fixed inset-0 flex items-center justify-center z-50">
-      <div class="bg-white max-w-4xl border-t rounded-lg shadow-lg w-full z-100">
-        <div class="flex justify-between items-center p-4 border-b border-gray-200">
-          <!-- Close button -->
-          <button @click="closeModal" class="text-gray-500 hover:text-gray-800 text-3xl">
-            &times;
-          </button>
+<template class="relative h-full max">
+  <div v-if="show" class="modal fixed inset-0 flex items-center z-50 justify-center">
+    <div class="absolute w-full h-full bg-gray-900 opacity-50"></div>
 
-          <!-- Title and "I agree" button -->
-          <div class="text-lg font-semibold">Privacy Policy</div>
+    <div class="bg-white min-w-full mx-auto rounded shadow-lg z-50">
+      <div class="py-1 text-left px-8">
+        <!-- loader -->
+        <div class="flex justify-end items-center">
           <button
             @click="closeModal"
-            class="border border-blue-primary px-2 py-1 rounded bg-blue-primary hover:bg-blue-800 font-medium tracking-wide text-white ml-auto"
+            class="text-gray-500 hover:text-gray-800 text-3xl font-extrabold"
           >
-            I agree to the policy
+            &times;
           </button>
         </div>
 
-        <!-- PDF viewer -->
-        <div class="h-96">
-          <vue-pdf-embed
-            class="h-full overflow-y-scroll"
-            ref="pdfRef"
-            :source="pdfSource"
-            :page="page"
-            @rendered="handleDocumentRender"
-          />
-        </div>
-
-        <!-- Pagination and show all pages toggle -->
-        <div class="flex justify-between items-center p-4 border-t border-gray-200">
-          <div v-if="showAllPages" class="text-gray-500">{{ pageCount }} page(s)</div>
-          <div v-else class="flex items-center">
-            <button
-              :disabled="page <= 1"
-              @click="page--"
-              class="border border-gray-300 px-3 py-1 rounded-md mr-2 hover:bg-gray-200"
-            >
-              <span class="text-black">❮</span>
-            </button>
-
-            <div class="text-black">{{ page }} / {{ pageCount }}</div>
-
-            <button
-              :disabled="page >= pageCount"
-              @click="page++"
-              class="border border-gray-300 px-3 py-1 rounded-md ml-2 hover:bg-gray-200"
-            >
-              <span class="text-black">❯</span>
-            </button>
+        <div class="border flex flex-col p-5 h-full min-w-md">
+          <!-- PDF viewer -->
+          <div class="h-96 w-full">
+            <vue-pdf-embed
+              class="h-full min-w-md w-full overflow-y-scroll"
+              ref="pdfRef"
+              :source="pdfSource"
+              :page="page"
+              @rendered="handleDocumentRender"
+            />
           </div>
 
-          <label class="ml-auto text-black">
-            <input v-model="showAllPages" type="checkbox" class="mr-2" />
-            Show all pages
-          </label>
+          <!-- Pagination and show all pages toggle -->
+          <div class="flex justify-between items-center p-4 border-t border-gray-200">
+            <div v-if="showAllPages" class="text-gray-500">{{ pageCount }} page(s)</div>
+            <div v-else class="flex items-center">
+              <button
+                :disabled="page <= 1"
+                @click="page--"
+                class="border border-gray-300 px-3 py-1 rounded-md mr-2 hover:bg-gray-200"
+              >
+                <span class="text-black">❮</span>
+              </button>
+
+              <div class="text-black text-lg font-bold">{{ page }} / {{ pageCount }}</div>
+
+              <button
+                :disabled="page >= pageCount"
+                @click="page++"
+                class="border border-gray-300 px-3 py-1 rounded-md ml-2 hover:bg-gray-200"
+              >
+                <span class="text-black">❯</span>
+              </button>
+            </div>
+            <div class="mx-auto mt-2">
+              <button
+                @click="closeModal"
+                class="border border-blue-primary px-2 py-1 rounded bg-blue-primary hover:bg-blue-800 font-medium tracking-wide text-white"
+              >
+                I understand and Agree
+              </button>
+            </div>
+            <label class="text-black text-lg font-bold">
+              <input v-model="showAllPages" type="checkbox" class="mr-2" />
+              Show all pages
+            </label>
+          </div>
         </div>
       </div>
     </div>
