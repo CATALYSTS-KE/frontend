@@ -69,6 +69,7 @@
       </div>
       <div></div>
     </div>
+    <!-- <vue-pdf-embed :source="pdfSource" @rendered="handleDocumentRender" class="mt-4" /> -->
     <PrivacyModal :show="showPdfModal" @close="showPdfModal = false" />
   </div>
 </template>

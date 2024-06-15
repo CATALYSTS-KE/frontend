@@ -1,63 +1,61 @@
-<!-- PdfModal.vue -->
-<!-- <template>
-  <div
-    v-if="show"
-    class="fixed  bg-gray-800 bg-opacity-75 flex items-center justify-center z-50"
-  >
-    <div class="bg-white p-6 rounded shadow-lg w-full max-w-3xl">
-      <div class="flex justify-between items-center">
-        <h2 class="text-xl font-semibold">Privacy Policy</h2>
-        <button @click="closeModal" class="text-gray-500 hover:text-gray-800">&times;</button>
-        <vue-pdf-embed :source="pdfSource" @rendered="handleDocumentRender" class="mt-4" />
-      </div>
-    </div>
-  </div>
-</template> -->
-<template class="relative h-full max">
-  <div v-if="show" class="modal fixed inset-0 flex items-center z-50 justify-center">
-    <div class="absolute w-full h-full bg-gray-900 opacity-50"></div>
-
-    <div class="bg-white min-w-min mx-auto rounded shadow-lg z-50 overflow-y-auto">
-      <div class="py-1 text-left px-8">
-        <!-- loader -->
-        <div class="flex justify-end items-center">
+<template>
+  <div class="relative">
+    <div v-if="show" class="fixed inset-0 flex items-center justify-center z-50">
+      <div class="bg-white max-w-4xl border-t rounded-lg shadow-lg w-full z-100">
+        <div class="flex justify-between items-center p-4 border-b border-gray-200">
+          <!-- Close button -->
           <button @click="closeModal" class="text-gray-500 hover:text-gray-800 text-3xl">
             &times;
           </button>
+
+          <!-- Title and "I agree" button -->
+          <div class="text-lg font-semibold">Privacy Policy</div>
+          <button
+            @click="closeModal"
+            class="border border-blue-primary px-2 py-1 rounded bg-blue-primary hover:bg-blue-800 font-medium tracking-wide text-white ml-auto"
+          >
+            I agree to the policy
+          </button>
         </div>
 
-        <div class="border flex flex-col p-5 h-full overflow-y-scroll">
-          <div class="pb-2">
-            <p class="privacy-headings text-black font-bold pb-2">Privacy Policy</p>
-            <p class="text-black">
-              This Privacy Policy outlines how CATALYSTS ("we," "us," "our") collects, uses, and
-              protects personal information gathered through our website (the "Site"). By using the
-              Site, you agree to this Privacy Policy. If you do not agree, please refrain from using
-              the Site.
-            </p>
-          </div>
-          <div class="pb-2">
-            <p class="privacy-headings text-black font-bold pb-2">Information Collection</p>
-            <p class="text-black">
-              We collect personal information that you voluntarily provide when using the Site,
-              including your name, email address, postal address, phone number, and payment
-              information. Additional information collected includes your device and browser type,
-              browsing history, and interaction with our website.
-            </p>
-          </div>
-          <div class="text-black">
-            <p class="privacy-headings text-black font-bold pb-2">Use of Personal Information</p>
-            <p>We use your personal information for various purposes, including:</p>
-          </div>
+        <!-- PDF viewer -->
+        <div class="h-96">
+          <vue-pdf-embed
+            class="h-full overflow-y-scroll"
+            ref="pdfRef"
+            :source="pdfSource"
+            :page="page"
+            @rendered="handleDocumentRender"
+          />
+        </div>
 
-          <div class="mx-auto mt-4">
+        <!-- Pagination and show all pages toggle -->
+        <div class="flex justify-between items-center p-4 border-t border-gray-200">
+          <div v-if="showAllPages" class="text-gray-500">{{ pageCount }} page(s)</div>
+          <div v-else class="flex items-center">
             <button
-              @click="closeModal"
-              class="border border-blue-primary px-2 py-1 rounded bg-blue-primary hover:bg-blue-800 font-medium tracking-wide text-white"
+              :disabled="page <= 1"
+              @click="page--"
+              class="border border-gray-300 px-3 py-1 rounded-md mr-2 hover:bg-gray-200"
             >
-              I understand and Agree
+              <span class="text-black">❮</span>
+            </button>
+
+            <div class="text-black">{{ page }} / {{ pageCount }}</div>
+
+            <button
+              :disabled="page >= pageCount"
+              @click="page++"
+              class="border border-gray-300 px-3 py-1 rounded-md ml-2 hover:bg-gray-200"
+            >
+              <span class="text-black">❯</span>
             </button>
           </div>
+
+          <label class="ml-auto text-black">
+            <input v-model="showAllPages" type="checkbox" class="mr-2" />
+            Show all pages
+          </label>
         </div>
       </div>
     </div>
@@ -65,42 +63,40 @@
 </template>
 
 <script setup>
-import { defineProps, defineEmits } from 'vue'
-// import VuePdfEmbed from 'vue-pdf-embed'
-
+import VuePdfEmbed from 'vue-pdf-embed'
+import { defineEmits, ref } from 'vue'
 const { show } = defineProps({
   show: {
     type: Boolean,
     required: true
   }
-  //   pdfSource: {
-  //     type: String,
-  //     required: true
-  //   }
 })
+// OR THE FOLLOWING IMPORT FOR VUE 2
+// import VuePdfEmbed from 'vue-pdf-embed/dist/vue2-pdf-embed'
+const pdfSource =
+  'https://res.cloudinary.com/djgy5qzmy/image/upload/v1718449474/private_policy_gllr2g.pdf'
 
-// const loading = ref(true)
-// const pageCount = ref(1)
-// const pdfRef = ref(null)
-// const page = 1
+const page = ref(1)
+const pageCount = ref(1)
+const isLoading = ref(true)
+const pdfRef = ref(null)
 const emit = defineEmits(['close'])
-// const handleDocumentRender = () => {
-//   //   loading.value = false
-//   pageCount.value = pdfRef.value.pageCount
-// }
+
+const handleDocumentRender = () => {
+  isLoading.value = false
+  pageCount.value = pdfRef.value.pageCount
+}
 
 const closeModal = () => {
   emit('close')
 }
 </script>
-
 <style scoped>
 .vue-pdf-embed > div {
   overflow-y: scroll;
-  height: 100vh;
   background: rgb(243, 244, 246);
-}
-.vue-pdf-embed canvas {
+  max-height: 60vh; /* Adjust as needed */
+  border: 1px solid #ccc;
   box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.1);
 }
 </style>
