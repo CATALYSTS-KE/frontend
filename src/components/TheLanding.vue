@@ -197,7 +197,9 @@
                     />
                     <span class="ml-2 text-sm text-gray-700"
                       >I agree to the CATALYSTS
-                      <span class="cursor-pointer underline">Privacy Policy</span>.
+                      <span class="cursor-pointer underline"
+                        ><a href="/privacy-policy" class="text-blue-500">Privacy Policy</a></span
+                      >.
                     </span>
                   </label>
                 </div>
