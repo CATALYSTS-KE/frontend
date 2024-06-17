@@ -56,8 +56,8 @@
           >
             <div v-if="showSuccess === false" class="flex flex-col justify-center">
               <div class="mb-6">
-                <label for="join-type" class="block text-sm font-medium text-gray-700"
-                  >Join As?</label
+                <label for="join-type" class="block text-sm font-bold text-gray-700"
+                  >Join Catalysts</label
                 >
                 <select
                   id="join-type"
