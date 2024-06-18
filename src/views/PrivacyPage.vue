@@ -67,7 +67,7 @@ import { defineEmits, ref } from 'vue'
 // OR THE FOLLOWING IMPORT FOR VUE 2
 // import VuePdfEmbed from 'vue-pdf-embed/dist/vue2-pdf-embed'
 const pdfSource =
-  'https://res.cloudinary.com/djgy5qzmy/image/upload/v1718449474/private_policy_gllr2g.pdf'
+  'https://res.cloudinary.com/djgy5qzmy/image/upload/v1718720200/privacy_policy_x5ou0l.pdf'
 
 const page = ref(1)
 const pageCount = ref(1)

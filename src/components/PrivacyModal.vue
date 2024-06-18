@@ -1,5 +1,5 @@
 <template class="relative h-full max">
-  <div v-if="show" class="modal fixed inset-0 flex items-center z-50 justify-center">
+  <div v-if="show" class="modal fixed top-0 inset-0 flex items-center z-50 justify-center">
     <div class="absolute w-full h-full bg-gray-900 opacity-50"></div>
 
     <div class="bg-white min-w-full mx-auto rounded shadow-lg z-50">
@@ -16,7 +16,7 @@
 
         <div class="border flex flex-col p-5 h-full min-w-md">
           <!-- PDF viewer -->
-          <div class="h-96 w-full">
+          <div class="h-[500px] w-full">
             <vue-pdf-embed
               class="h-full min-w-md w-full overflow-y-scroll"
               ref="pdfRef"
@@ -79,7 +79,7 @@ const { show } = defineProps({
 // OR THE FOLLOWING IMPORT FOR VUE 2
 // import VuePdfEmbed from 'vue-pdf-embed/dist/vue2-pdf-embed'
 const pdfSource =
-  'https://res.cloudinary.com/djgy5qzmy/image/upload/v1718449474/private_policy_gllr2g.pdf'
+  'https://res.cloudinary.com/djgy5qzmy/image/upload/v1718720200/privacy_policy_x5ou0l.pdf'
 
 const page = ref(1)
 const pageCount = ref(1)
