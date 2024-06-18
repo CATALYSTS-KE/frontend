@@ -92,12 +92,31 @@
               alt="Organization"
               class="mb-4 w-full shadow-md"
             />
-            <h3 class="text-xl font-black md:text-3xl text-gray-primary px-4 tracking-wide">
+            <h3
+              v-if="index === 1"
+              class="text-xl font-black md:text-3xl text-gray-primary px-4 tracking-wide"
+            >
+              IUSSP Scientific Panel on Abortion Research, International Seminar
+            </h3>
+            <h3 v-else class="text-xl font-black md:text-3xl text-gray-primary px-4 tracking-wide">
               STAY TUNED
             </h3>
-            <p class="mb-1 text-gray-500 text-left p-4 md:text-xl">Coming Soon</p>
+            <p v-if="index === 1" class="mb-1 text-gray-500 text-left p-4 md:text-xl">
+              Improving measurement of abortion incidence and safety: Innovations in methodology and
+              recent empirical studies - Mombasa, Kenya
+            </p>
+            <p v-else class="mb-1 text-gray-500 text-left p-4 md:text-xl">Coming Soon</p>
             <div class="mb-3 px-4">
-              <p class="mb-6 py-1 px-2 bg-[#EE3b26] text-white text-xl inline-block font-bold">
+              <p
+                v-if="index === 1"
+                class="mb-6 py-1 px-2 bg-[#EE3b26] text-white text-xl inline-block font-bold"
+              >
+                19 - 21ST NOVEMBER, MOMBASA
+              </p>
+              <p
+                v-else
+                class="mb-6 py-1 px-2 bg-[#EE3b26] text-white text-xl inline-block font-bold"
+              >
                 <span class="invisible">5<sup>th</sup> AUGUST, NAIROBI </span>
               </p>
             </div>
