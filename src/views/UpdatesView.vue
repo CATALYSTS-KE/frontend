@@ -88,7 +88,7 @@
         <div v-for="index in 3" :key="index" class="flex flex-col items-">
           <div class="bg-white m-2 p-1 rounded-sm">
             <img
-              src="@/assets/images/coming_soon.webp"
+              src="@/assets/images/coming_soon_2.webp"
               alt="Organization"
               class="mb-4 w-full shadow-md"
             />
