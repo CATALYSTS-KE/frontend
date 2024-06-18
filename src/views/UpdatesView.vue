@@ -88,20 +88,17 @@
         <div v-for="index in 3" :key="index" class="flex flex-col items-">
           <div class="bg-white m-2 p-1 rounded-sm">
             <img
-              src="@/assets/images/team_pic.png"
+              src="@/assets/images/coming_soon.webp"
               alt="Organization"
               class="mb-4 w-full shadow-md"
             />
             <h3 class="text-xl font-black md:text-3xl text-gray-primary px-4 tracking-wide">
-              Header one here
+              STAY TUNED
             </h3>
-            <p class="mb-1 text-gray-500 text-left p-4 md:text-xl">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-              euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-            </p>
+            <p class="mb-1 text-gray-500 text-left p-4 md:text-xl">Coming Soon</p>
             <div class="mb-3 px-4">
               <p class="mb-6 py-1 px-2 bg-[#EE3b26] text-white text-xl inline-block font-bold">
-                5<sup>th</sup> AUGUST, NAIROBI
+                <span class="invisible">5<sup>th</sup> AUGUST, NAIROBI </span>
               </p>
             </div>
           </div>
