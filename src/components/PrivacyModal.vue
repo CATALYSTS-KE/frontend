@@ -5,7 +5,7 @@
     <div class="bg-white min-w-full mx-auto rounded shadow-lg z-50">
       <div class="py-1 text-left px-8">
         <!-- loader -->
-        <div class="flex justify-end items-center">
+        <div class="flex justify-end items-center pt-2">
           <button
             @click="closeModal"
             class="text-gray-500 hover:text-gray-800 text-3xl font-extrabold"
@@ -16,7 +16,7 @@
 
         <div class="border flex flex-col p-5 h-full min-w-md">
           <!-- PDF viewer -->
-          <div class="h-[500px] w-full">
+          <div class="h-96 w-full">
             <vue-pdf-embed
               class="h-full min-w-md w-full overflow-y-scroll"
               ref="pdfRef"
