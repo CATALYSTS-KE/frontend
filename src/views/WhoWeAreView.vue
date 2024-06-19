@@ -108,6 +108,8 @@ most important being “What are the implications of this ruling beyond US borde
       <br>
       <br>
       We invite you to accompany us on this journey as we work to create a future in which everyone on the African continent has access to safe and legal abortion care as a matter of course. By working together, we can bring about long-lasting change and make sure that everyone is included in the struggle for reproductive autonomy. This is our tale.
+      <br>
+      The initiation of CATALYSTS has been propelled by a group of five organizations focused on sexual and reproductive health and rights in Africa - International Planned Parenthood Foundation-Africa Regional Office (IPPF_ARO), Ipas Africa Alliance (AA), Centre for Reproductive Rights (CRR), Population Council-Kenya, and the International Federation of Gynecology and Obstetrics (FIGO).
 `
   }
 ]

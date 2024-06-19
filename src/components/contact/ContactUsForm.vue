@@ -137,21 +137,6 @@
                 </div>
 
                 <div class="mb-6">
-                  <label for="primary-contact" class="block text-sm font-medium text-gray-700"
-                    >Primary Contact Person</label
-                  >
-                  <input
-                    id="primary-contact"
-                    name="primary-contact"
-                    type="text"
-                    v-model="primaryContactName"
-                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    placeholder="e.g. John Smith"
-                    required
-                  />
-                </div>
-
-                <div class="mb-6">
                   <label for="primary-email" class="block text-sm font-medium text-gray-700"
                     >Primary Contact Email</label
                   >
@@ -215,7 +200,7 @@
                 </div>
               </div>
 
-              <div class="mb-6" v-if="joinType">
+              <div class="pb-6" v-if="joinType">
                 <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                 <textarea
                   id="message"
@@ -228,7 +213,7 @@
                 ></textarea>
               </div>
 
-              <div class="mb-6">
+              <div class="mb-2">
                 <label class="inline-flex items-center">
                   <input
                     type="checkbox"
@@ -240,6 +225,35 @@
                     >I agree to the
                     <a href="/privacy-policy" class="text-blue-500">Privacy Policy</a></span
                   >
+                </label>
+              </div>
+              <div class="pb-2">
+                <label class="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    v-model="agreeToMsgs"
+                    class="form-checkbox h-5 w-5 text-orange-primary"
+                    required
+                  />
+                  <span class="ml-2 text-gray-700"
+                    >I agree to sign up to the CATALYSTS newsletter and receive CATALYSTS update
+                    messages.</span
+                  >
+                </label>
+              </div>
+
+              <div v-if="joinType === 'organisation'" class="pb-2">
+                <label class="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    v-model="agreeToLogo"
+                    class="form-checkbox h-5 w-5 text-orange-primary"
+                    required
+                  />
+                  <span class="ml-2 text-gray-700"
+                    >By submitting this form, I agree to CATALYSTS using my logo for website
+                    purposes.
+                  </span>
                 </label>
               </div>
 
@@ -290,6 +304,8 @@ export default {
         message: ''
       },
       agreeToPolicy: false,
+      agreeToMsgs: false,
+      agreeToLogo: false,
       showSuccess: false
     }
   },
@@ -299,12 +315,7 @@ export default {
       if (this.joinType === 'member') {
         return this.form.fullName && this.form.email && this.form.phoneNumber && this.form.message
       } else if (this.joinType === 'organisation') {
-        return (
-          this.form.organisationName &&
-          this.form.primaryContactName &&
-          this.form.primaryContactEmail &&
-          this.form.message
-        )
+        return this.form.organisationName && this.form.primaryContactEmail && this.form.message
       } else if (this.joinType === 'donor') {
         return (
           this.form.donorName &&
@@ -326,7 +337,7 @@ export default {
       `
 
       if (this.joinType === 'member') {
-        subject = 'New Member Sign Up'
+        subject = 'New Individual Sign Up'
         text = `
           Full Name: ${this.form.fullName}\n
           Email: ${this.form.email}\n
@@ -363,6 +374,8 @@ export default {
         this.form.donorName = ''
         this.form.message = ''
         this.agreeToPolicy = false
+        this.agreeToMsgs = false
+        this.agreeToLogo = false
         this.showSuccess = true
       } else {
         console.log('Failed to submit form.')
