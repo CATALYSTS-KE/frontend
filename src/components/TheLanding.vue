@@ -17,22 +17,22 @@
             class="block md:hidden relative px-4 py-2 z-10"
           />
         </div>
-        <div class="flex 7xl:justify-center my-8">
+        <div class="flex justify-center my-8">
           <div class="relative">
             <p
-              class="text-4xl md:text-6xl font-light leading-snug px-4 py-2 text-white text-center"
+              class="text-4xl md:text-5xl font-light leading-snug px-4 py-2 text-white text-center"
             >
               An
-              <span class="text-yellow-secondary font-bold"> Africa-Led Alliance </span> Connecting
-              And Amplifying African Voices And Efforts towards
-              <span class="text-yellow-secondary font-bold">
-                Universal Abortion Rights And Care.</span
+              <span class="text-yellow-secondary font-bold">Africa-Led Alliance</span>
+              Connecting And Amplifying African Voices And Efforts towards
+              <span class="text-yellow-secondary font-bold"
+                >Universal Abortion Rights And Care.</span
               >
             </p>
           </div>
         </div>
-        <div class="mt-4 px-8 2xl:px-56 md:pb-40">
-          <div class="relative w-full" style="padding-bottom: 56.25%">
+        <div class="mt-4 px-8 md:pb-40 flex justify-center items-center">
+          <div class="relative w-80 h-80 md:w-3/4 md:h-96 2xl:h-[500px]">
             <iframe
               class="absolute top-0 left-0 w-full h-full"
               title="The CATALYSTS"
@@ -40,11 +40,11 @@
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-            >
-            </iframe>
+            ></iframe>
           </div>
         </div>
       </section>
+
       <!-- Who we are -->
       <section
         class="relative px-4 md:px-20 lg:py-20 flex flex-col justify-center bg-[url('@/assets/images/who-we-are-bg.webp')] bg-cover bg-center"

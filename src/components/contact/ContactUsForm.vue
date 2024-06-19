@@ -65,7 +65,7 @@
                   v-model="joinType"
                   class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                 >
-                  <option value="member">Join as Member</option>
+                  <option value="member">Join as Individual</option>
                   <option value="organisation">Join as Organisation</option>
                   <option value="donor">Join as Donor</option>
                 </select>
