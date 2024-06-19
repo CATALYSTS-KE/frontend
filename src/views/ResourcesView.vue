@@ -26,7 +26,12 @@
             :style="{ backgroundColor: item.backgroundColor }"
             class="p-8 rounded-md shadow-md hover:bg-opacity-90 transition duration-300"
           >
-            <a :href="item.url" target="_blank" class="text-black hover:text-white uppercase">
+            <a
+              :href="item.url"
+              target="_blank"
+              :class="`text-${item.textColor}`"
+              class="hover:text-gray-500 uppercase"
+            >
               <h3 class="text-lg font-semibold">{{ item.title }}</h3>
             </a>
           </div>
@@ -96,18 +101,21 @@ const resources = [
       {
         title: 'WHO Abortion Care Guidelines (2022)',
         url: 'https://srhr.org/abortioncare/',
-        backgroundColor: '#C4D93C'
+        backgroundColor: '#C4D93C',
+        textColor: 'black'
       },
       {
         title: 'IPPF Comprehensive Abortion Care Guidelines',
         url: 'https://ippfmaforum.org/2021/10/06/abortion-care-guidelines/',
-        backgroundColor: '#00C5B4'
+        backgroundColor: '#00C5B4',
+        textColor: 'black'
       },
       {
         title:
           'SafeAccess - Website sharing best practice guidance, news and resources on safe abortion and post-abortion care',
         url: 'https://www.safeaccesshub.org/about/',
-        backgroundColor: '#F4A60E'
+        backgroundColor: '#F4A60E',
+        textColor: 'white'
       }
     ]
   },
@@ -117,17 +125,20 @@ const resources = [
       {
         title: 'Online medical abortion course (WHO)',
         url: 'https://lms-staging.lxp.academy.who.int/courses/course-v1:WHOA+0012_MA_EN+2023/about',
-        backgroundColor: '#933801'
+        backgroundColor: '#933801',
+        textColor: 'white'
       },
       {
         title: 'Mobile app for health care workers providing abortion care (WHO)',
         url: 'https://www.who.int/news/item/07-08-2023-new-mobile-phone-app-helps-healthcare-workers-provide-comprehensive-abortion-care#:~:text=In%20recognition%20of%20this%2C%20the,the%20WHO%20Abortion%20care%20guideline%2C',
-        backgroundColor: '#443635'
+        backgroundColor: '#443635',
+        textColor: 'white'
       },
       {
-        title: 'HowtoUse online medical abortion training for providers',
+        title: 'How to Use online medical abortion training for providers',
         url: 'https://elearning.howtouseabortionpill.org/',
-        backgroundColor: '#EE3B27'
+        backgroundColor: '#EE3B27',
+        textColor: 'white'
       }
     ]
   },
@@ -137,12 +148,14 @@ const resources = [
       {
         title: 'How to Talk about Abortion: A guide to stigma-free messaging (IPPF)',
         url: 'https://www.ippf.org/resource/how-talk-about-abortion-guide-stigma-free-messaging',
-        backgroundColor: '#8D7C34'
+        backgroundColor: '#8D7C34',
+        textColor: 'white'
       },
       {
         title: 'Women on Web Abortion Framing Toolkit (Women on Web)',
         url: 'https://www.womenonweb.org/en/page/21991/abortion-framing-toolkit',
-        backgroundColor: '#F7A901'
+        backgroundColor: '#F7A901',
+        textColor: 'black'
       },
       {
         title:
@@ -158,34 +171,40 @@ const resources = [
       {
         title: 'VCAT Facilitator Guide for Global Audience (Ipas)',
         url: 'https://www.ipas.org/resource/abortion-values-clarification-for-action-and-transformation-vcat/',
-        backgroundColor: '#933801'
+        backgroundColor: '#933801',
+        textColor: 'white'
       },
       {
         title: 'VCAT Abortion self-care facilitator’s guide (Ipas)',
         url: 'https://www.ipas.org/resource/abortion-self-care-values-clarification-for-action-and-transformation-workshop-facilitators-guide/',
-        backgroundColor: '#EB3D24'
+        backgroundColor: '#EB3D24',
+        textColor: 'white'
       },
       {
         title:
           'Abortion attitude transformation: Values clarification activities adapted for young women (Ipas)',
         url: 'https://www.ipas.org/resource/abortion-attitude-transformation-values-clarification-activities-adapted-for-young-women/',
-        backgroundColor: '#443737'
+        backgroundColor: '#443737',
+        textColor: 'white'
       },
       {
         title: 'Values clarification / VCAT facilitators training (MSI)',
         url: 'https://kayaconnect.org/course/info.php?id=5040',
-        backgroundColor: '#C4D93C'
+        backgroundColor: '#C4D93C',
+        textColor: 'black'
       },
       {
         title: 'Disability inclusion in reproductive health programs (Ipas)',
         url: 'https://www.ipas.org/resource/disability-inclusion-in-reproductive-health-programs-an-orientation-and-values-clarification-toolkit/',
-        backgroundColor: '#00C5B4'
+        backgroundColor: '#00C5B4',
+        textColor: 'black'
       },
       {
         title:
           'Abortion Attitude Transformation: A values clarification toolkit for humanitarian audiences (Ipas)',
         url: 'https://www.ipas.org/resource/abortion-attitude-transformation-a-values-clarification-toolkit-for-humanitarian-audiences/',
-        backgroundColor: '#F4A60E'
+        backgroundColor: '#F4A60E',
+        textColor: 'black'
       }
     ]
   },
@@ -196,7 +215,8 @@ const resources = [
         title:
           'Progress toward abortion access and quality care: Examples from across the globe. 2024 (IJGO)',
         url: 'https://obgyn.onlinelibrary.wiley.com/toc/18793479/2024/164/S1',
-        backgroundColor: '#8D7C34'
+        backgroundColor: '#8D7C34',
+        textColor: 'white'
       },
       {
         title:
