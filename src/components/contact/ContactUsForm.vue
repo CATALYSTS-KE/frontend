@@ -150,6 +150,22 @@
                     required
                   />
                 </div>
+
+                <div class="py-4">
+                  <button @click="openLogoUpload" id="upload_widget" class="cloudinary-button">
+                    Upload Logo
+                  </button>
+                  <div v-if="logoUrl" class="py-2">
+                    <h4 class="font-bold">Uploaded Logo:</h4>
+                    <img :src="logoUrl" alt="Uploaded Logo" class="uploaded-logo" />
+                    <button
+                      @click="deleteLogo"
+                      class="delete-logo-button bg-red-400 p-2 my-2 rounded-md text-white"
+                    >
+                      Delete Logo
+                    </button>
+                  </div>
+                </div>
               </div>
 
               <!-- Donor Fields -->
@@ -306,7 +322,8 @@ export default {
       agreeToPolicy: false,
       agreeToMsgs: false,
       agreeToLogo: false,
-      showSuccess: false
+      showSuccess: false,
+      logoUrl: ''
     }
   },
   computed: {
@@ -380,7 +397,70 @@ export default {
       } else {
         console.log('Failed to submit form.')
       }
+    },
+
+    openLogoUpload() {
+      // if (
+      //   this.joinType === 'organisation' &&
+      //   (!this.form.organisationName || !this.form.primaryContactEmail)
+      // ) {
+      //   // alert('Please fill in all required fields before uploading the logo.')
+      //   return
+      // }
+      if (!window.cloudinary) {
+        console.error('Cloudinary script not loaded')
+        return
+      }
+
+      const cloudinaryWidget = window.cloudinary.createUploadWidget(
+        {
+          cloudName: 'djgy5qzmy',
+          uploadPreset: 'mrb23fxn',
+          sources: ['local', 'url', 'camera'],
+          multiple: false,
+          maxFileSize: 5000000, // 5MB
+          resourceType: 'image',
+          theme: 'minimal'
+        },
+        (error, result) => {
+          if (!error && result && result.event === 'success') {
+            this.logoUrl = result.info.secure_url
+            console.log('Uploaded image URL:', result.info.secure_url)
+          }
+        }
+      )
+
+      cloudinaryWidget.open()
+    },
+
+    deleteLogo() {
+      this.logoUrl = ''
     }
   }
 }
 </script>
+<style scoped>
+.cloudinary-button {
+  background-color: #00c4b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.cloudinary-button:hover {
+  background-color: #4caf50;
+}
+
+.uploaded-logo {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+</style>
