@@ -52,6 +52,10 @@ const OrganizationData = [
     image: 'Pop_Council_logo.jpg'
   },
   {
+    title: 'Population Council2',
+    image: 'Pop_Council_logo_2.jpg'
+  },
+  {
     title: 'IPAS',
     image: 'IPAS_Logo_RGB.jpg'
   }
