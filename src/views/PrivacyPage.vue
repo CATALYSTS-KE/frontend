@@ -3,7 +3,7 @@
     <div class="absolute w-full h-full bg-gray-900 opacity-50"></div>
 
     <div class="bg-white min-w-full mx-auto rounded shadow-lg z-50">
-      <div class="py-1 text-left px-8">
+      <div class="py-1 text-left md:px-8">
         <!-- loader -->
         <div class="flex justify-end items-center"></div>
 
@@ -11,7 +11,7 @@
           <!-- PDF viewer -->
           <div class="w-full">
             <vue-pdf-embed
-              class="h-full min-w-md w-full overflow-y-scroll"
+              class="h-full min-w-md w-full md:overflow-y-scroll"
               ref="pdfRef"
               :source="pdfSource"
               :page="page"
@@ -49,7 +49,7 @@
                 I understand and Agree
               </button>
             </div>
-            <label class="text-black text-lg font-bold">
+            <label class="text-black text-lg font-bold hidden md:block">
               <input v-model="showAllPages" type="checkbox" class="mr-2" />
               Show all pages
             </label>
@@ -67,8 +67,7 @@ import { defineEmits, ref } from 'vue'
 // OR THE FOLLOWING IMPORT FOR VUE 2
 // import VuePdfEmbed from 'vue-pdf-embed/dist/vue2-pdf-embed'
 const pdfSource =
-  'https://res.cloudinary.com/djgy5qzmy/image/upload/v1718720200/privacy_policy_x5ou0l.pdf'
-
+  'https://res.cloudinary.com/djgy5qzmy/image/upload/v1718829588/privacy_policy_wgj9v0.pdf'
 const page = ref(1)
 const pageCount = ref(1)
 const isLoading = ref(true)

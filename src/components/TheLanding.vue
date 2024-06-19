@@ -5,7 +5,7 @@
         id=""
         class="pb-16 md:pb-10 md:px-20 bg-brown-primary bg-[url('@/assets/images/pattern_brown.svg')] bg-cover bg-center relative overflow-hidden"
       >
-        <div class="">
+        <div class="w-full h-full">
           <img
             src="@/assets/images/Catalyst.svg"
             alt="Title Image"
@@ -17,10 +17,10 @@
             class="block md:hidden relative px-4 py-2 z-10"
           />
         </div>
-        <div class="flex justify-center my-8">
+        <div class="flex justify-center my-4">
           <div class="relative">
             <p
-              class="text-4xl md:text-5xl font-light leading-snug px-4 py-2 text-white text-center"
+              class="text-2xl md:text-3xl font-light leading-snug px-4 py-2 text-white text-center"
             >
               An
               <span class="text-yellow-secondary font-bold">Africa-Led Alliance</span>
@@ -31,8 +31,8 @@
             </p>
           </div>
         </div>
-        <div class="mt-4 px-8 md:pb-40 flex justify-center items-center">
-          <div class="relative w-80 h-80 md:w-3/4 md:h-96 2xl:h-[500px]">
+        <div class="mt-4 px-8 md:pb-24 flex justify-center items-center">
+          <div class="relative w-full h-80 md:w-3/4 md:h-96 2xl:h-[500px]">
             <iframe
               class="absolute top-0 left-0 w-full h-full"
               title="The CATALYSTS"
