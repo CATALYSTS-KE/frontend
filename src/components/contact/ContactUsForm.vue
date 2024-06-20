@@ -229,50 +229,53 @@
                 ></textarea>
               </div>
 
-              <div class="mb-2">
-                <label class="inline-flex items-center">
-                  <input
-                    type="checkbox"
-                    v-model="agreeToPolicy"
-                    class="form-checkbox h-5 w-5 text-orange-primary"
-                    required
-                  />
-                  <span class="ml-2 text-gray-700"
-                    >I agree to the
-                    <a href="/privacy-policy" class="text-blue-500">Privacy Policy</a></span
-                  >
-                </label>
-              </div>
-              <div class="pb-2">
-                <label class="inline-flex items-center">
-                  <input
-                    type="checkbox"
-                    v-model="agreeToMsgs"
-                    class="form-checkbox h-5 w-5 text-orange-primary"
-                    required
-                  />
-                  <span class="ml-2 text-gray-700"
-                    >I agree to sign up to the CATALYSTS newsletter and receive CATALYSTS update
-                    messages.</span
-                  >
-                </label>
+              <div>
+                <div class="mb-2">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      v-model="agreeToPolicy"
+                      class="form-checkbox text-orange-primary"
+                      required
+                    />
+                    <span class="ml-2 text-gray-700">
+                      I agree to the
+                      <a href="/privacy-policy" class="text-blue-500">Privacy Policy</a>
+                    </span>
+                  </label>
+                </div>
+                <div class="pb-2">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      v-model="agreeToMsgs"
+                      class="form-checkbox text-orange-primary"
+                      required
+                    />
+                    <span class="ml-2 text-gray-700">
+                      I agree to sign up to the CATALYSTS newsletter and receive CATALYSTS update
+                      messages.
+                    </span>
+                  </label>
+                </div>
+
+                <div v-if="joinType === 'organisation'" class="pb-2">
+                  <label class="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      v-model="agreeToLogo"
+                      class="form-checkbox text-orange-primary"
+                      required
+                    />
+                    <span class="ml-2 text-gray-700">
+                      By submitting this form, I agree to CATALYSTS using my logo for website
+                      purposes.
+                    </span>
+                  </label>
+                </div>
               </div>
 
-              <div v-if="joinType === 'organisation'" class="pb-2">
-                <label class="inline-flex items-center">
-                  <input
-                    type="checkbox"
-                    v-model="agreeToLogo"
-                    class="form-checkbox h-5 w-5 text-orange-primary"
-                    required
-                  />
-                  <span class="ml-2 text-gray-700"
-                    >By submitting this form, I agree to CATALYSTS using my logo for website
-                    purposes.
-                  </span>
-                </label>
-              </div>
-
+              <!-- Submit -->
               <div class="text-left">
                 <button
                   type="submit"
@@ -367,6 +370,7 @@ export default {
           Organisation Name: ${this.form.organisationName}\n
           Primary Contact Name: ${this.form.primaryContactName}\n
           Primary Contact Email: ${this.form.primaryContactEmail}\n
+          Logo: ${this.logoUrl}\n
           Message: ${this.form.message}\n
         `
       } else if (this.joinType === 'donor') {
@@ -462,5 +466,9 @@ export default {
   border: 1px solid #ccc;
   padding: 5px;
   border-radius: 5px;
+}
+.custom-checkbox {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
 }
 </style>
