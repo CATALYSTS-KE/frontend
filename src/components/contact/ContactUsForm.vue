@@ -22,15 +22,9 @@
     <!-- Cols 2 -->
     <section class="pt-12">
       <div class="bg-white p-6 md:px-4 drop-shadow-2xl rounded-lg">
-        <div class="flex flex-col md:flex-row justify-center md:items-center">
+        <div class="flex flex-col md:flex-row justify-center">
           <div class="md:w-1/2 md:mb-0 md:pr-8">
-            <div class="flex justify-center">
-              <img
-                class="w-full h-auto"
-                alt="contact page dubai image"
-                src="@/assets/images/contact/contact_us.jpg"
-              />
-            </div>
+            <InteractiveContact />
             <div class="px-4">
               <p class="font-semibold pt-6 md:pt-10 md:mb-4 text-base md:text-lg leading-6">
                 For any query, please contact us:-
@@ -49,266 +43,22 @@
           </div>
 
           <!-- Form Section -->
-          <!-- Form Section -->
-          <form
-            @submit.prevent="submitForm"
-            class="md:w-1/2 bg-white p-6 md:p-12 drop-shadow-2xl rounded-lg"
-          >
-            <div v-if="showSuccess === false" class="flex flex-col justify-center">
-              <div class="mb-6">
-                <label for="join-type" class="block text-sm font-bold text-gray-700"
-                  >Join Catalysts</label
-                >
-                <select
-                  id="join-type"
-                  name="join-type"
-                  v-model="joinType"
-                  class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                >
-                  <option value="member">Join as Individual</option>
-                  <option value="organisation">Join as Organisation</option>
-                  <option value="donor">Join as Donor</option>
-                </select>
-              </div>
-
-              <!-- Member Fields -->
-              <div v-if="joinType === 'member'">
-                <div class="mb-6">
-                  <label for="full-name" class="block text-sm font-medium text-gray-700"
-                    >Full Name</label
-                  >
-                  <input
-                    id="full-name"
-                    name="full-name"
-                    v-model="fullName"
-                    type="text"
-                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    placeholder="e.g. Jane Doe"
-                    required
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label for="email" class="block text-sm font-medium text-gray-700"
-                    >Email Address</label
-                  >
-                  <input
-                    id="email"
-                    name="email"
-                    v-model="email"
-                    type="email"
-                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    placeholder="e.g. janedoe@gmail.com"
-                    required
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label for="phone-number" class="block text-sm font-medium text-gray-700"
-                    >Phone Number</label
-                  >
-                  <input
-                    id="phone-number"
-                    name="phone-number"
-                    v-model="phoneNumber"
-                    type="text"
-                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    placeholder="e.g. (+254) 701234567"
-                    required
-                  />
-                </div>
-              </div>
-
-              <!-- Organisation Fields -->
-              <div v-if="joinType === 'organisation'">
-                <div class="mb-6">
-                  <label for="org-name" class="block text-sm font-medium text-gray-700"
-                    >Organisation Name</label
-                  >
-                  <input
-                    id="org-name"
-                    name="org-name"
-                    type="text"
-                    v-model="organisationName"
-                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    placeholder="e.g. Catalyst Org"
-                    required
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label for="primary-email" class="block text-sm font-medium text-gray-700"
-                    >Primary Contact Email</label
-                  >
-                  <input
-                    id="primary-email"
-                    name="primary-email"
-                    type="email"
-                    v-model="primaryContactEmail"
-                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    placeholder="e.g. organisation.com"
-                    required
-                  />
-                </div>
-
-                <div class="py-4">
-                  <button @click="openLogoUpload" id="upload_widget" class="cloudinary-button">
-                    Upload Logo
-                  </button>
-                  <div v-if="logoUrl" class="py-2">
-                    <h4 class="font-bold">Uploaded Logo:</h4>
-                    <img :src="logoUrl" alt="Uploaded Logo" class="uploaded-logo" />
-                    <button
-                      @click="deleteLogo"
-                      class="delete-logo-button bg-red-400 p-2 my-2 rounded-md text-white"
-                    >
-                      Delete Logo
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Donor Fields -->
-              <div v-if="joinType === 'donor'">
-                <div class="mb-6">
-                  <label for="donor-name" class="block text-sm font-medium text-gray-700"
-                    >Donor Name</label
-                  >
-                  <input
-                    id="donor-name"
-                    name="donor-name"
-                    v-model="donorName"
-                    type="text"
-                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    placeholder="e.g. Donor Name"
-                    required
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label for="primary-contact" class="block text-sm font-medium text-gray-700"
-                    >Primary Contact Name</label
-                  >
-                  <input
-                    id="primary-contact"
-                    v-model="message"
-                    name="primary-contact"
-                    type="text"
-                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    placeholder="e.g. John Smith"
-                    required
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label for="primary-email" class="block text-sm font-medium text-gray-700"
-                    >Primary Contact Email</label
-                  >
-                  <input
-                    id="primary-email"
-                    name="primary-email"
-                    v-model="primaryContactEmail"
-                    type="email"
-                    class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    placeholder="e.g. johnsmith@gmail.com"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="pb-6" v-if="joinType">
-                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  v-model="message"
-                  rows="4"
-                  class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                  placeholder="Write your message here"
-                  required
-                ></textarea>
-              </div>
-
-              <div>
-                <div class="mb-2">
-                  <label class="inline-flex items-center">
-                    <input
-                      type="checkbox"
-                      v-model="agreeToPolicy"
-                      class="form-checkbox text-orange-primary"
-                      required
-                    />
-                    <span class="ml-2 text-gray-700">
-                      I agree to the
-                      <a href="/privacy-policy" class="text-blue-500">Privacy Policy</a>
-                    </span>
-                  </label>
-                </div>
-                <div class="pb-2">
-                  <label class="inline-flex items-center">
-                    <input
-                      type="checkbox"
-                      v-model="agreeToMsgs"
-                      class="form-checkbox text-orange-primary"
-                      required
-                    />
-                    <span class="ml-2 text-gray-700">
-                      I agree to sign up to the CATALYSTS newsletter and receive CATALYSTS update
-                      messages.
-                    </span>
-                  </label>
-                </div>
-
-                <div v-if="joinType === 'organisation'" class="pb-2">
-                  <label class="inline-flex items-center">
-                    <input
-                      type="checkbox"
-                      v-model="agreeToLogo"
-                      class="form-checkbox text-orange-primary"
-                      required
-                    />
-                    <span class="ml-2 text-gray-700">
-                      By submitting this form, I agree to CATALYSTS using my logo for website
-                      purposes.
-                    </span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Submit -->
-              <div class="text-left">
-                <button
-                  type="submit"
-                  @click="submitForm"
-                  class="h-[40px] px-6 font-bold text-sm md:text-base text-white bg-orange-primary inline-flex items-center justify-center rounded-lg hover:bg-secondary transition-all ease-linear duration-500"
-                >
-                  Submit
-                </button>
-              </div>
-            </div>
-            <div v-if="showSuccess === true">
-              <p class="py-4 font-bold text-lg">
-                Thank You for your submission. You're one step close to being part of the
-                <span class="text-orange-primary">CATALYSTS</span>
-                Community. We'll be in touch with you soon.
-              </p>
-              <button
-                @click="showSuccess = false"
-                class="py-2 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
-              >
-                Okay
-              </button>
-            </div>
-          </form>
+          <ContactSection />
         </div>
       </div>
     </section>
   </main>
 </template>
 <script>
-import { sendEmail } from '../common/emailService' // Adjust the path as necessary
+import { sendEmail } from '../common/emailService'
+import ContactSection from './ContactSection.vue'
+import InteractiveContact from './InteractiveContact.vue'
 
 export default {
+  components: {
+    ContactSection,
+    InteractiveContact
+  },
   data() {
     return {
       joinType: 'member',
