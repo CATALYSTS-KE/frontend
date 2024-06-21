@@ -122,7 +122,8 @@
             </div>
           </div>
           <div class="flex justify-between -mt-5 px-4">
-            <RectangleSvg
+            <a href="https://iussp.org/en/abortion-research">
+              <RectangleSvg
               fill="#00C4B3"
               width="142"
               height="44"
@@ -132,6 +133,8 @@
               textFill="white"
               class=""
             />
+            </a>
+         
             <RectangleSvg
               fill="#FFDD00"
               width="143"

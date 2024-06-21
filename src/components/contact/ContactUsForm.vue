@@ -50,7 +50,6 @@
   </main>
 </template>
 <script>
-import { sendEmail } from '../common/emailService'
 import ContactSection from './ContactSection.vue'
 import InteractiveContact from './InteractiveContact.vue'
 
@@ -60,137 +59,10 @@ export default {
     InteractiveContact
   },
   data() {
-    return {
-      joinType: 'member',
-      form: {
-        fullName: '',
-        email: '',
-        phoneNumber: '',
-        organisationName: '',
-        primaryContactName: '',
-        primaryContactEmail: '',
-        donorName: '',
-        message: ''
-      },
-      agreeToPolicy: false,
-      agreeToMsgs: false,
-      agreeToLogo: false,
-      showSuccess: false,
-      logoUrl: ''
-    }
+    return {}
   },
-  computed: {
-    isFormValid() {
-      if (!this.agreeToPolicy) return false
-      if (this.joinType === 'member') {
-        return this.form.fullName && this.form.email && this.form.phoneNumber && this.form.message
-      } else if (this.joinType === 'organisation') {
-        return this.form.organisationName && this.form.primaryContactEmail && this.form.message
-      } else if (this.joinType === 'donor') {
-        return (
-          this.form.donorName &&
-          this.form.primaryContactName &&
-          this.form.primaryContactEmail &&
-          this.form.message
-        )
-      }
-      return false
-    }
-  },
-  methods: {
-    async submitForm() {
-      let subject = `${this.form.fullName || this.form.organisationName || this.form.donorName} Has Joined Catalyst`
-      let text = `
-        Name: ${this.form.fullName || this.form.organisationName || this.form.donorName}\n
-        Email: ${this.form.email || this.form.primaryContactEmail}\n
-        Message: ${this.form.message}\n
-      `
-
-      if (this.joinType === 'member') {
-        subject = 'New Individual Sign Up'
-        text = `
-          Full Name: ${this.form.fullName}\n
-          Email: ${this.form.email}\n
-          Phone Number: ${this.form.phoneNumber}\n
-          Message: ${this.form.message}\n
-        `
-      } else if (this.joinType === 'organisation') {
-        subject = 'New Organisation Sign Up'
-        text = `
-          Organisation Name: ${this.form.organisationName}\n
-          Primary Contact Name: ${this.form.primaryContactName}\n
-          Primary Contact Email: ${this.form.primaryContactEmail}\n
-          Logo: ${this.logoUrl}\n
-          Message: ${this.form.message}\n
-        `
-      } else if (this.joinType === 'donor') {
-        subject = 'New Donor Sign Up'
-        text = `
-          Donor Name: ${this.form.donorName}\n
-          Primary Contact Name: ${this.form.primaryContactName}\n
-          Primary Contact Email: ${this.form.primaryContactEmail}\n
-          Message: ${this.form.message}\n
-        `
-      }
-
-      const emailSent = await sendEmail(subject, text)
-
-      if (emailSent) {
-        this.form.fullName = ''
-        this.form.email = ''
-        this.form.phoneNumber = ''
-        this.form.organisationName = ''
-        this.form.primaryContactName = ''
-        this.form.primaryContactEmail = ''
-        this.form.donorName = ''
-        this.form.message = ''
-        this.agreeToPolicy = false
-        this.agreeToMsgs = false
-        this.agreeToLogo = false
-        this.showSuccess = true
-      } else {
-        console.log('Failed to submit form.')
-      }
-    },
-
-    openLogoUpload() {
-      // if (
-      //   this.joinType === 'organisation' &&
-      //   (!this.form.organisationName || !this.form.primaryContactEmail)
-      // ) {
-      //   // alert('Please fill in all required fields before uploading the logo.')
-      //   return
-      // }
-      if (!window.cloudinary) {
-        console.error('Cloudinary script not loaded')
-        return
-      }
-
-      const cloudinaryWidget = window.cloudinary.createUploadWidget(
-        {
-          cloudName: 'djgy5qzmy',
-          uploadPreset: 'mrb23fxn',
-          sources: ['local', 'url', 'camera'],
-          multiple: false,
-          maxFileSize: 5000000, // 5MB
-          resourceType: 'image',
-          theme: 'minimal'
-        },
-        (error, result) => {
-          if (!error && result && result.event === 'success') {
-            this.logoUrl = result.info.secure_url
-            console.log('Uploaded image URL:', result.info.secure_url)
-          }
-        }
-      )
-
-      cloudinaryWidget.open()
-    },
-
-    deleteLogo() {
-      this.logoUrl = ''
-    }
-  }
+  computed: {},
+  methods: {}
 }
 </script>
 <style scoped>
