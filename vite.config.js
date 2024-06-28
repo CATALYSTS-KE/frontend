@@ -1,25 +1,19 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { createSitemap } from 'vite-plugin-sitemap'
+import { VitePages } from 'vite-pages'
+import { VitePluginSitemap } from 'vite-plugin-sitemap'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    createSitemap({
+    VitePages(),
+    VitePluginSitemap({
       hostname: 'https://catalystsafrica.org', // Your site URL
-      routes: [
-        '/',
-        '/who-we-are',
-        '/what-we-do',
-        '/updates',
-        '/resources',
-        '/join-us',
-        '/contact-us',
-        '/privacy-policy',
-        '/test'
-      ]
+      changefreq: 'weekly',
+      priority: 0.7,
+      exclude: ['/404'] // Example of excluding routes
     })
   ],
   resolve: {
