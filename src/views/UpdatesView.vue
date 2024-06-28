@@ -84,7 +84,7 @@
           />
         </div>
       </div>
-      <div class="px-8 pt-14 md:pt-24 grid-cols-1 grid md:grid-cols-3 gap-x-4">
+      <div class="px-2 md:px-4 pt-14 md:pt-24 grid-cols-1 grid md:grid-cols-3 gap-x-4">
         <div v-for="index in 3" :key="index" class="flex flex-col items-">
           <div class="bg-white m-2 p-1 rounded-sm">
             <img
@@ -109,7 +109,7 @@
             <div class="mb-3 px-4">
               <p
                 v-if="index === 1"
-                class="mb-6 py-1 px-2 bg-[#EE3b26] text-white text-xl inline-block font-bold"
+                class="mb-6 py-1 px-2 bg-[#EE3b26] text-white text-md md:text-xl inline-block font-bold"
               >
                 19 - 21ST NOVEMBER, MOMBASA
               </p>
@@ -124,17 +124,16 @@
           <div class="flex justify-between -mt-5 px-4">
             <a href="https://iussp.org/en/abortion-research">
               <RectangleSvg
-              fill="#00C4B3"
-              width="142"
-              height="44"
-              viewBox="0 0 142 44"
-              :path="path6"
-              text="REGISTER"
-              textFill="white"
-              class=""
-            />
+                fill="#00C4B3"
+                width="142"
+                height="44"
+                viewBox="0 0 142 44"
+                :path="path6"
+                text="REGISTER"
+                textFill="white"
+                class=""
+              />
             </a>
-         
             <RectangleSvg
               fill="#FFDD00"
               width="143"
