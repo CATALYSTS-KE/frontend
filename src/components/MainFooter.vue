@@ -35,39 +35,41 @@
       </div>
     </div>
 
-    <div
-      class="mx-auto flex md:grid grid-cols-2 md:grid-cols-3 justify-between px-4 md:px-1 md:justify-between text-sm md:text-xl text-normal tracking-wide items-center"
-    >
-      <router-link
-        to="/"
-        data-active="true"
-        class="motion-safe:active:-translate-y-0.5 px-4 md:pl-20"
-        @click="resetActiveTab()"
+    <div class="pb-2">
+      <div
+        class="mx-auto flex md:grid grid-cols-2 md:grid-cols-3 justify-between px-4 md:px-1 md:justify-between text-sm md:text-xl text-normal tracking-wide items-center"
       >
-        <div>
-          <img
-            alt="Catalysts logo"
-            class="logo h-full w-full"
-            src="@/assets/images/catalysts-logo_white.svg"
-          />
-        </div>
-      </router-link>
+        <router-link
+          to="/"
+          data-active="true"
+          class="motion-safe:active:-translate-y-0.5 px-4 md:pl-20"
+          @click="resetActiveTab()"
+        >
+          <div class="h-48 w-48">
+            <img
+              alt="Catalysts logo"
+              class="logo h-full md:w-full"
+              src="@/assets/images/catalysts-logo_white.svg"
+            />
+          </div>
+        </router-link>
 
-      <div class="md:col-span-2 items-center">
-        <div>
-          <div class="text-sm md:text-lg">
-            <span class="text-orange-primary">CONTACTS:</span
-            ><span class=""> info@catalystsafrica.org</span>
-          </div>
-          <!-- privacy policy link -->
-          <div class="text-sm md:text-lg">
-            <span @click="showPdfModal = true" class="text-white cursor-pointer underline"
-              >Privacy Policy</span
-            >
+        <div class="md:col-span-2 items-center">
+          <div>
+            <div class="text-sm md:text-lg">
+              <span class="text-orange-primary">CONTACTS:</span
+              ><span class=""> info@catalystsafrica.org</span>
+            </div>
+            <!-- privacy policy link -->
+            <div class="text-sm md:text-lg">
+              <span @click="showPdfModal = true" class="text-white cursor-pointer underline"
+                >Privacy Policy</span
+              >
+            </div>
           </div>
         </div>
+        <div></div>
       </div>
-      <div></div>
     </div>
     <!-- <vue-pdf-embed :source="pdfSource" @rendered="handleDocumentRender" class="mt-4" /> -->
     <PrivacyModal :show="showPdfModal" @close="showPdfModal = false" />

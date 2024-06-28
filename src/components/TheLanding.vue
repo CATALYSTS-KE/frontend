@@ -31,12 +31,24 @@
             </p>
           </div>
         </div>
-        <div class="mt-4 px-8 md:pb-24 flex justify-center items-center">
-          <div class="relative w-full h-80 md:w-3/4 md:h-96 2xl:h-[500px]">
+        <!-- <div class="mt-4 md:px-8 md:pb-24 flex justify-center items-center">
+          <div class="relative w-full h-96 md:w-3/4 md:h-96 2xl:h-[500px]">
             <iframe
               class="absolute top-0 left-0 w-full h-full"
               title="The CATALYSTS"
               src="https://www.youtube.com/embed/GkkvkG-L4RM?autoplay=0&loop=1&rel=0&showinfo=0&modestbranding=0&controls=1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div> -->
+        <div class="flex justify-center mx-auto md:w-3/4 md:pb-24">
+          <div class="relative w-full pb-[56.25%] h-0">
+            <iframe
+              class="absolute w-full h-full"
+              src="https://www.youtube.com/embed/GkkvkG-L4RM?autoplay=0&loop=1&rel=0&showinfo=0&modestbranding=0&controls=1"
+              title="The CATALYSTS"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -63,7 +75,7 @@
         </div>
 
         <!-- <div class="flex flex-1 items-center justify-center"> -->
-        <div class="h-full pt-10 py-20 md:py-24">
+        <div class="h-full pt-10 py-12 md:py-24">
           <div
             class="bg-white text-gray-primary bg-opacity-60 p-8 rounded-lg shadow-lg overflow-y-auto relative mx-auto text-center"
           >
