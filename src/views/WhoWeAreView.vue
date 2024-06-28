@@ -98,7 +98,7 @@ most important being “What are the implications of this ruling beyond US borde
       Motivated by a common goal of preserving hard-won gains and expanding access to abortion services across the African continent, we embarked on a collaborative and insightful journey. It became evident that competing for scarce donor funds or operating in silos was unsustainable. The task at hand required cooperation and teamwork. It was clear that we were not the only ones on this quest. Experts agreed with us, highlighting the necessity of a coordinated effort to protect reproductive rights in Africa.
       <br>
       <br>
-      We are motivated by groups like LGBTQIA+ advocacy, THE OUAGADOUGOU PARTNERSHIP, and THE GREEN WAVE IN LATIN AMERICA. These examples confirmed our belief that collective actions can result in meaningful transformation.
+      We are motivated by groups like LGBTQIA+ advocacy, The Ouagadougou Partnership, and The Green Wave in Latin America. These examples confirmed our belief that collective actions can result in meaningful transformation.
       <br>
       <br>
       Acknowledging the significance of utilizing the wider abortion ecosystem, we combined our assets and knowledge to proceed. This signaled the start of an extensive consultation process involving stakeholders with a variety of viewpoints and voices. We made sure that all pertinent parties were present, including donors, NGOs/INGOs, lawyers, grassroots activists, and medical professionals.
@@ -107,10 +107,10 @@ most important being “What are the implications of this ruling beyond US borde
       At a pivotal workshop held in Nairobi, this wide network of partners came together to begin developing a Theory of Change and laying out a strategy for a coalition dedicated to advancing abortion rights in Africa.
       <br>
       <br>
-      We invite you to accompany us on this journey as we work to create a future in which everyone on the African continent has access to safe and legal abortion care as a matter of course. By working together, we can bring about long-lasting change and make sure that everyone is included in the struggle for reproductive autonomy. This is our tale.
-      <br>
-      <br>
       The initiation of CATALYSTS has been propelled by a group of five organizations focused on sexual and reproductive health and rights in Africa - International Planned Parenthood Foundation-Africa Regional Office (IPPF_ARO), Ipas Africa Alliance (AA), Centre for Reproductive Rights (CRR), Population Council-Kenya, and the International Federation of Gynecology and Obstetrics (FIGO).
+      <br>
+      <br>
+      We invite you to accompany us on this journey as we work to create a future in which everyone on the African continent has access to safe and legal abortion care as a matter of course. By working together, we can bring about long-lasting change and make sure that everyone is included in the struggle for reproductive autonomy. This is our tale.
       `
   }
 ]
