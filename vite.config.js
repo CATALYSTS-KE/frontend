@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
     createSitemap({
-      hostname: 'https://catalysts-africa.netlify.app', // Your site URL
+      hostname: 'https://catalystsafrica.org', // Your site URL
       routes: [
         '/',
         '/who-we-are',
@@ -26,8 +26,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  build: {
-    outDir: 'dist'
   }
 })
