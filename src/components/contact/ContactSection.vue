@@ -25,7 +25,7 @@
           <input
             id="full-name"
             name="full-name"
-            v-model="fullName"
+            v-model="form.fullName"
             type="text"
             class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             placeholder="e.g. Jane Doe"
@@ -38,7 +38,7 @@
           <input
             id="email"
             name="email"
-            v-model="email"
+            v-model="form.email"
             type="email"
             class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             placeholder="e.g. janedoe@gmail.com"
@@ -53,7 +53,7 @@
           <input
             id="phone-number"
             name="phone-number"
-            v-model="phoneNumber"
+            v-model="form.phoneNumber"
             type="text"
             class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             placeholder="e.g. (+254) 701234567"
@@ -72,7 +72,7 @@
             id="org-name"
             name="org-name"
             type="text"
-            v-model="organisationName"
+            v-model="form.organisationName"
             class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             placeholder="e.g. Catalyst Org"
             required
@@ -87,7 +87,7 @@
             id="primary-email"
             name="primary-email"
             type="email"
-            v-model="primaryContactEmail"
+            v-model="form.primaryContactEmail"
             class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             placeholder="e.g. organisation.com"
             required
@@ -118,7 +118,7 @@
           <input
             id="donor-name"
             name="donor-name"
-            v-model="donorName"
+            v-model="form.donorName"
             type="text"
             class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             placeholder="e.g. Donor Name"
@@ -132,7 +132,7 @@
           >
           <input
             id="primary-contact"
-            v-model="message"
+            v-model="form.message"
             name="primary-contact"
             type="text"
             class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
@@ -148,7 +148,7 @@
           <input
             id="primary-email"
             name="primary-email"
-            v-model="primaryContactEmail"
+            v-model="form.primaryContactEmail"
             type="email"
             class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             placeholder="e.g. johnsmith@gmail.com"
@@ -162,7 +162,7 @@
         <textarea
           id="message"
           name="message"
-          v-model="message"
+          v-model="form.message"
           rows="4"
           class="mt-2 block w-full rounded-md border border-gray-300 py-2 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
           placeholder="Write your message here"
@@ -218,7 +218,6 @@
       <div class="text-left">
         <button
           type="submit"
-          @click="submitForm"
           class="h-[40px] px-6 font-bold text-sm md:text-base text-white bg-orange-primary inline-flex items-center justify-center rounded-lg hover:bg-secondary transition-all ease-linear duration-500"
         >
           Submit
@@ -290,7 +289,7 @@ export default {
           Email: ${this.form.email || this.form.primaryContactEmail}\n
           Message: ${this.form.message}\n
         `
-
+      console.log('org name', this.form.organisationName)
       if (this.joinType === 'member') {
         subject = 'New Individual Sign Up'
         text = `
