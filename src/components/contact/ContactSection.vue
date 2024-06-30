@@ -289,7 +289,7 @@ export default {
           Email: ${this.form.email || this.form.primaryContactEmail}\n
           Message: ${this.form.message}\n
         `
-      console.log('org name', this.form.organisationName)
+
       if (this.joinType === 'member') {
         subject = 'New Individual Sign Up'
         text = `
