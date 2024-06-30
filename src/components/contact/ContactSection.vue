@@ -302,7 +302,6 @@ export default {
         subject = 'New Organisation Sign Up'
         text = `
             Organisation Name: ${this.form.organisationName}\n
-            Primary Contact Name: ${this.form.primaryContactName}\n
             Primary Contact Email: ${this.form.primaryContactEmail}\n
             Logo: ${this.logoUrl}\n
             Message: ${this.form.message}\n
