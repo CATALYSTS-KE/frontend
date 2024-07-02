@@ -13,9 +13,7 @@
       />
     </div>
 
-    <div
-      class="flex flex-wrap justify-start md:pr-6 space-y-4 md:justify-evenly items-center overflow-auto"
-    >
+    <div class="flex flex-wrap justify-evenly md:pr-6 space-y-4 items-center overflow-auto">
       <!-- Loop through organizations -->
       <div v-for="item in OrganizationData" :key="item.title" class="px-4 py-2 md:px-2">
         <div class="w-36 md:w-full">
