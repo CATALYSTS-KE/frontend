@@ -297,6 +297,7 @@ export default {
             Email: ${this.form.email}\n
             Phone Number: ${this.form.phoneNumber}\n
             Message: ${this.form.message}\n
+            Receive NewsLetter: ${this.agreeToMsgs}\n
           `
       } else if (this.joinType === 'organisation') {
         subject = 'New Organisation Sign Up'
@@ -305,6 +306,7 @@ export default {
             Primary Contact Email: ${this.form.primaryContactEmail}\n
             Logo: ${this.logoUrl}\n
             Message: ${this.form.message}\n
+            Receive NewsLetter: ${this.agreeToMsgs}\n
           `
       } else if (this.joinType === 'donor') {
         subject = 'New Donor Sign Up'
@@ -313,6 +315,7 @@ export default {
             Primary Contact Name: ${this.form.primaryContactName}\n
             Primary Contact Email: ${this.form.primaryContactEmail}\n
             Message: ${this.form.message}\n
+            Receive NewsLetter: ${this.agreeToMsgs}\n
           `
       }
 
