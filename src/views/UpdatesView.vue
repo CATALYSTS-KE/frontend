@@ -141,7 +141,7 @@
                 </div>
               </div>
               <div class="flex justify-between -mt-5 px-4">
-                <a href="https://iussp.org/en/abortion-research">
+                <a href="https://procurement.ipas.org/rfp/consortium-coordinator/">
                   <RectangleSvg
                     fill="#00C4B3"
                     :width="142"
