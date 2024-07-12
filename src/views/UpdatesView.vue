@@ -153,6 +153,7 @@
                     class=""
                   />
                 </a>
+                <a href="https://procurement.ipas.org/rfp/consortium-coordinator/">
                 <RectangleSvg
                   fill="#FFDD00"
                   :width="143"
@@ -163,6 +164,7 @@
                   textFill="black"
                   class="text font-extrabold"
                 />
+              </a>
               </div>
             </div>
           </swiper-slide>
