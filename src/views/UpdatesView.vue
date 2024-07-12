@@ -103,7 +103,7 @@
             <div class="flex flex-col items-">
               <div class="bg-white m-2 p-1 rounded-sm">
                 <img
-                  :src="`src/assets${slide.imgSrc}`"
+                  :src="`${slide.imgSrc}`"
                   :alt="slide.imgAlt"
                   class="mb-4 w-full shadow-md"
                 />
@@ -181,7 +181,7 @@ import { ref } from 'vue'
 const slides = ref([
   {
     id: 1,
-    imgSrc: '/images/coming_soon_2.webp',
+    imgSrc: 'https://res.cloudinary.com/djgy5qzmy/image/upload/v1720815463/IPAS_Africa_Alliance_dzham7.png',
     imgAlt: 'Organization',
     title: 'IUSSP Scientific Panel on Abortion Research, International Seminar',
     description:
@@ -191,16 +191,16 @@ const slides = ref([
   },
   {
     id: 2,
-    imgSrc: '/images/coming_soon_2.webp',
+    imgSrc: 'https://res.cloudinary.com/djgy5qzmy/image/upload/v1720815741/coming_soon_2_1_jvdmhg.webp',
     imgAlt: 'Organization',
-    title: 'STAY TUNED',
-    description: 'Coming Soon',
+    title: 'Job Opportunity ',
+    description: 'Consortium Coordinator',
     date: '5<sup>th</sup> AUGUST, NAIROBI',
     isComingSoon: true
   },
   {
     id: 3,
-    imgSrc: '/images/coming_soon_2.webp',
+    imgSrc: 'https://res.cloudinary.com/djgy5qzmy/image/upload/v1720815741/coming_soon_2_1_jvdmhg.webp',
     imgAlt: 'Organization',
     title: 'STAY TUNED',
     description: 'Coming Soon',
@@ -209,7 +209,7 @@ const slides = ref([
   },
   {
     id: 4,
-    imgSrc: '/images/coming_soon_2.webp',
+    imgSrc: 'https://res.cloudinary.com/djgy5qzmy/image/upload/v1720815741/coming_soon_2_1_jvdmhg.webp',
     imgAlt: 'Organization',
     title: 'STAY TUNED --',
     description: 'Coming Soon',
