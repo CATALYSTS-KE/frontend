@@ -183,7 +183,7 @@ import { ref } from 'vue'
 const slides = ref([
   {
     id: 1,
-    imgSrc: 'https://res.cloudinary.com/djgy5qzmy/image/upload/v1720815463/IPAS_Africa_Alliance_dzham7.png',
+    imgSrc: 'https://res.cloudinary.com/djgy5qzmy/image/upload/v1720815741/coming_soon_2_1_jvdmhg.webp',
     imgAlt: 'Organization',
     title: 'IUSSP Scientific Panel on Abortion Research, International Seminar',
     description:
@@ -193,12 +193,12 @@ const slides = ref([
   },
   {
     id: 2,
-    imgSrc: 'https://res.cloudinary.com/djgy5qzmy/image/upload/v1720815741/coming_soon_2_1_jvdmhg.webp',
+    imgSrc: 'https://res.cloudinary.com/djgy5qzmy/image/upload/v1720815463/IPAS_Africa_Alliance_dzham7.png',
     imgAlt: 'Organization',
     title: 'Job Opportunity ',
     description: 'Consortium Coordinator',
-    date: '5<sup>th</sup> AUGUST, NAIROBI',
-    isComingSoon: true
+    date: '17TH JULY, 2024',
+    isComingSoon: false
   },
   {
     id: 3,
