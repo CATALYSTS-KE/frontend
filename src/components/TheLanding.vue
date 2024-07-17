@@ -288,7 +288,7 @@
                 :href="`${frame.frame_i}`"
                 class="bg-light-green text-white text-center px-8 py-2 my-2 rounded-md shadow-md hover:bg-blue-600 transition-colors"
                 target="_blank">
-                Try It Out on Instaagram
+                Try It Out on Instagram
               </a>
             </div>
             <!-- If there are only 3 items, add an empty div to center the last item -->
