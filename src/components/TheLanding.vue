@@ -279,11 +279,16 @@
                 />
               </div>
               <a
-                :href="`/frames/${frame.frame}`"
-                :download="`/frames/${frame.frame}`"
-                class="bg-blue-primary text-white px-8 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors"
-              >
-                Try It Out
+                :href="`${frame.frame_f}`"
+                class="bg-blue-primary text-white text-center px-8 py-2 my-2 rounded-md shadow-md hover:bg-blue-600 transition-colors"
+                target="_blank">
+                Try It Out on Facebook
+              </a>
+              <a
+                :href="`${frame.frame_i}`"
+                class="bg-light-green text-white text-center px-8 py-2 my-2 rounded-md shadow-md hover:bg-blue-600 transition-colors"
+                target="_blank">
+                Try It Out on Instaagram
               </a>
             </div>
             <!-- If there are only 3 items, add an empty div to center the last item -->
@@ -316,17 +321,20 @@ const socialFrames = [
   {
     name: 'Jessica',
     image: 'Catalysts_C_Hand_KV_1.webp',
-    frame: 'Catalysts_C_Hand_KV_1_frame.png'
+    frame_f: '#',
+    frame_i: '#'
   },
   {
     name: 'Angela',
     image: 'Catalysts_C_Hand_KV_2.webp',
-    frame: 'Catalysts_C_Hand_KV_2_frame.jpg'
+    frame_f: 'https://www.facebook.com/fbcameraeffects/tryit/403396316077382/',
+    frame_i: 'https://www.instagram.com/ar/403396316077382/'
   },
   {
     name: 'Mallah',
     image: 'Catalysts_C_Hand_KV_3.webp',
-    frame: 'Catalysts_C_Hand_KV_3_frame.png'
+    frame_f: 'https://www.facebook.com/fbcameraeffects/tryit/1016535299813252/',
+    frame_i: 'https://www.instagram.com/ar/1016535299813252/'
   }
 ]
 
